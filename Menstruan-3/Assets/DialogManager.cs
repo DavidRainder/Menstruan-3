@@ -1,4 +1,14 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
+
+[Serializable]
+public struct DialogSettings
+{
+    public List<string> texts;
+
+    public float speed;
+}
 
 public class DialogManager : MonoBehaviour
 {
@@ -20,17 +30,21 @@ public class DialogManager : MonoBehaviour
     #endregion
 
     [SerializeField] private GameObject dialogPrefab;
+    [SerializeField] private Canvas canvas;
 
     private GameObject _dialogInstance;
 
-    void StartDialog()
+    public void StartDialog(DialogSettings settings)
     {
         if(_dialogInstance != null)
         {
             Destroy(_dialogInstance);
         }
 
-        _dialogInstance = Instantiate(dialogPrefab);
+        _dialogInstance = Instantiate(dialogPrefab, canvas.transform);
+        ShowDialog dialog = _dialogInstance.GetComponent<ShowDialog>();
+        dialog.SetSettings(settings);
+        
     }
 
 
