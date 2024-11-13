@@ -1,13 +1,19 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [Serializable]
-public struct DialogSettings
+[CreateAssetMenu]
+public class DialogSettings : ScriptableObject
 {
     public List<string> texts;
 
     public float speed;
+
+    [Header("Events")]
+    public UnityEvent onStartDialog;
+    public UnityEvent onFinishDialog;
 }
 
 public class DialogManager : MonoBehaviour
@@ -36,27 +42,13 @@ public class DialogManager : MonoBehaviour
 
     public void StartDialog(DialogSettings settings)
     {
-        if(_dialogInstance != null)
+        if(instance._dialogInstance != null)
         {
-            Destroy(_dialogInstance);
+            Destroy(instance._dialogInstance);
         }
 
-        _dialogInstance = Instantiate(dialogPrefab, canvas.transform);
-        ShowDialog dialog = _dialogInstance.GetComponent<ShowDialog>();
+        instance._dialogInstance = Instantiate(dialogPrefab, instance.canvas.transform);
+        ShowDialog dialog = instance._dialogInstance.GetComponent<ShowDialog>();
         dialog.SetSettings(settings);
-        
-    }
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

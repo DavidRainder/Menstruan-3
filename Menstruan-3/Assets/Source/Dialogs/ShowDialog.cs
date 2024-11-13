@@ -6,7 +6,7 @@ using UnityEngine;
 public class ShowDialog : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _text;
-    [SerializeField] private string _shownText;
+    [SerializeField] private GameObject _endTextPointer;
 
     private bool _textEnded;
 
@@ -27,21 +27,44 @@ public class ShowDialog : MonoBehaviour
 
     public void Update()
     {
-        if (_textEnded && _currentText < _settings.texts.Count && Input.GetMouseButtonUp(0))
+        if (_textEnded && Input.GetMouseButtonUp(0))
         {
             ShowText();
         }
     }
 
+    private void StartDialog()
+    {
+        _settings.onStartDialog.Invoke();
+    }
+
+    private void EndDialog()
+    {
+        _settings.onFinishDialog.Invoke();
+        Destroy(this.gameObject);
+    }
+
     public void ShowText()
     {
-        int initialIndex = 0;
-        StartCoroutine(AnimText(initialIndex, _settings.texts[_currentText++]));
+        if(_currentText == 0)
+        {
+            StartDialog();
+        }
+        if(_currentText >= _settings.texts.Count)
+        {
+            EndDialog();
+        }
+        else
+        {
+            int initialIndex = 0;
+            StartCoroutine(AnimText(initialIndex, _settings.texts[_currentText++]));
+        }
     }
 
     IEnumerator AnimText(int initialIndex, string messageToShow)
     {
         _textEnded = false;
+        _endTextPointer.SetActive(_textEnded);
         if (initialIndex < messageToShow.Length && initialIndex >= 0)
         {
             int index = initialIndex;
@@ -55,5 +78,6 @@ public class ShowDialog : MonoBehaviour
             }
         }
         _textEnded = true;
+        _endTextPointer.SetActive(_textEnded);
     }
 }
