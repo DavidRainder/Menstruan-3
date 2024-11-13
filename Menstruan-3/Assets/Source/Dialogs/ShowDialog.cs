@@ -41,7 +41,7 @@ public class ShowDialog : MonoBehaviour
     private void EndDialog()
     {
         _settings.onFinishDialog.Invoke();
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 
     public void ShowText()

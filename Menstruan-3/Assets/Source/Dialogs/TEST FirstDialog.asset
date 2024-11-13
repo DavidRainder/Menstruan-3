@@ -13,24 +13,14 @@ MonoBehaviour:
   m_Name: TEST FirstDialog
   m_EditorClassIdentifier: 
   texts:
-  - test
-  - test
+  - test1
+  - test2
+  - test3
+  - test4
   speed: 0.025
   onStartDialog:
     m_PersistentCalls:
       m_Calls: []
   onFinishDialog:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6171634020383266119, guid: 598b04a249e2bf24e94007cdad2ee9e3, type: 3}
-        m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
-        m_MethodName: StartDialog
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 4a146db5da0e7804b80c5c79a33cce70, type: 2}
-          m_ObjectArgumentAssemblyTypeName: DialogSettings, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []

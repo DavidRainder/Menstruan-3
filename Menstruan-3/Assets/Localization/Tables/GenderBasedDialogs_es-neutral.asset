@@ -19,7 +19,19 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 436589862912
+    m_Localized: "to\xF1ete"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49826255904768
     m_Localized: "Este es un di\xE1logo en neutro"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49829116420096
+    m_Localized: tuitea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49785172697088
+    m_Localized: jeje
     m_Metadata:
       m_Items: []
   references:

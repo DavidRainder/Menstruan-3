@@ -15,8 +15,20 @@ MonoBehaviour:
   m_TableCollectionName: GenderBasedDialogs
   m_TableCollectionNameGuidString: 32cd532d2822bac44bacc7bcace5e597
   m_Entries:
+  - m_Id: 49826255904768
+    m_Key: test1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49829116420096
+    m_Key: test2
+    m_Metadata:
+      m_Items: []
   - m_Id: 436589862912
-    m_Key: test
+    m_Key: test3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49785172697088
+    m_Key: test4
     m_Metadata:
       m_Items: []
   m_Metadata:
