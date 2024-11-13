@@ -65,6 +65,8 @@ public class ShowDialog : MonoBehaviour
     {
         _textEnded = false;
         _endTextPointer.SetActive(_textEnded);
+        messageToShow = StringManager.Instance.GetGenderStringByKey(messageToShow);
+
         if (initialIndex < messageToShow.Length && initialIndex >= 0)
         {
             int index = initialIndex;
