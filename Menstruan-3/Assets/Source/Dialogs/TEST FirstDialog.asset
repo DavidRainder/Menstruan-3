@@ -9,14 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: TEST SecondDialog
-  m_EditorClassIdentifier: Assembly-CSharp::DialogSettings
+  m_Script: {fileID: 11500000, guid: 1713d12d484f4484eb085b080a080eeb, type: 3}
+  m_Name: TEST FirstDialog
+  m_EditorClassIdentifier: 
   texts:
-  - Este es el tercero!! en otra caja
-  - y el siguiente, pero en la misma caja
-  - impresionante (el quinto)
-  speed: 0.05
+  - test1
+  - test2
+  - test3
+  - test4
+  speed: 0.025
   onStartDialog:
     m_PersistentCalls:
       m_Calls: []

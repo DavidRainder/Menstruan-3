@@ -1,24 +1,11 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[Serializable]
-[CreateAssetMenu]
-public class DialogSettings : ScriptableObject
-{
-    public List<string> texts;
-
-    public float speed;
-
-    [Header("Events")]
-    public UnityEvent onStartDialog;
-    public UnityEvent onFinishDialog;
-}
-
 public class DialogManager : MonoBehaviour
 {
-
     #region Singleton
 
     private static DialogManager instance = null;
@@ -42,7 +29,17 @@ public class DialogManager : MonoBehaviour
 
     public void StartDialog(DialogSettings settings)
     {
-        if(instance._dialogInstance != null)
+        instance.StartCoroutine(instance.StartDialogCoroutine(settings));
+    }
+    
+    IEnumerator StartDialogCoroutine(DialogSettings settings)
+    {
+        while (StringManager.Instance.IsChangingLanguage())
+        {
+            yield return null;
+        }
+
+        if (instance._dialogInstance != null)
         {
             Destroy(instance._dialogInstance);
         }

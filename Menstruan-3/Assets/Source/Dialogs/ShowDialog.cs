@@ -41,7 +41,7 @@ public class ShowDialog : MonoBehaviour
     private void EndDialog()
     {
         _settings.onFinishDialog.Invoke();
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 
     public void ShowText()
@@ -65,6 +65,8 @@ public class ShowDialog : MonoBehaviour
     {
         _textEnded = false;
         _endTextPointer.SetActive(_textEnded);
+        messageToShow = StringManager.Instance.GetGenderStringByKey(messageToShow);
+
         if (initialIndex < messageToShow.Length && initialIndex >= 0)
         {
             int index = initialIndex;
