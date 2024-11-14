@@ -1,48 +1,89 @@
+using System;
+using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
+
+[Serializable]
+[CreateAssetMenu]
+public class QuizSettings : ScriptableObject
+{
+    public string question;
+    public string[] wrongOptions;
+    public string rightOption;
+
+    [Header("Events")]
+    public UnityEvent onCorrectOption;
+    public UnityEvent onWrongOption;
+}
 
 public class QuizManager : MonoBehaviour
 {
     [SerializeField]
-    private float _offsetQuestDistance;
+    private float _offsetQuestionButtons;
     [SerializeField]
-    private float _offsetButtonDistance;
+    private Image _questionImage;
     [SerializeField]
-    private float _offsetTextDistance;
-    [SerializeField] 
-    private GameObject _questionObject;
+    private TextMeshProUGUI _questionText;
     [SerializeField]
-    private GameObject _questionObjectText;
-    [SerializeField]
-    private VerticalLayoutGroup _answers;
+    private VerticalLayoutGroup _layout;
 
-    // Only call once
-    void AdaptRectsToText()
+    QuizSettings _settings;
+
+    public void SetInfo(QuizSettings settings)
     {
-        TextMeshProUGUI textGUI = _questionObjectText.GetComponent<TextMeshProUGUI>();
-        textGUI.rectTransform.offsetMin = new Vector2(_offsetTextDistance, _offsetTextDistance);
-        textGUI.rectTransform.offsetMax = new Vector2(-_offsetTextDistance, -_offsetTextDistance);
-        _answers.spacing = _offsetButtonDistance;
-        RectTransform sizeRect = _questionObject.GetComponent<RectTransform>();
-        Rect rect = textGUI.GetPixelAdjustedRect();
-        sizeRect.sizeDelta = new Vector2(rect.width + 2 * _offsetTextDistance, rect.height / 1.5f);
-        sizeRect.anchoredPosition = new Vector3(0, 0, 0);
-        RectTransform answerRect = _answers.GetComponent<RectTransform>();
-        RectTransform buttonRect = _answers.transform.GetChild(0).gameObject.GetComponent<RectTransform>();
-        answerRect.anchoredPosition = new Vector3(sizeRect.sizeDelta.x / 2 - buttonRect.sizeDelta.x / 2, 
-            -sizeRect.sizeDelta.y / 2 - _offsetQuestDistance - answerRect.sizeDelta.y / 2);
+        _settings = settings;
+
+        _questionText.text = settings.question;
+        
+        int correctAnswer = UnityEngine.Random.Range(0, settings.wrongOptions.Length);
+        Button rightButton = _layout.transform.GetChild(correctAnswer / 2).transform.GetChild(correctAnswer % 2).GetComponent<Button>();
+        TextMeshProUGUI rightText = rightButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        rightText.text = settings.rightOption;
+        rightButton.gameObject.SetActive(true);
+        
+
+        int wrongSize = settings.wrongOptions.GetLength(0);
+        Button[] wrongButtons = new Button[wrongSize];
+        for(int i = 1; i <= wrongSize; i++) {
+            int index = (correctAnswer + i) % (wrongSize + 1);
+            GameObject g = _layout.transform.GetChild(index / 2).transform.GetChild(index % 2).gameObject;
+            wrongButtons[i - 1] = g.GetComponent<Button>();
+            TextMeshProUGUI wrongText = g.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+            wrongText.text = settings.wrongOptions[i - 1];
+            g.SetActive(true);
+        }
+
+        for (int i = wrongSize + 1; i < 4; ++i)
+        {
+            _layout.transform.GetChild(i / 2).transform.GetChild(i % 2).gameObject.SetActive(false);
+        }
+
+        gameObject.GetComponent<VerticalLayoutGroup>().spacing = _offsetQuestionButtons;
+        LayoutRebuilder.ForceRebuildLayoutImmediate(gameObject.GetComponent<RectTransform>());
+
+        rightButton.onClick.AddListener(RightOptionChoosed);
+
+        for(int j = 0; j < wrongSize; ++j)
+        {
+            wrongButtons[j].onClick.AddListener(WrongOptionChoosed);
+        }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void RightOptionChoosed()
     {
-        AdaptRectsToText();
+        _settings.onCorrectOption.Invoke();
     }
 
-    // Update is called once per frame
-    void Update()
+    void WrongOptionChoosed()
     {
+        _settings.onWrongOption.Invoke();
+    }
 
+    private void Start()
+    {
+        LayoutRebuilder.ForceRebuildLayoutImmediate(gameObject.GetComponent<RectTransform>());
     }
 }
