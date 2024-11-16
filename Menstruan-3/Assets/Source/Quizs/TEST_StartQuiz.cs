@@ -16,7 +16,7 @@ public class TEST_StartQuiz : MonoBehaviour
     {
         _quizInstance = Instantiate(_prefab);
         _quizInstance.transform.SetParent(_canvas.transform);
-        _quizInstance.GetComponent<RectTransform>().position = new Vector3(40, 220, 0);
+        _quizInstance.GetComponent<RectTransform>().position = new Vector3(200, 250, 0);
         ChangeQuiz();
     }
 

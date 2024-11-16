@@ -39,8 +39,9 @@ public class QuizManager : MonoBehaviour
 
     public void SetInfo(QuizSettings settings)
     {
-        gameObject.GetComponent<Animator>().Rebind();
-        gameObject.GetComponent<Animator>().Update(0f);
+        Animator anim = gameObject.transform.GetChild(0).GetComponent<Animator>();
+        anim.Rebind();
+        anim.Update(0f);
 
         _buttonPressed = false;
         _settings = settings;
@@ -70,11 +71,11 @@ public class QuizManager : MonoBehaviour
             _layout.transform.GetChild(i / 2).transform.GetChild(i % 2).gameObject.SetActive(false);
         }
 
-        gameObject.GetComponent<VerticalLayoutGroup>().spacing = _offsetQuestionButtons;
+        anim.gameObject.GetComponent<VerticalLayoutGroup>().spacing = _offsetQuestionButtons;
 
         _rightButton.onClick.RemoveAllListeners();
         _rightButton.onClick.AddListener(RightOptionChoosed);
-        Animator anim = _rightButton.GetComponent<Animator>();
+        anim = _rightButton.GetComponent<Animator>();
         anim.Rebind();
         anim.Update(0f);
         anim.SetBool("Correct", false);
