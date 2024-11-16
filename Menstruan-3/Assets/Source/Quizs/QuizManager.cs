@@ -30,27 +30,36 @@ public class QuizManager : MonoBehaviour
     [SerializeField]
     private VerticalLayoutGroup _layout;
 
+    private Button _rightButton;
+    private Button[] _wrongButtons;
+ 
     QuizSettings _settings;
+
+    bool _buttonPressed;
 
     public void SetInfo(QuizSettings settings)
     {
+        gameObject.GetComponent<Animator>().Rebind();
+        gameObject.GetComponent<Animator>().Update(0f);
+
+        _buttonPressed = false;
         _settings = settings;
 
         _questionText.text = settings.question;
         
         int correctAnswer = UnityEngine.Random.Range(0, settings.wrongOptions.Length);
-        Button rightButton = _layout.transform.GetChild(correctAnswer / 2).transform.GetChild(correctAnswer % 2).GetComponent<Button>();
-        TextMeshProUGUI rightText = rightButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        _rightButton = _layout.transform.GetChild(correctAnswer / 2).transform.GetChild(correctAnswer % 2).GetComponent<Button>();
+        TextMeshProUGUI rightText = _rightButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         rightText.text = settings.rightOption;
-        rightButton.gameObject.SetActive(true);
+        _rightButton.gameObject.SetActive(true);
         
 
         int wrongSize = settings.wrongOptions.GetLength(0);
-        Button[] wrongButtons = new Button[wrongSize];
+        _wrongButtons = new Button[wrongSize];
         for(int i = 1; i <= wrongSize; i++) {
             int index = (correctAnswer + i) % (wrongSize + 1);
             GameObject g = _layout.transform.GetChild(index / 2).transform.GetChild(index % 2).gameObject;
-            wrongButtons[i - 1] = g.GetComponent<Button>();
+            _wrongButtons[i - 1] = g.GetComponent<Button>();
             TextMeshProUGUI wrongText = g.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
             wrongText.text = settings.wrongOptions[i - 1];
             g.SetActive(true);
@@ -62,24 +71,49 @@ public class QuizManager : MonoBehaviour
         }
 
         gameObject.GetComponent<VerticalLayoutGroup>().spacing = _offsetQuestionButtons;
-        LayoutRebuilder.ForceRebuildLayoutImmediate(gameObject.GetComponent<RectTransform>());
 
-        rightButton.onClick.AddListener(RightOptionChoosed);
+        _rightButton.onClick.RemoveAllListeners();
+        _rightButton.onClick.AddListener(RightOptionChoosed);
+        Animator anim = _rightButton.GetComponent<Animator>();
+        anim.Rebind();
+        anim.Update(0f);
+        anim.SetBool("Correct", false);
+        anim.SetBool("Wrong", false);
 
-        for(int j = 0; j < wrongSize; ++j)
+        for (int j = 0; j < wrongSize; ++j)
         {
-            wrongButtons[j].onClick.AddListener(WrongOptionChoosed);
+            _wrongButtons[j].onClick.RemoveAllListeners();
+            _wrongButtons[j].onClick.AddListener(WrongOptionChoosed);
+            anim = _wrongButtons[j].GetComponent<Animator>();
+            anim.Rebind();
+            anim.Update(0f);
+            anim.SetBool("Correct", false);
+            anim.SetBool("Wrong", false);
         }
+        LayoutRebuilder.ForceRebuildLayoutImmediate(gameObject.GetComponent<RectTransform>());
     }
 
     void RightOptionChoosed()
     {
-        _settings.onCorrectOption.Invoke();
+        if (!_buttonPressed)
+        {
+            _buttonPressed = true;
+            _rightButton.GetComponent<Animator>().SetBool("Correct", true);
+            _settings.onCorrectOption.Invoke();
+        }
     }
 
     void WrongOptionChoosed()
     {
-        _settings.onWrongOption.Invoke();
+        if(!_buttonPressed)
+        {
+            _buttonPressed = true;
+            foreach (Button button in _wrongButtons)
+            {
+                button.GetComponent<Animator>().SetBool("Wrong", true);
+            }
+            _settings.onWrongOption.Invoke();
+        }
     }
 
     private void Start()
