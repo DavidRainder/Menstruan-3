@@ -129,7 +129,8 @@ GameObject:
   m_Component:
   - component: {fileID: 707226605}
   - component: {fileID: 707226604}
-  - component: {fileID: 707226603}
+  - component: {fileID: 707226606}
+  - component: {fileID: 707226607}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -137,14 +138,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &707226603
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707226602}
-  m_Enabled: 1
 --- !u!20 &707226604
 Camera:
   m_ObjectHideFlags: 0
@@ -211,6 +204,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &707226606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707226602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+--- !u!114 &707226607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707226602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &850247015
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +378,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -361,7 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -421,10 +472,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _settings:
-  - {fileID: 11400000, guid: 6258a802d32878845acd34d4b060c2bb, type: 2}
-  - {fileID: 11400000, guid: 6011dd27f78381e46a8c24affcd3f74e, type: 2}
   - {fileID: 11400000, guid: 0a875344d560f1c4d856c4f865542b59, type: 2}
-  _prefab: {fileID: 5198952652788943346, guid: ec08afc1e786f8c48b2865d4446520e6, type: 3}
+  - {fileID: 11400000, guid: 6258a802d32878845acd34d4b060c2bb, type: 2}
+  - {fileID: 11400000, guid: 6cb77ba94ba418f42bcda6b65a9a9534, type: 2}
+  - {fileID: 11400000, guid: 5f561fed0c967e54682c6b750f8d7788, type: 2}
+  - {fileID: 11400000, guid: 8a6e6b89f2aac964cb7f8d475ac8f2a2, type: 2}
+  - {fileID: 11400000, guid: acf42831456f84641b8bf1a3bf2e3f82, type: 2}
+  - {fileID: 11400000, guid: ea318d74e83494f4cbd945fec3ca2dea, type: 2}
+  - {fileID: 11400000, guid: df70b659fe5ebb448b69170af12633ae, type: 2}
+  - {fileID: 11400000, guid: 39719e098c0ee9e47b881b0c358813ba, type: 2}
+  _prefab: {fileID: 3781232615646628980, guid: e99bd0749ce1ec1489274ee5391d5f92, type: 3}
   _canvas: {fileID: 1646750950}
 --- !u!4 &1669829010
 Transform:

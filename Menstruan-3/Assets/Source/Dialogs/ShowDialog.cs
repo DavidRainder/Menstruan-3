@@ -74,7 +74,10 @@ public class ShowDialog : MonoBehaviour
 
             while (++index <= length)
             {
-                _text.text = messageToShow.Substring(initialIndex, index - initialIndex);
+                string dialog = messageToShow.Substring(initialIndex, index - initialIndex);
+                _text.text = dialog;
+                char currentLetter = dialog[dialog.Length - 1];
+
 
                 yield return new WaitForSeconds(_settings.speed);
             }
