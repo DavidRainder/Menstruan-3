@@ -4,6 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 [Serializable]
@@ -39,6 +40,8 @@ public class QuizManager : MonoBehaviour
 
     public void SetInfo(QuizSettings settings)
     {
+        EventSystem.current.GetComponent<EventSystem>().SetSelectedGameObject(null);
+
         Animator anim = gameObject.transform.GetChild(0).GetComponent<Animator>();
         anim.Rebind();
         anim.Update(0f);
@@ -53,7 +56,7 @@ public class QuizManager : MonoBehaviour
         TextMeshProUGUI rightText = _rightButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         rightText.text = settings.rightOption;
         _rightButton.gameObject.SetActive(true);
-        
+
 
         int wrongSize = settings.wrongOptions.GetLength(0);
         _wrongButtons = new Button[wrongSize];
