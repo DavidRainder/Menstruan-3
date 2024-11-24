@@ -1,0 +1,6 @@
+/[Bb]uild/
+.cache/
+.unsaved/
+.user/
+
+*.bank
