@@ -706,12 +706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17447fe300f6308449bfcc83a352919e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TEST_MOVEMENT:
-  - {fileID: 11400000, guid: afc6ba5d251c8bf49af2cf5957ec1557, type: 2}
-  - {fileID: 11400000, guid: f43c6d42d962dcb4e8a88bbdee3b6458, type: 2}
-  - {fileID: 11400000, guid: 69a2da7d60270d745b141f6b794bca28, type: 2}
-  - {fileID: 11400000, guid: e65bbab724adf704e9a73210d9003e7f, type: 2}
-  - {fileID: 11400000, guid: c998a9b2f9f7ebd4db74f14cbd7b38cb, type: 2}
   ID: MOM
   startingDialog: {fileID: 11400000, guid: b7f80f1015d98f7459c338bcc06a5c83, type: 2}
   _animator: {fileID: 1868091426}
@@ -1118,7 +1112,7 @@ Transform:
   m_GameObject: {fileID: 1279353142}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 0, z: 0}
+  m_LocalPosition: {x: 3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1180,7 +1174,7 @@ Transform:
   m_GameObject: {fileID: 1362713224}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 0, z: 0}
+  m_LocalPosition: {x: -3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

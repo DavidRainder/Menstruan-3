@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44bbcd51b1812d5408c1dace17bd2f5a, type: 3}
-  m_Name: test_1
+  m_Name: MOM_MOVE_LEFT
   m_EditorClassIdentifier: 
   moveByCoordinates: 0
   id: MOM
   destinationPoint: {x: 0, y: 0, z: 0}
   displacement: {x: 0, y: 0, z: 0}
-  destination: 4
+  destination: 0

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44bbcd51b1812d5408c1dace17bd2f5a, type: 3}
-  m_Name: test_4
+  m_Name: MOM_MOVE_CENTER_LEFT
   m_EditorClassIdentifier: 
   moveByCoordinates: 0
   id: MOM
