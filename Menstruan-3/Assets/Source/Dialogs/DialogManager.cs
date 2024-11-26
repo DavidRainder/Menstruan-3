@@ -53,4 +53,5 @@ public class DialogManager : MonoBehaviour
         ShowDialog dialog = instance._dialogInstance.GetComponent<ShowDialog>();
         dialog.SetSettings(settings);
     }
+
 }

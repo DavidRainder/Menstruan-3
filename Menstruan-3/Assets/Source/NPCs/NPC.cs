@@ -9,8 +9,6 @@ public class NPC : MonoBehaviour
 
     [SerializeField] string ID = "null_id";
 
-    [SerializeField] DialogSettings startingDialog;
-
     [SerializeField] Animator _animator;
 
     private void Start()
@@ -21,11 +19,10 @@ public class NPC : MonoBehaviour
         NPCManager.Instance.RegisterNPC(ID, this);
     }
 
-    public void Talk()
+    public void Talk(DialogSettings startingDialog)
     {
         _animator.SetBool("isTalking", true);
         startingDialog.onFinishDialog.AddListener(StopTalking);
-        DialogManager.Instance.StartDialog(startingDialog);
     }
 
     public void StopTalking()

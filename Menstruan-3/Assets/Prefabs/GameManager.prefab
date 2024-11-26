@@ -54,4 +54,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1d2047833da370e4d9ddb3d824c86bba, type: 2}
   - {fileID: 11400000, guid: 7f29cbf6d9d372043b709b44aa15f856, type: 2}
   - {fileID: 11400000, guid: 58cf9d4746a79a843ad21d94e58a694c, type: 2}
-  dialogSettingsInfo: []
+  dialogSettingsInfo:
+  - {fileID: 11400000, guid: b7f80f1015d98f7459c338bcc06a5c83, type: 2}

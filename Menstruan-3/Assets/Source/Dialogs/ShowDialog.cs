@@ -60,7 +60,7 @@ public class ShowDialog : MonoBehaviour
 
     private void StartDialog()
     {
-        _settings.onStartDialog.Invoke();
+        _settings.onStartDialog.Invoke();   
     }
 
     private void EndDialog()

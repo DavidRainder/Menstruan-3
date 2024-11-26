@@ -13,6 +13,7 @@ public class NPCManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            _npcs = new Dictionary<string, NPC>();
         }
         else { Destroy(this.gameObject); }
     }
@@ -34,7 +35,6 @@ public class NPCManager : MonoBehaviour
 
     private void Start()
     {
-        _npcs = new Dictionary<string, NPC>();
         if(_positions == null)
         {
             _positions = transform.GetChild(0).GetComponentsInChildren<Transform>();
@@ -47,15 +47,15 @@ public class NPCManager : MonoBehaviour
         else _npcs.Add(ID, npc);
     }
 
-    public void MoveNPC(NPCMovement movement, string ID)
-    {
-        if (!_npcs.ContainsKey(ID)) { return; }
-        if (movement.moveByCoordinates)
-        {
-            _npcs[movement.id].MoveToPoint(movement.destinationPoint + movement.displacement);
-        }
-        else _npcs[movement.id].MoveToPoint(_positions[(int)movement.destination].position);
-    }
+    //public void MoveNPC(NPCMovement movement, string ID)
+    //{
+    //    if (!_npcs.ContainsKey(ID)) { return; }
+    //    if (movement.moveByCoordinates)
+    //    {
+    //        _npcs[movement.id].MoveToPoint(movement.destinationPoint + movement.displacement);
+    //    }
+    //    else _npcs[movement.id].MoveToPoint(_positions[(int)movement.destination].position);
+    //}
 
     public void MoveNPC(NPCMovement movement)
     {
@@ -65,5 +65,10 @@ public class NPCManager : MonoBehaviour
             _npcs[movement.id].MoveToPoint(movement.destinationPoint + movement.displacement);
         }
         else _npcs[movement.id].MoveToPoint(_positions[(int)movement.destination].position);
+    }
+
+    public void TalkNPC(DialogSettings settings, string npcID)
+    {
+        _npcs[npcID].Talk(settings);
     }
 }

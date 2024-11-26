@@ -25,23 +25,34 @@ public class GameManager : MonoBehaviour
     private DialogSettings[] dialogSettingsInfo;
 
 
-    public static void StartQuiz(int index)
+    public void StartQuiz(int index)
     {
         QuizManager.Instance.StartQuiz(instance.quizSettingsInfo[index]);
     }
 
-    public static void StartDialog(int index)
+    public void StartDialog(string index)
     {
-        DialogManager.Instance.StartDialog(instance.dialogSettingsInfo[index]);
+        var splitted = index.Split('_');
+        int dialog = int.Parse(splitted[0]);
+        DialogSettings settings = dialogSettingsInfo[dialog];
+        DialogManager.Instance.StartDialog(settings);
+        if(splitted.Length > 1)
+            NPCManager.Instance.TalkNPC(settings, splitted[1]);
     }
 
-    public static void EndQuiz()
+    public void EndQuiz()
     {
         QuizManager.Instance.EndQuiz();
     }
 
-    public static void EndDialog()
+    public void EndDialog()
     {
         DialogManager.Instance.EndDialog();
     }
+
+    public void MoveNPC(NPCMovement movement)
+    {
+        NPCManager.Instance.MoveNPC(movement);
+    }
+
 }

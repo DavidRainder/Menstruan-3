@@ -21,12 +21,12 @@ MonoBehaviour:
   onStartDialog:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5942177769211674358, guid: 72263008702ab1e48b321c01a2cb1fa7, type: 3}
-        m_TargetAssemblyTypeName: NPCManager, Assembly-CSharp
+      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: MoveNPC
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 11400000, guid: 69a2da7d60270d745b141f6b794bca28, type: 2}
           m_ObjectArgumentAssemblyTypeName: NPCMovement, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -43,6 +43,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveNPC
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: afc6ba5d251c8bf49af2cf5957ec1557, type: 2}
+          m_ObjectArgumentAssemblyTypeName: NPCMovement, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
