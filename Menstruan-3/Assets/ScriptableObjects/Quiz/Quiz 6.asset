@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd685626c1381d74c8cfddf37eaff4b6, type: 3}
+  m_Name: Quiz 6
+  m_EditorClassIdentifier: 
+  question: "\xBFQu\xE9 sucede en la fase preovulatoria?"
+  wrongOptions:
+  - "El \xF3vulo sale del ovario y espera a que lleguen los espermatozoides"
+  - "Se destruye el endometrio que se prepar\xF3 para el beb\xE9"
+  - "Se expulsa el endometrio (cama y comida de un beb\xE9)"
+  rightOption: "El \xF3vulo se prepara y se pega a la pared del ovario "
+  onCorrectOption:
+    m_PersistentCalls:
+      m_Calls: []
+  onWrongOption:
+    m_PersistentCalls:
+      m_Calls: []

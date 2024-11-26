@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2775451464532338113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2507819037345319208}
+  - component: {fileID: 2665242717952186066}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2507819037345319208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2775451464532338113}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2665242717952186066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2775451464532338113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146c7cb2a3d035e41849c4bbad146872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quizSettingsInfo:
+  - {fileID: 11400000, guid: 845f8a732ae1777459f91d25267b0c42, type: 2}
+  - {fileID: 11400000, guid: 86d10624f509eda429c8b80d3f7605f8, type: 2}
+  - {fileID: 11400000, guid: 1c97e10cd73408d4ca81c2676005889c, type: 2}
+  - {fileID: 11400000, guid: b10bbff091037b84da3da52c585fe61e, type: 2}
+  - {fileID: 11400000, guid: 80590884412a34a44aa5b20068376f22, type: 2}
+  - {fileID: 11400000, guid: f8416cdd0bc858b439f62997ad80522c, type: 2}
+  - {fileID: 11400000, guid: 1d2047833da370e4d9ddb3d824c86bba, type: 2}
+  - {fileID: 11400000, guid: 7f29cbf6d9d372043b709b44aa15f856, type: 2}
+  - {fileID: 11400000, guid: 58cf9d4746a79a843ad21d94e58a694c, type: 2}
+  dialogSettingsInfo: []
