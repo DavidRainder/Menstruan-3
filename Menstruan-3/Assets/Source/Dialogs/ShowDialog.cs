@@ -1,5 +1,8 @@
+using FMOD;
 using NUnit.Framework;
 using System.Collections;
+using System.Collections.Generic;
+using System.IO;
 using TMPro;
 using UnityEngine;
 
@@ -15,8 +18,30 @@ public class ShowDialog : MonoBehaviour
     int _currentText;
     public void SetSettings(DialogSettings settings) { this._settings = settings; }
 
+    FMOD.System _system;
+
+    private int _maxLetters = 0;
+    private string _path = Application.dataPath + "/Sounds/Letters/";
+    private Dictionary<string, Sound> _soundsDict;
+
     private void Start()
     {
+        _system = FMODUnity.RuntimeManager.CoreSystem;
+        _soundsDict = new Dictionary<string, Sound>();
+        DirectoryInfo info = new DirectoryInfo(_path);
+        FileInfo[] files = info.GetFiles();
+        foreach(FileInfo file in files)
+        {
+            Sound sound;
+            string name = file.Name.Split(".")[0];
+            if (!_soundsDict.ContainsKey(name))
+            {
+                _system.createSound(file.Name, MODE._2D | MODE.LOOP_OFF | MODE.CREATESAMPLE | MODE.LOWMEM, out sound);
+                _soundsDict.Add(name, sound);
+                _maxLetters++;
+            }
+        }
+
         ShowText();
     }
 
@@ -63,6 +88,8 @@ public class ShowDialog : MonoBehaviour
 
     IEnumerator AnimText(int initialIndex, string messageToShow)
     {
+        _system.getMasterChannelGroup(out ChannelGroup channelgroup);
+
         _textEnded = false;
         _endTextPointer.SetActive(_textEnded);
         messageToShow = StringManager.Instance.GetGenderStringByKey(messageToShow);
@@ -78,6 +105,8 @@ public class ShowDialog : MonoBehaviour
                 _text.text = dialog;
                 char currentLetter = dialog[dialog.Length - 1];
 
+                if(_soundsDict.ContainsKey(currentLetter.ToString()))
+                    _system.playSound(_soundsDict[currentLetter.ToString()], channelgroup, false, out Channel channel);
 
                 yield return new WaitForSeconds(_settings.speed);
             }
