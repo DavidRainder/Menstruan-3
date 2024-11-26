@@ -31,6 +31,11 @@ public class DialogManager : MonoBehaviour
     {
         instance.StartCoroutine(instance.StartDialogCoroutine(settings));
     }
+
+    public void EndDialog()
+    {
+        Destroy(instance._dialogInstance);
+    }
     
     IEnumerator StartDialogCoroutine(DialogSettings settings)
     {

@@ -9,15 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Quiz7
-  m_EditorClassIdentifier: Assembly-CSharp::QuizSettings
-  question: "\xBFQu\xE9 producto de higiene menstrual se introduce en la vagina?"
+  m_Script: {fileID: 11500000, guid: bd685626c1381d74c8cfddf37eaff4b6, type: 3}
+  m_Name: Quiz 5
+  m_EditorClassIdentifier: 
+  question: En la fase ovulatoria, se expulsa el endometrio por la vagina
   wrongOptions:
-  - Ropa interior absorbente
-  - Compresas de tela y desechables
-  - Salvaslip
-  rightOption: "Tamp\xF3n"
+  - Verdadero
+  rightOption: Falso
   onCorrectOption:
     m_PersistentCalls:
       m_Calls: []

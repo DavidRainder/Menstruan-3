@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Quiz9
-  m_EditorClassIdentifier: Assembly-CSharp::QuizSettings
-  question: "\xBFEn qu\xE9 fases tienes menos energ\xEDa? "
+  m_Script: {fileID: 11500000, guid: bd685626c1381d74c8cfddf37eaff4b6, type: 3}
+  m_Name: Quiz 8
+  m_EditorClassIdentifier: 
+  question: "El pis y el sangrado de la menstruaci\xF3n salen por el mismo sitio"
   wrongOptions:
-  - Preovulatoria y ovulatoria
-  rightOption: 'Premenstrual y menstrual '
+  - Verdadero
+  rightOption: Falso
   onCorrectOption:
     m_PersistentCalls:
       m_Calls: []

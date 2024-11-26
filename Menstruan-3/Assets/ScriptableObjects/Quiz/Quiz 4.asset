@@ -9,14 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Quiz1
-  m_EditorClassIdentifier: Assembly-CSharp::QuizSettings
-  question: "\xBFQu\xE9 es el cl\xEDtoris?"
+  m_Script: {fileID: 11500000, guid: bd685626c1381d74c8cfddf37eaff4b6, type: 3}
+  m_Name: Quiz 4
+  m_EditorClassIdentifier: 
+  question: "Las compresas de tela se lavan despu\xE9s de su uso"
   wrongOptions:
-  - Labios que rodean al resto de partes de la vulva
-  - Sitio por donde sale la regla
-  rightOption: "\xD3rgano para el placer sexual"
+  - Falso
+  rightOption: Verdadero
   onCorrectOption:
     m_PersistentCalls:
       m_Calls: []

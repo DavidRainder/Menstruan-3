@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Quiz4
-  m_EditorClassIdentifier: Assembly-CSharp::QuizSettings
-  question: "Las compresas de tela se lavan despu\xE9s de su uso"
+  m_Script: {fileID: 11500000, guid: bd685626c1381d74c8cfddf37eaff4b6, type: 3}
+  m_Name: Quiz 3
+  m_EditorClassIdentifier: 
+  question: "\xBFCu\xE1les de los siguientes productos de higiene menstrual son reutilizables?"
   wrongOptions:
-  - Falso
-  rightOption: 'Verdadero '
+  - "Tamp\xF3n "
+  - Compresa desechable
+  rightOption: Copa menstrual
   onCorrectOption:
     m_PersistentCalls:
       m_Calls: []
