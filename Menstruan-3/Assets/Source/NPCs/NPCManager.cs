@@ -47,6 +47,16 @@ public class NPCManager : MonoBehaviour
         else _npcs.Add(ID, npc);
     }
 
+    public void MoveNPC(NPCMovement movement, string ID)
+    {
+        if (!_npcs.ContainsKey(ID)) { return; }
+        if (movement.moveByCoordinates)
+        {
+            _npcs[movement.id].MoveToPoint(movement.destinationPoint + movement.displacement);
+        }
+        else _npcs[movement.id].MoveToPoint(_positions[(int)movement.destination].position);
+    }
+
     public void MoveNPC(NPCMovement movement)
     {
         if (!_npcs.ContainsKey(movement.id)) { return; }
