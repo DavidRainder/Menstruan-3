@@ -19,19 +19,152 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 436589862912
-    m_Localized: "to\xF1ete"
+    m_Localized: Lo primero que vamos a ver son los tampones.
     m_Metadata:
       m_Items: []
   - m_Id: 49826255904768
-    m_Localized: "Este es un di\xE1logo en neutro"
+    m_Localized: "Y\u2026 ahora bien, \xBFc\xF3mo podemos gestionar el sangrado? "
     m_Metadata:
       m_Items: []
   - m_Id: 49829116420096
-    m_Localized: tuitea
+    m_Localized: Para empezar, vamos a ver los insertados. Son aquellos que se introducen
+      en la vagina.
     m_Metadata:
       m_Items: []
   - m_Id: 49785172697088
-    m_Localized: jeje
+    m_Localized: Luego, existen los discos menstruales.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4773140170428416
+    m_Localized: "Se coloca un tamp\xF3n dentro de la vagina y se empuja hasta que
+      est\xE9 completamente dentro. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4773176484712448
+    m_Localized: "Se coloca un disco en la base del cuello del \xFAtero. Para insertarlo,
+      debe doblarse e introducirse en \xE1ngulo horizontal. \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4773225713258496
+    m_Localized: "Es parecida al disco, pero se coloca en mitad de la vagina. Para
+      hacerlo, se debe doblar, insertar y soltar. \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4773242826018816
+    m_Localized: "Es ropa interior que absorbe cualquier l\xEDquido. \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4773269963165696
+    m_Localized: "Est\xE1n hechas de tela. Se colocan en la ropa interior y se comportan
+      como la ropa interior absorbente \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4773328368848896
+    m_Localized: "Est\xE1n hechas de un material parecido al de los tampones. \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4772021448888320
+    m_Localized: "Por \xFAltimo, la copa menstrual."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4772045532581888
+    m_Localized: De los no insertados, vamos a ver otros 3.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4772098385006592
+    m_Localized: Lo primero es la ropa interior absorbente.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4772114726014976
+    m_Localized: Luego, las compresas de tela.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4772127938072576
+    m_Localized: "Por \xFAltimo, las compresas de un solo uso."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4775347364188160
+    m_Localized: "Es normal no saber c\xF3mo se utilizan al principio, puedes pedirnos
+      ayuda para aprender a colocarlos las primeras veces.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4775398274650112
+    m_Localized: "Luego, hay otros que no son tan conocidos como el sangrado libre.
+      Se puede preferir sangrar libremente sin utilizar productos menstruales e ir
+      al ba\xF1o cuando tu cuerpo te lo pida. \r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4779647586947072
+    m_Localized: "Tenemos hasta 5 formas diferentes de hacerlo, que son las m\xE1s
+      conocidas. Puedes escoger la que prefieras."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4779887580827648
+    m_Localized: "Existen tambi\xE9n con aplicador, que te ayuda a empujarlo. Los
+      tampones absorben el sangrado. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4780352154521600
+    m_Localized: "Si te molesta, probablemente no est\xE1 bien puesto. En ese caso,
+      se saca y se vuelve a intentar con otro. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4780451760852992
+    m_Localized: "No se debe usar m\xE1s de 8 horas seguidas, es MUY IMPORTANTE cambiarlo
+      varias veces al d\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4780720749957120
+    m_Localized: "En este caso, no es como el tamp\xF3n, es decir, no absorbe el
+      sangrado, solo lo recoge. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4780977953067008
+    m_Localized: "Por eso hay que vaciarlo y volver a meterlo las veces que sea necesario.
+      Se recomienda que no se use m\xE1s de 12 horas seguidas. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4781051135283200
+    m_Localized: Al terminar la fase de sangrado, se lava para guardarla.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4781242781421568
+    m_Localized: 'Es importante asegurarse de que se abra por completo dentro. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4781340651311104
+    m_Localized: Al igual que el disco, hay que vaciarla y volver a meterla las veces
+      que sea necesario
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4781612198940672
+    m_Localized: "Puedes tardar m\xE1s o menos en cambiarla dependiendo de la cantidad
+      de regla que tengas. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4781870878445568
+    m_Localized: "Es decir, no m\xE1s de 12 horas y lavarlas con agua fr\xEDa despu\xE9s
+      de usarlas. Al cambiarlas te pones una diferente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4782179604385792
+    m_Localized: "Se pegan en la ropa interior, y no se deben de llevar m\xE1s de
+      8 horas (como los tampones). Al cambiarlas te pones una diferente y tiras la
+      anterior."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4784025593073664
+    m_Localized: "Tampoco debe usarse m\xE1s de 12 horas seguidas y hay que lavarla
+      al terminar el sangrado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4785280558190592
+    m_Localized: Al cambiarlas te pones una diferente y tiras la anterior.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4785417573519360
+    m_Localized: "No se debe usar m\xE1s de 12 horas seguidas y hay que lavarlas
+      con agua fr\xEDa despu\xE9s de usarlas."
     m_Metadata:
       m_Items: []
   references:

@@ -71,4 +71,9 @@ public class NPCManager : MonoBehaviour
     {
         _npcs[npcID].Talk(settings);
     }
+
+    public void StopNPC(string npcID)
+    {
+        _npcs[npcID].StopTalking();
+    }
 }
