@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         DialogSettings settings = instance.dialogSettingsInfo[dialog];
         DialogManager.Instance.StartDialog(settings);
         if(splitted.Length > 1)
-            NPCManager.Instance.TalkNPC(settings, splitted[1]);
+            NPCManager.Instance.TalkNPC(splitted[1]);
     }
 
     public static void EndQuiz(string id)
@@ -59,4 +59,18 @@ public class GameManager : MonoBehaviour
         NPCManager.Instance.MoveNPC(movement);
     }
 
+    public static void StopTalking(string id)
+    {
+        NPCManager.Instance.StopNPC(id);
+    }
+
+    public static void StartAnimation(string id)
+    {
+        AnimationManager.Instance.StartAnimation(id);
+    }
+
+    public static void StopAnimation()
+    {
+        AnimationManager.Instance.EndAnimation();
+    }
 }

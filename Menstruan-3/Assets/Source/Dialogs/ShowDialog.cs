@@ -6,6 +6,16 @@ using System.IO;
 using TMPro;
 using UnityEngine;
 
+public enum Feelings
+{
+    NEUTRAL, 
+    ANGRY, 
+    HAPPY,
+    SAD,
+    NUM_FEELINGS
+}
+
+
 public class ShowDialog : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _text;
@@ -24,19 +34,62 @@ public class ShowDialog : MonoBehaviour
     private string _path = Application.dataPath + "/Sounds/Letters/";
     private Dictionary<string, Sound> _soundsDict;
 
+    private DSP[][] _dsps;
+
     private void Start()
     {
+        _dsps = new DSP[(int)Feelings.NUM_FEELINGS][];
+
         _system = FMODUnity.RuntimeManager.CoreSystem;
         _soundsDict = new Dictionary<string, Sound>();
         DirectoryInfo info = new DirectoryInfo(_path);
         FileInfo[] files = info.GetFiles();
-        foreach(FileInfo file in files)
+
+        for(int i = 0; i < (int)Feelings.NUM_FEELINGS; i++)
         {
-            Sound sound;
+            DSP_TYPE type;
+            switch ((Feelings)i)
+            {
+                case Feelings.ANGRY:
+                    _dsps[i] = new DSP[2];
+                    
+                    type = DSP_TYPE.COMPRESSOR;
+                    _system.createDSPByType(type, out _dsps[i][0]);
+                    //_dsps[i][0].setParameterInt();
+
+                    type = DSP_TYPE.MULTIBAND_EQ;
+                    _system.createDSPByType(type, out _dsps[i][1]);
+                    break;
+                case Feelings.HAPPY:
+                    _dsps[i] = new DSP[1];
+
+                    type = DSP_TYPE.MULTIBAND_EQ;
+                    _system.createDSPByType(type, out _dsps[i][0]);
+                    break;
+                case Feelings.SAD:
+                    _dsps[i] = new DSP[1];
+
+                    type = DSP_TYPE.MULTIBAND_EQ;
+                    _system.createDSPByType(type, out _dsps[i][0]);
+                    _dsps[i][0].setParameterFloat((int)DSP_MULTIBAND_EQ.A_FILTER, (int)DSP_MULTIBAND_EQ_FILTER_TYPE.LOWPASS_24DB);
+                    _dsps[i][0].setParameterFloat((int)DSP_MULTIBAND_EQ.A_FREQUENCY, (int)10);
+                    _dsps[i][0].setParameterFloat((int)DSP_MULTIBAND_EQ.A_GAIN, -20);
+                    break;
+            }
+        }
+
+
+        foreach (FileInfo file in files)
+        {
             string name = file.Name.Split(".")[0];
             if (!_soundsDict.ContainsKey(name))
             {
-                _system.createSound(file.Name, MODE._2D | MODE.LOOP_OFF | MODE.CREATESAMPLE | MODE.LOWMEM, out sound);
+                RESULT ret = _system.createSound(file.FullName, MODE._2D | MODE.LOOP_OFF | MODE.CREATESAMPLE | MODE.LOWMEM, out Sound sound);
+                if (ret != RESULT.OK)
+                {
+                    UnityEngine.Debug.LogError("ERROR: " + ret);
+                    return;
+                }
                 _soundsDict.Add(name, sound);
                 _maxLetters++;
             }
@@ -82,11 +135,11 @@ public class ShowDialog : MonoBehaviour
         else
         {
             int initialIndex = 0;
-            StartCoroutine(AnimText(initialIndex, _settings.texts[_currentText++]));
+            StartCoroutine(AnimText(initialIndex, _settings.texts[_currentText++], Feelings.SAD));
         }
     }
 
-    IEnumerator AnimText(int initialIndex, string messageToShow)
+    IEnumerator AnimText(int initialIndex, string messageToShow, Feelings feelings)
     {
         _system.getMasterChannelGroup(out ChannelGroup channelgroup);
 
@@ -105,8 +158,17 @@ public class ShowDialog : MonoBehaviour
                 _text.text = dialog;
                 char currentLetter = dialog[dialog.Length - 1];
 
-                if(_soundsDict.ContainsKey(currentLetter.ToString()))
+                if (_soundsDict.ContainsKey(currentLetter.ToString()))
+                {
                     _system.playSound(_soundsDict[currentLetter.ToString()], channelgroup, false, out Channel channel);
+                    int size = _dsps[(int)feelings].Length;
+                    for (int i = 0; i < size; ++i)
+                    {
+                        channel.addDSP(i, _dsps[(int)feelings][i]);
+                        //_system.playDSP(_dsps[(int)feelings][i], channelgroup, false, channel);
+                    }
+                }
+
 
                 yield return new WaitForSeconds(_settings.speed);
             }
