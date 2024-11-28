@@ -67,9 +67,9 @@ public class NPCManager : MonoBehaviour
         else _npcs[movement.id].MoveToPoint(_positions[(int)movement.destination].position);
     }
 
-    public void TalkNPC(DialogSettings settings, string npcID)
+    public void TalkNPC(string npcID)
     {
-        _npcs[npcID].Talk(settings);
+        _npcs[npcID].Talk();
     }
 
     public void StopNPC(string npcID)

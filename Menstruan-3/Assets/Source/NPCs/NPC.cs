@@ -19,10 +19,9 @@ public class NPC : MonoBehaviour
         NPCManager.Instance.RegisterNPC(ID, this);
     }
 
-    public void Talk(DialogSettings startingDialog)
+    public void Talk()
     {
         _animator.SetBool("isTalking", true);
-        startingDialog.onFinishDialog.AddListener(StopTalking);
     }
 
     public void StopTalking()
