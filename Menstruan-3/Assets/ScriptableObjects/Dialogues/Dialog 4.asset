@@ -17,7 +17,7 @@ MonoBehaviour:
   - Tema2_CopaInfo2
   - Tema2_CopaInfo3
   - Tema2_CopaInfo4
-  speed: 0.025
+  speed: 0.035
   onStartDialog:
     m_PersistentCalls:
       m_Calls: []

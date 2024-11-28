@@ -15,7 +15,7 @@ MonoBehaviour:
   texts:
   - Tema2_Consejo
   - Tema2_SangradoLibre
-  speed: 0.025
+  speed: 0.035
   onStartDialog:
     m_PersistentCalls:
       m_Calls: []
