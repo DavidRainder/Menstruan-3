@@ -1,5 +1,4 @@
 using FMOD;
-using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -31,7 +30,7 @@ public class ShowDialog : MonoBehaviour
     FMOD.System _system;
 
     private int _maxLetters = 0;
-    private string _path = Application.dataPath + "/Sounds/Letters/";
+    private string _path = Application.streamingAssetsPath + "/Sounds/Letters/";
     private Dictionary<string, Sound> _soundsDict;
 
     private DSP[][] _dsps;
@@ -78,13 +77,12 @@ public class ShowDialog : MonoBehaviour
             }
         }
 
-
         foreach (FileInfo file in files)
         {
             string name = file.Name.Split(".")[0];
             if (!_soundsDict.ContainsKey(name))
             {
-                RESULT ret = _system.createSound(file.FullName, MODE._2D | MODE.LOOP_OFF | MODE.CREATESAMPLE | MODE.LOWMEM, out Sound sound);
+                RESULT ret = _system.createSound(_path + file.Name, MODE._2D | MODE.LOOP_OFF | MODE.CREATESAMPLE | MODE.LOWMEM, out Sound sound);
                 if (ret != RESULT.OK)
                 {
                     UnityEngine.Debug.LogError("ERROR: " + ret);
