@@ -89,9 +89,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4775398274650112
-    m_Localized: "Luego, hay otros que no son tan conocidos como el sangrado libre.
-      Se puede preferir sangrar libremente sin utilizar productos menstruales e ir
-      al ba\xF1o cuando tu cuerpo te lo pida. \r\n"
+    m_Localized: "Luego, hay otros m\xE9todos que no son tan conocidos como el sangrado
+      libre.\n"
     m_Metadata:
       m_Items: []
   - m_Id: 4779647586947072
@@ -165,6 +164,11 @@ MonoBehaviour:
   - m_Id: 4785417573519360
     m_Localized: "No se debe usar m\xE1s de 12 horas seguidas y hay que lavarlas
       con agua fr\xEDa despu\xE9s de usarlas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5277886425747456
+    m_Localized: "Se puede preferir sangrar libremente sin utilizar productos menstruales
+      e ir al ba\xF1o cuando tu cuerpo te lo pida."
     m_Metadata:
       m_Items: []
   references:

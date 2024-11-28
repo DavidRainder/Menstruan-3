@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Dialog 5
   m_EditorClassIdentifier: 
   texts:
-  - Tema2_NoInsertados
-  - Tema2_InteriorAbsorbente
-  speed: 0.035
+  - Tema2_Copa
+  speed: 0.025
   onStartDialog:
     m_PersistentCalls:
       m_Calls: []
@@ -31,6 +30,6 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 5_DAD
+          m_StringArgument: 5_MOM
           m_BoolArgument: 0
         m_CallState: 2

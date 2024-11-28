@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1713d12d484f4484eb085b080a080eeb, type: 3}
-  m_Name: Dialog 8
+  m_Name: Dialog 10
   m_EditorClassIdentifier: 
   texts:
-  - Tema2_InteriorAbsorbenteInfo
-  - Tema2_InteriorAbsorbenteInfo2
-  - Tema2_InteriorAbsorbenteInfo3
+  - Tema2_CompresasTelaInfo
+  - Tema2_CompresasTelaInfo2
   speed: 0.025
   onStartDialog:
     m_PersistentCalls:
@@ -44,7 +43,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 8_DAD
+          m_StringArgument: 10_DAD
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
@@ -56,6 +55,6 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 6_DAD
+          m_StringArgument: 10_DAD
           m_BoolArgument: 0
         m_CallState: 2

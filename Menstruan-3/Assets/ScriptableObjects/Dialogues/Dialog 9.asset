@@ -13,12 +13,23 @@ MonoBehaviour:
   m_Name: Dialog 9
   m_EditorClassIdentifier: 
   texts:
-  - Tema2_Consejo
-  - Tema2_SangradoLibre
-  speed: 0.035
+  - Tema2_CompresasTela
+  speed: 0.025
   onStartDialog:
     m_PersistentCalls:
       m_Calls: []
   onFinishDialog:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: StartDialog
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 9_DAD
+          m_BoolArgument: 0
+        m_CallState: 2

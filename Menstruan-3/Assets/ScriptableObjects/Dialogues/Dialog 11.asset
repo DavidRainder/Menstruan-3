@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1713d12d484f4484eb085b080a080eeb, type: 3}
-  m_Name: Dialog 7
+  m_Name: Dialog 11
   m_EditorClassIdentifier: 
   texts:
-  - Tema2_NoInsertados
-  - Tema2_InteriorAbsorbente
+  - Tema2_CompresasUnUso
   speed: 0.025
   onStartDialog:
     m_PersistentCalls:
@@ -31,6 +30,6 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 7_DAD
+          m_StringArgument: 11_DAD
           m_BoolArgument: 0
         m_CallState: 2

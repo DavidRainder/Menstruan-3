@@ -521,7 +521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: dialogSettingsInfo.Array.size
-      value: 9
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'dialogSettingsInfo.Array.data[0]'
@@ -534,29 +534,45 @@ PrefabInstance:
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'dialogSettingsInfo.Array.data[2]'
       value: 
-      objectReference: {fileID: 11400000, guid: 91cedaef814bf6f4990db09840535510, type: 2}
+      objectReference: {fileID: 11400000, guid: 84915237091b0dd449254d098e130d90, type: 2}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'dialogSettingsInfo.Array.data[3]'
       value: 
-      objectReference: {fileID: 11400000, guid: 31abb44466974d541976c0548c752121, type: 2}
+      objectReference: {fileID: 11400000, guid: 91cedaef814bf6f4990db09840535510, type: 2}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'dialogSettingsInfo.Array.data[4]'
       value: 
-      objectReference: {fileID: 11400000, guid: ccc4108702ed88e4daddf6ab297508e9, type: 2}
+      objectReference: {fileID: 11400000, guid: 22082e4f40c6db543b400f98268c9193, type: 2}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'dialogSettingsInfo.Array.data[5]'
       value: 
-      objectReference: {fileID: 11400000, guid: 80fac568b259d3c4a9ea61efacac9ba8, type: 2}
+      objectReference: {fileID: 11400000, guid: 31abb44466974d541976c0548c752121, type: 2}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'dialogSettingsInfo.Array.data[6]'
       value: 
-      objectReference: {fileID: 11400000, guid: f2d1ab710d2387c4b837cc1c05ec276d, type: 2}
+      objectReference: {fileID: 11400000, guid: ccc4108702ed88e4daddf6ab297508e9, type: 2}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'dialogSettingsInfo.Array.data[7]'
       value: 
-      objectReference: {fileID: 11400000, guid: f34cef72fa105384a8dcd2a191f51fb7, type: 2}
+      objectReference: {fileID: 11400000, guid: 80fac568b259d3c4a9ea61efacac9ba8, type: 2}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'dialogSettingsInfo.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 14cd88aa6ccf8964882e9deb9c6bae57, type: 2}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'dialogSettingsInfo.Array.data[9]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f2d1ab710d2387c4b837cc1c05ec276d, type: 2}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'dialogSettingsInfo.Array.data[10]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f83f5461d9dc84e429f3bdfa58483d13, type: 2}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'dialogSettingsInfo.Array.data[11]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f34cef72fa105384a8dcd2a191f51fb7, type: 2}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'dialogSettingsInfo.Array.data[12]'
       value: 
       objectReference: {fileID: 11400000, guid: 0bd23b4f1471ef148833bcc1c396f03c, type: 2}
     - target: {fileID: 2775451464532338113, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
@@ -2599,6 +2615,14 @@ PrefabInstance:
     - target: {fileID: 580491051670606471, guid: 4355fcd0b5150774d9d7bb5c5b42e6f1, type: 3}
       propertyPath: m_Name
       value: AnimationManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292331639869282176, guid: 4355fcd0b5150774d9d7bb5c5b42e6f1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292331639869282176, guid: 4355fcd0b5150774d9d7bb5c5b42e6f1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 7900245648623882693, guid: 4355fcd0b5150774d9d7bb5c5b42e6f1, type: 3}
       propertyPath: m_LocalPosition.x

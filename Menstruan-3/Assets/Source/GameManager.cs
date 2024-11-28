@@ -40,13 +40,9 @@ public class GameManager : MonoBehaviour
             NPCManager.Instance.TalkNPC(splitted[1]);
     }
 
-    public static void EndQuiz(string id)
+    public static void EndQuiz()
     {
         QuizManager.Instance.EndQuiz();
-        if(id != null)
-        {
-            NPCManager.Instance.StopNPC(id);
-        }
     }
 
     public static void EndDialog()
