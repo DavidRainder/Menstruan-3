@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 602ecffb75a65f7438c5726e7f45ac13
+guid: 529e80a30ffd9ff41b6f3de04def9669
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8987336373830317643
-    second: VulvaBoceto_0
+      213: 3379734846042428075
+    second: ropaInteriorAbsorbente_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VulvaBoceto_0
+      name: ropaInteriorAbsorbente_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 240
-        height: 300
+        x: 58
+        y: 124
+        width: 683
+        height: 551
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b467a17a0de69bc70800000000000000
-      internalID: 8987336373830317643
+      spriteID: ba25e559fea37ee20800000000000000
+      internalID: 3379734846042428075
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      VulvaBoceto_0: 8987336373830317643
+      ropaInteriorAbsorbente_0: 3379734846042428075
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

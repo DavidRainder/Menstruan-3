@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 602ecffb75a65f7438c5726e7f45ac13
+guid: 3a8e34b0c27db1e44b1881971e7ad53a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8987336373830317643
-    second: VulvaBoceto_0
+      213: 7617786362116584808
+    second: tampon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VulvaBoceto_0
+      name: tampon_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 240
-        height: 300
+        x: 338
+        y: 17
+        width: 167
+        height: 769
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b467a17a0de69bc70800000000000000
-      internalID: 8987336373830317643
+      spriteID: 86536c8e550d7b960800000000000000
+      internalID: 7617786362116584808
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      VulvaBoceto_0: 8987336373830317643
+      tampon_0: 7617786362116584808
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
