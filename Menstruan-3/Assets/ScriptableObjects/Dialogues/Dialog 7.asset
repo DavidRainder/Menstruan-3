@@ -15,7 +15,7 @@ MonoBehaviour:
   texts:
   - Tema2_NoInsertados
   - Tema2_InteriorAbsorbente
-  speed: 0.025
+  speed: 0.035
   onStartDialog:
     m_PersistentCalls:
       m_Calls: []

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texts:
   - Tema2_Copa
-  speed: 0.025
+  speed: 0.035
   onStartDialog:
     m_PersistentCalls:
       m_Calls: []

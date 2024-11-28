@@ -17,7 +17,7 @@ MonoBehaviour:
   - Tema2_Introduccion2
   - Tema2_Insertados
   - Tema2_Tampon
-  speed: 0.025
+  speed: 0.035
   onStartDialog:
     m_PersistentCalls:
       m_Calls:

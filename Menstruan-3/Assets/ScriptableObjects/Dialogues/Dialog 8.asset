@@ -16,7 +16,7 @@ MonoBehaviour:
   - Tema2_InteriorAbsorbenteInfo
   - Tema2_InteriorAbsorbenteInfo2
   - Tema2_InteriorAbsorbenteInfo3
-  speed: 0.025
+  speed: 0.035
   onStartDialog:
     m_PersistentCalls:
       m_Calls:

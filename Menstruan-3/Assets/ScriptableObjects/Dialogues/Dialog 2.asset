@@ -17,7 +17,7 @@ MonoBehaviour:
   - Tema2_TamponInfo2
   - Tema2_TamponInfo3
   - Tema2_TamponInfo4
-  speed: 0.025
+  speed: 0.035
   onStartDialog:
     m_PersistentCalls:
       m_Calls:
@@ -30,7 +30,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Example
+          m_StringArgument: TamponAnimation
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}

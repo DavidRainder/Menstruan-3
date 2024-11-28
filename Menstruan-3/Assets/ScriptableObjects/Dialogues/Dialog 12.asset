@@ -16,7 +16,7 @@ MonoBehaviour:
   - Tema2_CompresasUnUsoInfo
   - Tema2_CompresasUnUsoInfo2
   - Tema2_CompresasUnUsoInfo3
-  speed: 0.025
+  speed: 0.035
   onStartDialog:
     m_PersistentCalls:
       m_Calls:

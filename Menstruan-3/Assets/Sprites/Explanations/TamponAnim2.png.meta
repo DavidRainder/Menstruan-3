@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0fe0bf25266774848b22da51ad871559
+guid: 3ca4dba595b417547bb4ac1ada34a85e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1991033864557486755
-    second: Background (1)_0
+      213: -3635641662052426180
+    second: TamponAnim2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background (1)_0
+      name: TamponAnim2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 800
+        height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3a2e8b830c291ab10800000000000000
-      internalID: 1991033864557486755
+      spriteID: c3e11cabb2b9b8dc0800000000000000
+      internalID: -3635641662052426180
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Background (1)_0: 1991033864557486755
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -15,7 +15,7 @@ MonoBehaviour:
   texts:
   - Tema2_CompresasTelaInfo
   - Tema2_CompresasTelaInfo2
-  speed: 0.025
+  speed: 0.035
   onStartDialog:
     m_PersistentCalls:
       m_Calls:
