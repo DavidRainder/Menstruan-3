@@ -9,12 +9,12 @@ public class DragObjectComponent : MonoBehaviour
     private Vector3 _dropPos;
     bool _inDropZone;
     bool _isDragging;
-    private SpriteRenderer renderer;
+    private SpriteRenderer _myRenderer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       renderer = GetComponent<SpriteRenderer>();
+       _myRenderer = GetComponent<SpriteRenderer>();
         _myTransform = transform;
         _initialPos = _myTransform.position;
         _inDropZone = false;
@@ -39,7 +39,7 @@ public class DragObjectComponent : MonoBehaviour
 
     private void OnMouseUp()
     {
-        Collider2D[] colliders = Physics2D.OverlapBoxAll(_myTransform.position, renderer.bounds.size, _myTransform.eulerAngles.z);
+        Collider2D[] colliders = Physics2D.OverlapBoxAll(_myTransform.position, _myRenderer.bounds.size, _myTransform.eulerAngles.z);
 
         int i = 0;
         while (i < colliders.Length)
@@ -59,35 +59,5 @@ public class DragObjectComponent : MonoBehaviour
 
         _inDropZone = false;
         _isDragging = false;
-
-        //if (_inDropZone)
-        //{
-        //    _myTransform.position = _dropPos;
-        //    Debug.Log("Drop position puesta");
-        //}
-        //else
-        //    _myTransform.position = _initialPos;
-
-        //_isDragging = false;
-        //Debug.Log("Holaa he dejado de clicar");
     }
-
-
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    //// Si es una zone donde se puede colocar
-    //    //if (collision.GetComponent<DropZoneComponent>() != null)
-    //    //{
-    //    //    _inDropZone = true;
-    //    //    _dropPos = collision.transform.position;
-    //    //    Debug.Log("Pos drop: " + _dropPos);
-    //    //}
-
-
-    //}
-
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    //_inDropZone = false;
-    //}
 }

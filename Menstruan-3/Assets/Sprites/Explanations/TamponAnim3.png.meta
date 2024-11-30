@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TamponAnim3_0: -9172734703744936351
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

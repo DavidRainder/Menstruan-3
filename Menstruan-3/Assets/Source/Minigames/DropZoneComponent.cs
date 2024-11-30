@@ -6,14 +6,6 @@ public class DropZoneComponent : MonoBehaviour
 
     bool occupied;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField]
+    private int _index;
 }
