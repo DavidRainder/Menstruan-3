@@ -11,10 +11,13 @@ public class DragObjectComponent : MonoBehaviour
     bool _isDragging;
     private SpriteRenderer _myRenderer;
 
+    InfoTypeComponent _myInfoTypeComponent;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
        _myRenderer = GetComponent<SpriteRenderer>();
+        _myInfoTypeComponent = GetComponent<InfoTypeComponent>();
         _myTransform = transform;
         _initialPos = _myTransform.position;
         _inDropZone = false;
@@ -44,11 +47,13 @@ public class DragObjectComponent : MonoBehaviour
         int i = 0;
         while (i < colliders.Length)
         {
-        // Si es una zone donde se puede colocar
-            if (colliders[i].GetComponent<DropZoneComponent>() != null)
+            // Si es una zone donde se puede colocar
+            DropZoneComponent dzComp = colliders[i].GetComponent<DropZoneComponent>();
+            if (dzComp != null)
             {
+                Vector3 pos = dzComp.GetZonePosition((int)(_myInfoTypeComponent.GetInfoType()));
                 _inDropZone = true;
-                _myTransform.position = colliders[i].transform.position;
+                _myTransform.position = pos;
                 Debug.Log("Pos drop: " + _myTransform.position);
             }
             i++;

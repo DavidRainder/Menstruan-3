@@ -1,6 +1,6 @@
 using UnityEngine;
 
-enum InfoType { NAME, DESCRIPTION};
+public enum InfoType { NAME, DESCRIPTION};
 
 public class InfoTypeComponent : MonoBehaviour
 {
@@ -9,4 +9,9 @@ public class InfoTypeComponent : MonoBehaviour
 
     [SerializeField]
     private int _index;
+
+
+    public int GetIndex() {  return _index; }
+
+    public InfoType GetInfoType() {  return _type; }
 }
