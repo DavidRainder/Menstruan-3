@@ -35,7 +35,6 @@ public class DragObjectComponent : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //Debug.Log("Holaa he clicado");
         _offset = _myTransform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         _isDragging = true;
     }
@@ -54,7 +53,6 @@ public class DragObjectComponent : MonoBehaviour
                 Vector3 pos = dzComp.GetZonePosition((int)(_myInfoTypeComponent.GetInfoType()));
                 _inDropZone = true;
                 _myTransform.position = pos;
-                Debug.Log("Pos drop: " + _myTransform.position);
             }
             i++;
         }
