@@ -439,3 +439,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 7116589900971135864}
   _endTextPointer: {fileID: 7053497094185152053}
+  _speedFactors:
+  - 1
+  - 0.9
+  - 0.8
+  - 1.5

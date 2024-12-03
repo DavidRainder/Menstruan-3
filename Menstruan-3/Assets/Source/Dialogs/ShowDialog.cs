@@ -1,8 +1,10 @@
 using FMOD;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using TMPro;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public enum Feelings
@@ -33,46 +35,77 @@ public class ShowDialog : MonoBehaviour
     private string _path = Application.streamingAssetsPath + "/Sounds/Letters/";
     private Dictionary<string, Sound> _soundsDict;
 
-    private DSP[][] _dsps;
+    private ChannelGroup[] _channelGroups;
+    private ChannelGroup _dialogueGroup;
+    
+    [SerializeField]
+    private float[] _speedFactors;
+
+    [SerializeField]
+    private Feelings _feeling;
 
     private void Start()
     {
-        _dsps = new DSP[(int)Feelings.NUM_FEELINGS][];
-
         _system = FMODUnity.RuntimeManager.CoreSystem;
+
+        _channelGroups = new ChannelGroup[(int)Feelings.NUM_FEELINGS];
+        
         _soundsDict = new Dictionary<string, Sound>();
         DirectoryInfo info = new DirectoryInfo(_path);
         FileInfo[] files = info.GetFiles();
 
-        for(int i = 0; i < (int)Feelings.NUM_FEELINGS; i++)
+        _system.createChannelGroup("Dialogue", out _dialogueGroup);
+
+        DSP dsp;
+        for (int i = 0; i < (int)Feelings.NUM_FEELINGS; i++)
         {
             DSP_TYPE type;
             switch ((Feelings)i)
             {
+                case Feelings.NEUTRAL:
+                    _system.createChannelGroup("Dialogue_Neutral", out _channelGroups[i]);
+                    _channelGroups[i].addGroup(_dialogueGroup);
+                    break;
                 case Feelings.ANGRY:
-                    _dsps[i] = new DSP[2];
-                    
+                    _system.createChannelGroup("Dialogue_Angry", out _channelGroups[i]);
+                    _channelGroups[i].addGroup(_dialogueGroup);
+
                     type = DSP_TYPE.COMPRESSOR;
-                    _system.createDSPByType(type, out _dsps[i][0]);
+                    _system.createDSPByType(type, out dsp);
                     //_dsps[i][0].setParameterInt();
+                    _channelGroups[i].addDSP(CHANNELCONTROL_DSP_INDEX.HEAD, dsp);
 
                     type = DSP_TYPE.MULTIBAND_EQ;
-                    _system.createDSPByType(type, out _dsps[i][1]);
+                    _system.createDSPByType(type, out dsp);
+                    dsp.setParameterInt((int)DSP_MULTIBAND_EQ.A_FILTER, (int)DSP_MULTIBAND_EQ_FILTER_TYPE.HIGHPASS_24DB);
+                    dsp.setParameterFloat((int)DSP_MULTIBAND_EQ.A_FREQUENCY, 2000);
+                    dsp.setParameterFloat((int)DSP_MULTIBAND_EQ.A_GAIN, 20);
+                    dsp.setWetDryMix(1, 1, 0);
+                    _channelGroups[i].addDSP(CHANNELCONTROL_DSP_INDEX.HEAD, dsp);
                     break;
                 case Feelings.HAPPY:
-                    _dsps[i] = new DSP[1];
+                    _system.createChannelGroup("Dialogue_Happy", out _channelGroups[i]);
+                    _channelGroups[i].addGroup(_dialogueGroup);
 
                     type = DSP_TYPE.MULTIBAND_EQ;
-                    _system.createDSPByType(type, out _dsps[i][0]);
+                    _system.createDSPByType(type, out dsp);
+                    dsp.setParameterInt((int)DSP_MULTIBAND_EQ.A_FILTER, (int)DSP_MULTIBAND_EQ_FILTER_TYPE.HIGHPASS_24DB);
+                    dsp.setParameterFloat((int)DSP_MULTIBAND_EQ.A_FREQUENCY, 4000);
+                    dsp.setParameterFloat((int)DSP_MULTIBAND_EQ.A_GAIN, -20);
+                    dsp.setWetDryMix(1, 1, 0);
+                    _channelGroups[i].addDSP(CHANNELCONTROL_DSP_INDEX.HEAD, dsp);
                     break;
                 case Feelings.SAD:
-                    _dsps[i] = new DSP[1];
+                    _system.createChannelGroup("Dialogue_Sad", out _channelGroups[i]);
+                    _channelGroups[i].addGroup(_dialogueGroup);
 
                     type = DSP_TYPE.MULTIBAND_EQ;
-                    _system.createDSPByType(type, out _dsps[i][0]);
-                    _dsps[i][0].setParameterFloat((int)DSP_MULTIBAND_EQ.A_FILTER, (int)DSP_MULTIBAND_EQ_FILTER_TYPE.LOWPASS_24DB);
-                    _dsps[i][0].setParameterFloat((int)DSP_MULTIBAND_EQ.A_FREQUENCY, (int)10);
-                    _dsps[i][0].setParameterFloat((int)DSP_MULTIBAND_EQ.A_GAIN, -20);
+                    _system.createDSPByType(type, out dsp);
+                    dsp.setParameterInt((int)DSP_MULTIBAND_EQ.A_FILTER, (int)DSP_MULTIBAND_EQ_FILTER_TYPE.LOWPASS_24DB);
+                    dsp.setParameterFloat((int)DSP_MULTIBAND_EQ.A_FREQUENCY, 2000);
+                    dsp.setParameterFloat((int)DSP_MULTIBAND_EQ.A_GAIN, -20);
+                    dsp.setWetDryMix(1, 1, 0);
+                    _channelGroups[i].addDSP(CHANNELCONTROL_DSP_INDEX.HEAD, dsp);
                     break;
             }
         }
@@ -133,14 +166,12 @@ public class ShowDialog : MonoBehaviour
         else
         {
             int initialIndex = 0;
-            StartCoroutine(AnimText(initialIndex, _settings.texts[_currentText++], Feelings.SAD));
+            StartCoroutine(AnimText(initialIndex, _settings.texts[_currentText++], _feeling));
         }
     }
 
     IEnumerator AnimText(int initialIndex, string messageToShow, Feelings feelings)
     {
-        _system.getMasterChannelGroup(out ChannelGroup channelgroup);
-
         _textEnded = false;
         _endTextPointer.SetActive(_textEnded);
         messageToShow = StringManager.Instance.GetGenderStringByKey(messageToShow);
@@ -158,17 +189,11 @@ public class ShowDialog : MonoBehaviour
 
                 if (_soundsDict.ContainsKey(currentLetter.ToString()))
                 {
-                    _system.playSound(_soundsDict[currentLetter.ToString()], channelgroup, false, out Channel channel);
-                    int size = _dsps[(int)feelings].Length;
-                    for (int i = 0; i < size; ++i)
-                    {
-                        channel.addDSP(i, _dsps[(int)feelings][i]);
-                        //_system.playDSP(_dsps[(int)feelings][i], channelgroup, false, channel);
-                    }
+                    _system.playSound(_soundsDict[currentLetter.ToString()], _channelGroups[(int)feelings], false, out Channel channel);
                 }
 
 
-                yield return new WaitForSeconds(_settings.speed);
+                yield return new WaitForSeconds(_settings.speed * _speedFactors[(int)feelings]);
             }
         }
         _textEnded = true;
