@@ -75,44 +75,4 @@ public class DropZoneComponent : MonoBehaviour
             }
         }
     }
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    Debug.Log("Holah?");
-    //    InfoTypeComponent itComp = collision.gameObject.GetComponent<InfoTypeComponent>();
-    //    if (itComp != null)
-    //    {
-    //        if((int)itComp.GetInfoType() == 0) // Nombre
-    //        {
-    //            _nameOccupied = true;
-    //            _nameCorrect = (_index == itComp.GetIndex());
-    //            Debug.Log("Nombre puesto");
-    //        }
-    //        else if((int)itComp.GetInfoType() == 1) // Descripcion
-    //        {
-    //            _descriptionOccupied = true;
-    //            _descriptionCorrect = (_index == itComp.GetIndex());
-    //            Debug.Log("Descripcion puesta");
-    //        }
-    //    }
-    //}
-
-    //private void OnCollisionExit2D(Collision2D collision)
-    //{
-    //    InfoTypeComponent itComp = collision.gameObject.GetComponent<InfoTypeComponent>();
-    //    if (itComp != null)
-    //    {
-    //        if ((int)itComp.GetInfoType() == 0) // Nombre
-    //        {
-    //            Debug.Log("Nombre kitado");
-    //            _nameOccupied = false;
-    //            _nameCorrect = false;
-    //        }
-    //        else if ((int)itComp.GetInfoType() == 1) // Descripcion
-    //        {
-    //            Debug.Log("Descripcion kitado");
-    //            _descriptionOccupied = false;
-    //            _descriptionCorrect = false;
-    //        }
-    //    }
-    //}
 }
