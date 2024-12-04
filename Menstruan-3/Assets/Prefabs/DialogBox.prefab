@@ -398,6 +398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8176506881839671058}
   - component: {fileID: 8000175387768647434}
+  - component: {fileID: 6283457155163268614}
   m_Layer: 5
   m_Name: DialogBox
   m_TagString: Untagged
@@ -439,8 +440,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 7116589900971135864}
   _endTextPointer: {fileID: 7053497094185152053}
-  _speedFactors:
-  - 1
-  - 0.9
-  - 0.8
-  - 1.5
+--- !u!114 &6283457155163268614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9207173393832567713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21e35dea3c184be4a899005f1a1dc48c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
