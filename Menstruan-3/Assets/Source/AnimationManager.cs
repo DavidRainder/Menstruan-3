@@ -31,6 +31,11 @@ public class AnimationManager : MonoBehaviour
     {
         if (instance._animationInstance != null)
         {
+            if (!instance._animationInstance.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Default"))
+            {
+                StartCoroutine(endAnimationBeforeStart(animation));
+                return;
+            }
             Destroy(instance._animationInstance);
         }
 
@@ -40,6 +45,15 @@ public class AnimationManager : MonoBehaviour
         animator.SetBool("Appear", true);
         animator = animator.transform.GetChild(0).GetComponent<Animator>();
         animator.SetBool(animation, true);
+    }
+
+    IEnumerator endAnimationBeforeStart(string animation)
+    {
+        while (!instance._animationInstance.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Default"))
+        {
+            yield return new WaitForEndOfFrame();
+        }
+        StartAnimation(animation);
     }
 
     public void EndAnimation()

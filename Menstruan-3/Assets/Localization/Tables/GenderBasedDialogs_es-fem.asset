@@ -170,6 +170,118 @@ MonoBehaviour:
       e ir al ba\xF1o cuando tu cuerpo te lo pida."
     m_Metadata:
       m_Items: []
+  - m_Id: 7473905762717696
+    m_Localized: "Bueno, vamos a empezar. Lo que te ha pasado se llama menstruaci\xF3n. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7474678936522752
+    m_Localized: Es una cosa muy normal, ya que todas las personas con ovarios la
+      tienen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7474872155525120
+    m_Localized: "Adem\xE1s, esto te va a volver a pasar cada ciertos d\xEDas. Se
+      conoce como ciclo menstrual, ya que se repite entre 24 y 35 d\xEDas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7475244781686784
+    m_Localized: "Y te acompa\xF1ar\xE1 durante 40 a\xF1os aproximadamente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7475664996421632
+    m_Localized: "Durante el ciclo, tu cuerpo se prepara cada mes para tener un beb\xE9,
+      y si no sucede, se destruye el lugar donde el beb\xE9 empezar\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7476131931508736
+    m_Localized: " a crearse y se expulsa en forma de menstruaci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7476396122329088
+    m_Localized: "La regla (o menstruaci\xF3n) es una mezcla de sangre, otros fluidos
+      y el endometrio (que se explicar\xE1 m\xE1s adelante),\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7476615174049792
+    m_Localized: "\xBFY c\xF3mo surgen los beb\xE9s? Pues esto sucede cuando un \xF3vulo
+      (c\xE9lula sexual femenina)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7478098284138496
+    m_Localized: Entonces, para entender todo esto vamos a empezar con una clase
+      para aprender sobre tu cuerpo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7478331416137728
+    m_Localized: Esto se llama vulva.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7478373908631552
+    m_Localized: Esta parte se conoce como vagina y es por donde sale la regla.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7478475402399744
+    m_Localized: Encima tenemos la uretra, que es por donde sale el pis.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7478563101102080
+    m_Localized: "Y arriba de todo est\xE1 el cl\xEDtoris, que es un \xF3rgano para
+      el placer sexual."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7478803950620672
+    m_Localized: "Todas estas zonas est\xE1n rodeadas por los labios internos, que
+      pueden tener distintas formas.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7479604555173888
+    m_Localized: "Por \xFAltimo, en la parte inferior se encuentra el ano, que es
+      por donde sale la caca. No forma parte de la vulva pero nos sirve para ayudar
+      a ubicar cada parte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7479791327531008
+    m_Localized: "Ahora veremos c\xF3mo se conecta la vagina con la parte interior
+      de tu cuerpo, el \xFAtero.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7480454493130752
+    m_Localized: "Esto es el cuello del \xFAtero, que conecta con la vagina. Recuerda,
+      \xA1es por donde sale la regla fuera de tu cuerpo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7480474776784896
+    m_Localized: "Luego est\xE1 el endometrio, que es la casita y la comida que preparas
+      para el beb\xE9, y es lo que se expulsar\xE1 luego en forma de regla.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7480845406457856
+    m_Localized: "Por \xFAltimo, estos son los ovarios. Aqu\xED se almacenan los
+      \xF3vulos, que luego se pueden llegar a convertir en beb\xE9s\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7481029658038272
+    m_Localized: "Ahora, \xA1conecta todo lo que has aprendido!\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7486389949190144
+    m_Localized: por lo que no tiene por que ser roja como la sangre que va por tu
+      cuerpo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7487349048102912
+    m_Localized: " que tienes dentro de tu cuerpo se junta con un espermatozoide
+      (c\xE9lula sexual masculina). As\xED naciste t\xFA."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7488043729702912
+    m_Localized: "\xBFPor d\xF3nde est\xE1 sucediendo todo esto? Pues, \xA1por aqu\xED!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7491312329838592
+    m_Localized: ' si se juntan con un espermatozoide.'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
