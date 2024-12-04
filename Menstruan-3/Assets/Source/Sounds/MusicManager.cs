@@ -1,5 +1,6 @@
 using FMOD;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class MusicManager : MonoBehaviour
@@ -40,21 +41,41 @@ public class MusicManager : MonoBehaviour
     {
         _system = FMODUnity.RuntimeManager.CoreSystem;
         RESULT ret = _system.createSound(_musicPath + _musicName, MODE._2D | MODE.LOOP_NORMAL | MODE.CREATESAMPLE | MODE.LOWMEM, out _musicSound);
-        _system.createChannelGroup("Music", out _musicGroup);
-        _system.createChannelGroup("Dialogue", out _dialogueGroup);
+        UnityEngine.Debug.Log(ret);
+
+        ret = _system.createChannelGroup("Music", out _musicGroup);
+        UnityEngine.Debug.Log(ret);
+        ret = _system.createChannelGroup("Dialogue", out _dialogueGroup);
+        UnityEngine.Debug.Log(ret);
 
         DSP dialogueDSP;
         DSP compressorDSP;
         ret = _system.createDSPByType(DSP_TYPE.COMPRESSOR, out compressorDSP);
-        compressorDSP.setParameterFloat((int)DSP_COMPRESSOR.THRESHOLD, -60.0f);
-        compressorDSP.setParameterBool((int)DSP_COMPRESSOR.USESIDECHAIN, true);
+        UnityEngine.Debug.Log(ret);
+
+        ret = compressorDSP.setParameterFloat((int)DSP_COMPRESSOR.THRESHOLD, -60.0f);
+        UnityEngine.Debug.Log(ret);
+
+        DSP_PARAMETER_SIDECHAIN dspSideChain = new DSP_PARAMETER_SIDECHAIN();
+        byte[] dspdatabytes = new byte[Marshal.SizeOf(typeof(DSP_PARAMETER_SIDECHAIN))];
+        dspdatabytes[0] = 1;
+        ret = compressorDSP.setParameterData((int)DSP_COMPRESSOR.USESIDECHAIN, dspdatabytes);
+        UnityEngine.Debug.Log(ret);
 
         ret = _system.createDSPByType(DSP_TYPE.SEND, out dialogueDSP);
-        compressorDSP.addInput(dialogueDSP, out DSPConnection connection, DSPCONNECTION_TYPE.SEND_SIDECHAIN);
-        _musicGroup.addDSP(CHANNELCONTROL_DSP_INDEX.HEAD, compressorDSP);
-        _dialogueGroup.addDSP(CHANNELCONTROL_DSP_INDEX.HEAD, dialogueDSP);
+        UnityEngine.Debug.Log(ret);
 
-        _system.playSound(_musicSound, _musicGroup, false, out Channel channel);
+        ret = compressorDSP.addInput(dialogueDSP, out DSPConnection connection, DSPCONNECTION_TYPE.SEND_SIDECHAIN);
+        UnityEngine.Debug.Log(ret);
+
+        ret = _musicGroup.addDSP(CHANNELCONTROL_DSP_INDEX.HEAD, compressorDSP);
+        UnityEngine.Debug.Log(ret);
+
+        ret = _dialogueGroup.addDSP(CHANNELCONTROL_DSP_INDEX.HEAD, dialogueDSP);
+        UnityEngine.Debug.Log(ret);
+
+        ret = _system.playSound(_musicSound, _musicGroup, false, out Channel channel);
+        UnityEngine.Debug.Log(ret);
     }
 
     // Update is called once per frame
