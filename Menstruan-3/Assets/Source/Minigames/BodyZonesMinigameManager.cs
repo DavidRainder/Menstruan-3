@@ -11,13 +11,13 @@ public class BodyZonesMinigameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void comprobar()
@@ -27,11 +27,11 @@ public class BodyZonesMinigameManager : MonoBehaviour
         while (i < _dropZones.Count && _gameFinished)
         {
             DropZoneComponent dropZonComp = _dropZones[i].GetComponent<DropZoneComponent>();
-
+            if (dropZonComp == null) { Debug.Log("SOOY NULOOO"); }
             _gameFinished = dropZonComp.IsCorrect();
             i++;
         }
-
         Debug.Log("Juego Correcto: " + _gameFinished);
+
     }
 }

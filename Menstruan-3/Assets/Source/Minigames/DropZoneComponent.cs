@@ -32,6 +32,8 @@ public class DropZoneComponent : MonoBehaviour
 
     public bool IsCorrect()
     {
+        Debug.Log("Nombre correcto: " + _nameCorrect);
+        Debug.Log("Descripción correcta: " + _descriptionCorrect);
         return _descriptionCorrect && _nameCorrect;
     }
 
@@ -45,13 +47,13 @@ public class DropZoneComponent : MonoBehaviour
             {
                 _nameOccupied = true;
                 _nameCorrect = (_index == itComp.GetIndex());
-                Debug.Log("Nombre puesto");
+                Debug.Log("Nombre puesto!___Correcto: " + _nameCorrect);
             }
             else if ((int)itComp.GetInfoType() == 1) // Descripcion
             {
                 _descriptionOccupied = true;
                 _descriptionCorrect = (_index == itComp.GetIndex());
-                Debug.Log("Descripcion puesta");
+                Debug.Log("Descripcion puesta!___Correcto: " + _descriptionCorrect);
             }
         }
     }
@@ -63,15 +65,15 @@ public class DropZoneComponent : MonoBehaviour
         {
             if ((int)itComp.GetInfoType() == 0) // Nombre
             {
-                Debug.Log("Nombre kitado");
                 _nameOccupied = false;
                 _nameCorrect = false;
+                Debug.Log("Nombre kitado!___Nombre correcto: " + _nameCorrect);
             }
             else if ((int)itComp.GetInfoType() == 1) // Descripcion
             {
-                Debug.Log("Descripcion kitado");
                 _descriptionOccupied = false;
                 _descriptionCorrect = false;
+                Debug.Log("Descripcion kitado!___Descripción correcto: " + _descriptionCorrect);
             }
         }
     }
