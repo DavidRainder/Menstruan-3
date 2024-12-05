@@ -8,10 +8,13 @@ public class BodyZonesMinigameManager : MonoBehaviour
     [SerializeField]
     List<GameObject> _dropZones;
 
+    MinigameManager _myMinigameManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        _myMinigameManager = GetComponent<MinigameManager>();
+        _myMinigameManager.StartMinigame();
     }
 
     // Update is called once per frame
@@ -33,5 +36,8 @@ public class BodyZonesMinigameManager : MonoBehaviour
         }
         Debug.Log("Juego Correcto: " + _gameFinished);
 
+        if (_gameFinished) {
+            _myMinigameManager.EndMinigame();
+        }
     }
 }

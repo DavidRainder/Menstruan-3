@@ -10,12 +10,12 @@ public class MinigameManager : MonoBehaviour
     public UnityEvent onStart;
     public UnityEvent onEnd;
 
-    void StartMinigame()
+    public void StartMinigame()
     {
         onStart.Invoke();
     }
 
-    void EndMinigame()
+    public void EndMinigame()
     {
         onEnd.Invoke();
     }
