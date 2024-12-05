@@ -16,7 +16,7 @@ public class DragObjectComponent : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       _myRenderer = GetComponent<SpriteRenderer>();
+        _myRenderer = GetComponent<SpriteRenderer>();
         _myInfoTypeComponent = GetComponent<InfoTypeComponent>();
         _myTransform = transform;
         _initialPos = _myTransform.position;
@@ -50,14 +50,20 @@ public class DragObjectComponent : MonoBehaviour
             DropZoneComponent dzComp = colliders[i].GetComponent<DropZoneComponent>();
             if (dzComp != null)
             {
-                Vector3 pos = dzComp.GetZonePosition((int)(_myInfoTypeComponent.GetInfoType()));
-                _inDropZone = true;
-                _myTransform.position = pos;
+
+                // Si no esta ocupado
+                int indx = _myInfoTypeComponent.GetIndex();
+                if ((((int)_myInfoTypeComponent.GetInfoType() == 0) && dzComp.IsNameZoneFree(indx)) || (((int)_myInfoTypeComponent.GetInfoType() == 1) && dzComp.IsDescriptionZoneFree(indx)))
+                {
+                    Vector3 pos = dzComp.GetZonePosition((int)(_myInfoTypeComponent.GetInfoType()));
+                    _inDropZone = true;
+                    _myTransform.position = pos;
+                }
             }
             i++;
         }
 
-        if(!_inDropZone)
+        if (!_inDropZone)
             _myTransform.position = _initialPos;
 
         _inDropZone = false;
