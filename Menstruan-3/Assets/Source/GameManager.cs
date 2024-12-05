@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     {
         if (instance == null)
         {
+            DontDestroyOnLoad(gameObject);
             instance = this;
         }
         else { Destroy(this.gameObject); }
@@ -23,6 +24,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private DialogSettings[] dialogSettingsInfo;
+
+    [SerializeField]
+    private CamMovements[] cameraPositions;
 
 
     public static void StartQuiz(int index)
@@ -68,5 +72,10 @@ public class GameManager : MonoBehaviour
     public static void StopAnimation()
     {
         AnimationManager.Instance.EndAnimation();
+    }
+
+    public static void MoveCamera(int id)
+    {
+        CameraManager.Instance.MoveToSprite(instance.cameraPositions[id]);
     }
 }
