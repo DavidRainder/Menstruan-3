@@ -119,67 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &205184120
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7231270715033085518, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_Text
-      value: Labios internos
-      objectReference: {fileID: 0}
-    - target: {fileID: 8529694656266298841, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_Name
-      value: BodyMinigame
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
 --- !u!1 &735529795
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +198,124 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &918045643
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529694656266298841, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_Name
+      value: UteroBodyMinigame
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+--- !u!1001 &945220992
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1087043684570282683, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087043684570282683, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529694656266298841, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_Name
+      value: VulvaBodyMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529694656266298841, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
 --- !u!1 &1861488702
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,4 +414,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1861488705}
   - {fileID: 735529798}
-  - {fileID: 205184120}
+  - {fileID: 945220992}
+  - {fileID: 918045643}

@@ -1173,9 +1173,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2907697906423441033, guid: 50e0e628498304f4285daac624fae257, type: 3}
       propertyPath: m_Text
-      value: 'Labios
-
-        internos'
+      value: Labios internos
       objectReference: {fileID: 0}
     - target: {fileID: 2907697906423441033, guid: 50e0e628498304f4285daac624fae257, type: 3}
       propertyPath: m_CharacterSize
