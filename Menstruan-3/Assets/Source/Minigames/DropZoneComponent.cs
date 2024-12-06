@@ -30,14 +30,14 @@ public class DropZoneComponent : MonoBehaviour
     }
 
 
-    public bool IsCorrect()
-    {
-        Debug.Log("Nombre correcto: " + _nameCorrect);
-        Debug.Log("Descripción correcta: " + _descriptionCorrect);
-        return _descriptionCorrect && _nameCorrect;
-    }
+    public bool IsCorrect() { return _descriptionCorrect && _nameCorrect; }
+
+    public bool IsNameCorrect() { return _nameCorrect; }
+
+    public bool IsDescriptionCorrect() { return _descriptionCorrect; }
 
     public bool IsNameZoneFree(int i) { return (_nameOccupied == -1) || (_nameOccupied == i); }
+
     public bool IsDescriptionZoneFree(int i) { return (_descriptionOccupied == -1) || (_descriptionOccupied == i); }
 
     private void OnTriggerEnter2D(Collider2D collision)
