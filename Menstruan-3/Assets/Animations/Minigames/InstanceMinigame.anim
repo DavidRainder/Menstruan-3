@@ -319,7 +319,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 2.536255, y: 0.1982269, z: 0.07112265}
+        value: {x: 3.39, y: 0.33, z: 0.07112265}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -329,8 +329,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.6666667
         value: {x: 25.200008, y: 1.6, z: 0.07112265}
-        inSlope: {x: 0, y: 8.205502, z: 0}
-        outSlope: {x: 0, y: 8.205502, z: 0}
+        inSlope: {x: 0, y: 7.4341464, z: 0}
+        outSlope: {x: 0, y: 7.4341464, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -380,7 +380,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 15.39626, y: -0.02177429, z: 0.07112265}
+        value: {x: 15.28, y: 1.06, z: 0.07112265}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -1760,7 +1760,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 2.536255
+        value: 3.39
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1826,7 +1826,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.1982269
+        value: 0.33
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1836,8 +1836,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.6666667
         value: 1.6
-        inSlope: 8.205502
-        outSlope: 8.205502
+        inSlope: 7.4341464
+        outSlope: 7.4341464
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -1958,7 +1958,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 15.39626
+        value: 15.28
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2024,7 +2024,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -0.02177429
+        value: 1.06
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2699,42 +2699,6 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: BackgroundMinigame
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: BackgroundMinigame
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: BackgroundMinigame
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
     path: BackgroundDialogue
     classID: 4
     script: {fileID: 0}
@@ -2796,6 +2760,42 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
     path: NPC_DAD
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: BackgroundMinigame
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: BackgroundMinigame
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: BackgroundMinigame
     classID: 4
     script: {fileID: 0}
     flags: 0

@@ -34,6 +34,7 @@ public class MinigameInstanceManager : MonoBehaviour
             Destroy(instance._minigameInstance);
         }
 
+        _minigameInstanceAnimations.enabled = true;
         _minigameInstanceAnimations.SetBool("Instance", true);
         StartCoroutine(InstantiateMinigame(prefab));
     }
@@ -82,6 +83,7 @@ public class MinigameInstanceManager : MonoBehaviour
 
     public void ResetAnim()
     {
+        _minigameInstanceAnimations.enabled = false;
         _minigameInstanceAnimations.SetBool("End", false);
     }
 }
