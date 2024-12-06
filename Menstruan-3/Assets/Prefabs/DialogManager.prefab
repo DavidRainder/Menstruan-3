@@ -191,6 +191,7 @@ GameObject:
   - component: {fileID: 2984248112780461210}
   - component: {fileID: 6171634020383266119}
   - component: {fileID: 1139231063006371412}
+  - component: {fileID: 2052154975063370477}
   m_Layer: 0
   m_Name: DialogManager
   m_TagString: Untagged
@@ -244,3 +245,16 @@ MonoBehaviour:
   _genderTable:
     m_TableReference:
       m_TableCollectionName: GUID:32cd532d2822bac44bacc7bcace5e597
+--- !u!114 &2052154975063370477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5989151657519918487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e4e9ec373adcc40bb62ec72174b12f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicName: BackgroundMusic.mp3

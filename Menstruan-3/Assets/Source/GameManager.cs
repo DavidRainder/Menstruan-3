@@ -1,6 +1,7 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class GameManager : MonoBehaviour
     private DialogSettings[] dialogSettingsInfo;
 
     [SerializeField]
-    private CamMovements[] cameraPositions;
+    private List<CamMovements> cameraPositions = new List<CamMovements>();
 
     [SerializeField]
     private GameObject[] minigamesPrefabs;
@@ -39,7 +40,7 @@ public class GameManager : MonoBehaviour
         QuizManager.Instance.StartQuiz(instance.quizSettingsInfo[index]);
     }
 
-    public static void StartDialog(string index)
+    public void StartDialog(string index)
     {
         var splitted = index.Split('_');
         int dialog = int.Parse(splitted[0]);
@@ -77,6 +78,11 @@ public class GameManager : MonoBehaviour
     public static void StopAnimation()
     {
         AnimationManager.Instance.EndAnimation();
+    }
+
+    public static void AddCameraMovement(CamMovements movements)
+    {
+        instance.cameraPositions.Add(movements);
     }
 
     public static void MoveCamera(int id)

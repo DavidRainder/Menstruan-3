@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &60904109733043459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2521643474334793993}
+  - component: {fileID: 8290431078233361283}
+  m_Layer: 0
+  m_Name: Comic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2521643474334793993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60904109733043459}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8290431078233361283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60904109733043459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a18b8808ab2b7674ab4683d7e7584e83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _frames:
+  - {fileID: 21300000, guid: c7cc0f97b085a244789f6c7f6283ae6b, type: 3}
+  - {fileID: 21300000, guid: 6f17d935f3100994d9ed8096bd3f3121, type: 3}
+  - {fileID: 21300000, guid: 4fb073379d5650644a175a10f3d14273, type: 3}
+  - {fileID: 21300000, guid: 7d8d6b07f64a17d4196dd6b87c3e459d, type: 3}
+  _layout:
+    _strips:
+    - _image: {fileID: 21300000, guid: 0f724ef322becd44fb916e203fdb7420, type: 3}
+      _type: 0
+      _dialogSettings: {fileID: 11400000, guid: fb864ce5e95f2de408b18d3669b099dd, type: 2}
+    - _image: {fileID: 21300000, guid: 414d4bbca3cc97c4d9a07d6e717f99e0, type: 3}
+      _type: 0
+      _dialogSettings: {fileID: 0}
+    - _image: {fileID: 21300000, guid: d584054a5bcb18c4b861fd4dd660a1d1, type: 3}
+      _type: 0
+      _dialogSettings: {fileID: 0}
+    - _image: {fileID: 21300000, guid: 232857c25e9966642814ecb8bf857e1e, type: 3}
+      _type: 0
+      _dialogSettings: {fileID: 0}
+    - _image: {fileID: 21300000, guid: c43df64b663a739408bbb3c2e74f0289, type: 3}
+      _type: 0
+      _dialogSettings: {fileID: 0}
+    - _image: {fileID: 21300000, guid: 22ccbbb75078dca4ba981535b1e17a7b, type: 3}
+      _type: 2
+      _dialogSettings: {fileID: 0}
+    - _image: {fileID: 21300000, guid: 7be7be07b5d1b324aa743d53f7273aea, type: 3}
+      _type: 0
+      _dialogSettings: {fileID: 0}
+  _numCols: 3
+  _initialPosition: {x: 0, y: 0, z: 0}

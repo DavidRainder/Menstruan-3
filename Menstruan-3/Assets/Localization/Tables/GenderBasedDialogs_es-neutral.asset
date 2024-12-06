@@ -285,6 +285,41 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 8305575361400832
     m_Localized: "\xA1Muy bien hecho! \xBFTe parece hacer un quiz? \xA1Vamos a ello!"
+  - m_Id: 8301744372387840
+    m_Localized: "\xA1Ya estoy en casa!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8301972915818496
+    m_Localized: "\xA1Hola cari\xF1o! Ven a poner la mesa que ya est\xE1 la comida"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8302220690132992
+    m_Localized: "\xA1Valee! Voy al ba\xF1o un momento y ya vengo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8302304391663616
+    m_Localized: "\xA1Vale, cari\xF1o!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8339868083359744
+    m_Localized: "\xA1Pap\xE1, Mam\xE1! \xA1Estoy sangrando y no s\xE9 por qu\xE9!
+      \xBFMe voy a morir?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8339902313074688
+    m_Localized: Vaya... Parece que ya ha llegado el momento.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8339903600726016
+    m_Localized: "No te preocupes. Ven al sal\xF3n y te explicamos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8340863186178048
+    m_Localized: "Pero... \xBF\xA1qu\xE9!?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8340984980377600
+    m_Localized: "\xBF\xA1Qu\xE9 me pasa!?"
     m_Metadata:
       m_Items: []
   references:

@@ -2,7 +2,6 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-
 [Serializable]
 [CreateAssetMenu]
 public class CamMovements : ScriptableObject
@@ -12,4 +11,12 @@ public class CamMovements : ScriptableObject
     public UnityEvent onEnd;
 
     public Vector3 lastPosition;
+
+    public CamMovements()
+    {
+        onStart = new UnityEvent();
+        onEnd = new UnityEvent();
+
+        lastPosition = Vector3.zero;
+    }
 }
