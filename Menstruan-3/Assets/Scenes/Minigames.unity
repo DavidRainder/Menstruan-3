@@ -250,6 +250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UteroBodyMinigame
       objectReference: {fileID: 0}
+    - target: {fileID: 8529694656266298841, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
