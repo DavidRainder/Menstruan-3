@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class DialogueSounds : MonoBehaviour
 {
-    
     FMOD.System _system;
 
     private int _maxLetters = 0;
