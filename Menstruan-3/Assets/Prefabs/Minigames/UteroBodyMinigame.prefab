@@ -788,12 +788,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
-      propertyPath: onStart.m_PersistentCalls.m_Calls.Array.size
+      propertyPath: onEnd.m_PersistentCalls.m_Calls.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
+      propertyPath: onStart.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
+      propertyPath: onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
+      propertyPath: onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+    - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
+      propertyPath: onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
+      propertyPath: onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndMinigame
       objectReference: {fileID: 0}
     - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
       propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
+      propertyPath: onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
+      propertyPath: onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 0_MOM
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
+      propertyPath: onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6443589420585211535, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
       propertyPath: m_Name

@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -27,6 +29,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private CamMovements[] cameraPositions;
+
+    [SerializeField]
+    private GameObject[] minigamesPrefabs;
 
 
     public static void StartQuiz(int index)
@@ -77,5 +82,37 @@ public class GameManager : MonoBehaviour
     public static void MoveCamera(int id)
     {
         CameraManager.Instance.MoveToSprite(instance.cameraPositions[id]);
+    }
+
+    public static void TPCamera(int id)
+    {
+        CameraManager.Instance.TPToSprite(instance.cameraPositions[id]);
+    }
+
+    public static void StartMinigame(int id)
+    {
+        MinigameInstanceManager.Instance.StartMinigame(instance.minigamesPrefabs[id]);
+    }
+
+    public static void StartMinigameNoAnimation(int id)
+    {
+        MinigameInstanceManager.Instance.StartMinigameNoAnimation(instance.minigamesPrefabs[id]);
+    }
+
+    public static void EndMinigame(string dialogID)
+    {
+        MinigameInstanceManager.Instance.EndMinigame();
+        instance.StartCoroutine(instance.AfterMinigame(dialogID));
+    }
+
+    IEnumerator AfterMinigame(string dialogID)
+    {
+        while (MinigameInstanceManager.Instance.IsPlayingAnimation("BackToDialoguesScene"))
+        {
+            yield return new WaitForEndOfFrame();
+        }
+
+        MinigameInstanceManager.Instance.ResetAnim();
+        StartDialog(dialogID);
     }
 }

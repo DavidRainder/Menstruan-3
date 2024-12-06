@@ -20,7 +20,9 @@ public class BodyZonesMinigameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(Input.GetKeyDown(KeyCode.Space)) {
+            _myMinigameManager.EndMinigame();
+        }
     }
 
     public void comprobar()

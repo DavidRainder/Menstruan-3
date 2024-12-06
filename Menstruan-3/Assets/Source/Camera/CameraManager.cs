@@ -45,6 +45,11 @@ public class CameraManager : MonoBehaviour
         StartCoroutine(CameraMovement(movement));
     }
 
+    public void TPToSprite(CamMovements movement)
+    {
+        _camera.transform.position = movement.lastPosition;
+    }
+
     IEnumerator CameraMovement(CamMovements movement)
     {
         movement.onStart.Invoke();
