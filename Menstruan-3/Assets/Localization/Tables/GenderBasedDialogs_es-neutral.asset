@@ -283,6 +283,10 @@ MonoBehaviour:
     m_Localized: ' si se juntan con un espermatozoide.'
     m_Metadata:
       m_Items: []
+  - m_Id: 8305575361400832
+    m_Localized: "\xA1Muy bien hecho! \xBFTe parece hacer un quiz? \xA1Vamos a ello!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -27,6 +27,12 @@ public class MinigameInstanceManager : MonoBehaviour
     [SerializeField]
     private Animator _minigameInstanceAnimations;
 
+    [SerializeField]
+    private Animator _screenOnAnimation;
+
+    [SerializeField]
+    private float _instanceTime = 2.0f;
+
     public void StartMinigame(GameObject prefab)
     {
         if (instance._minigameInstance!= null)
@@ -46,9 +52,14 @@ public class MinigameInstanceManager : MonoBehaviour
             Destroy(instance._minigameInstance);
         }
 
-        _minigameInstance = GameObject.Instantiate(prefab, _positionInstance);
+        StartCoroutine(WaitToStart(prefab));
     }
 
+
+    private void InstantiatePrefab(GameObject prefab)
+    {
+        _minigameInstance = GameObject.Instantiate(prefab, _positionInstance);
+    }
 
     IEnumerator InstantiateMinigame(GameObject prefab)
     {
@@ -57,14 +68,29 @@ public class MinigameInstanceManager : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
+        _screenOnAnimation.enabled = true;
+        _screenOnAnimation.Rebind();
+        _screenOnAnimation.Update(0f);
+        _screenOnAnimation.SetBool("End", false);
+        while (_screenOnAnimation.GetCurrentAnimatorStateInfo(0).IsName("ScreenOn"))
+        {
+            yield return new WaitForEndOfFrame();
+        }
+
         StartMinigameNoAnimation(prefab);
+    }
+
+
+    IEnumerator WaitToStart(GameObject prefab)
+    {
+        yield return new WaitForSeconds(_instanceTime);
+        InstantiatePrefab(prefab);
     }
 
     public void EndMinigame()
     {
         Destroy(instance._minigameInstance);
-        _minigameInstanceAnimations.SetBool("Instance", false);
-        _minigameInstanceAnimations.SetBool("End", true);
+        StartCoroutine(StopScreenAnimation());
     }
 
     public bool IsPlayingAnimation(string animation)
@@ -79,6 +105,22 @@ public class MinigameInstanceManager : MonoBehaviour
             name = "DefaultDialogues";
         }
         return !_minigameInstanceAnimations.GetCurrentAnimatorStateInfo(0).IsName(name);
+    }
+
+    IEnumerator StopScreenAnimation()
+    {
+        _screenOnAnimation.SetBool("End", true);
+        while (!_screenOnAnimation.GetCurrentAnimatorStateInfo(0).IsName("ScreenGrey"))
+        {
+            yield return new WaitForEndOfFrame();
+        }
+
+        _screenOnAnimation.enabled = false;
+        _screenOnAnimation.Rebind();
+        _screenOnAnimation.Update(0f);
+        _screenOnAnimation.SetBool("End", false);
+        _minigameInstanceAnimations.SetBool("Instance", false);
+        _minigameInstanceAnimations.SetBool("End", true);
     }
 
     public void ResetAnim()
