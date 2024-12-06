@@ -171,8 +171,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xBFCorrecto?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
+  m_sharedMaterial: {fileID: -6233259095536918644, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -274,9 +274,9 @@ RectTransform:
   - {fileID: 3436292490690711470}
   m_Father: {fileID: 6561920079258283140}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -235, y: -162.3}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 85, y: 20}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9212605102387732438
@@ -664,7 +664,7 @@ MonoBehaviour:
   m_text: 'Mal: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
-  m_sharedMaterial: {fileID: -6233259095536918644, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 31825f0d17c614245aa0e478773c67e7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
