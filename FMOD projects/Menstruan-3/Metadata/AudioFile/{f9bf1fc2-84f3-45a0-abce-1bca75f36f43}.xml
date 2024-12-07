@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f9bf1fc2-84f3-45a0-abce-1bca75f36f43}">
+		<property name="assetPath">
+			<value>tv_background.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>8.2360208333333329</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9317f74c-f380-401a-a8da-8807eb306907}</destination>
+		</relationship>
+	</object>
+</objects>

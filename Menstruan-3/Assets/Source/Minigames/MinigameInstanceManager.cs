@@ -33,8 +33,11 @@ public class MinigameInstanceManager : MonoBehaviour
     [SerializeField]
     private float _instanceTime = 2.0f;
 
+    private FMOD.Studio.EventInstance _screenSounds;
+
     public void StartMinigame(GameObject prefab)
     {
+        _screenSounds = FMODUnity.RuntimeManager.CreateInstance("event:/Television");
         if (instance._minigameInstance!= null)
         {
             Destroy(instance._minigameInstance);
@@ -72,6 +75,7 @@ public class MinigameInstanceManager : MonoBehaviour
         _screenOnAnimation.Rebind();
         _screenOnAnimation.Update(0f);
         _screenOnAnimation.SetBool("End", false);
+        _screenSounds.start();
         while (_screenOnAnimation.GetCurrentAnimatorStateInfo(0).IsName("ScreenOn"))
         {
             yield return new WaitForEndOfFrame();
@@ -90,6 +94,9 @@ public class MinigameInstanceManager : MonoBehaviour
     public void EndMinigame()
     {
         Destroy(instance._minigameInstance);
+        FMOD.RESULT ret = _screenSounds.setParameterByName("ScreenOff", 1);
+        UnityEngine.Debug.Log(FMOD.Error.String(ret));
+
         StartCoroutine(StopScreenAnimation());
     }
 
@@ -121,6 +128,7 @@ public class MinigameInstanceManager : MonoBehaviour
         _screenOnAnimation.SetBool("End", false);
         _minigameInstanceAnimations.SetBool("Instance", false);
         _minigameInstanceAnimations.SetBool("End", true);
+        _screenSounds.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
     public void ResetAnim()

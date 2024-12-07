@@ -1,3 +1,4 @@
+using FMOD;
 using System.Collections;
 using UnityEngine;
 
@@ -59,6 +60,10 @@ public class NPC : MonoBehaviour
             if (!sound && currentDistance < initialDistance * 0.3f)
             {
                 _movementSound.start();
+                if (target.position.x < position.x)
+                    _movementSound.setParameterByNameWithLabel("Pan", "RIGHT");
+                else
+                    _movementSound.setParameterByNameWithLabel("Pan", "LEFT");
                 sound = true;
             }
             target.position = Vector3.Lerp(target.position, position, ( speed / (currentDistance / initialDistance))* Time.deltaTime);
