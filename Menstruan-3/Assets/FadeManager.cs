@@ -1,5 +1,6 @@
 using System.Collections;
 using Unity.VisualScripting;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,6 +27,11 @@ public class FadeManager : MonoBehaviour
     [SerializeField] private float _timeToFade;
 
     private float _timer;
+
+    private void Start()
+    {
+        FadeIn();
+    }
 
     public void FadeIn()
     {
