@@ -11,12 +11,14 @@ public class NPC : MonoBehaviour
 
     [SerializeField] Animator _animator;
 
+    private FMOD.Studio.EventInstance _movementSound;
     private void Start()
     {
         _animator ??= GetComponentInChildren<Animator>();
         if(ID == "null_id") { ID = "NPC_" + _id.ToString(); }
         ++_id;
         NPCManager.Instance.RegisterNPC(ID, this);
+        _movementSound = FMODUnity.RuntimeManager.CreateInstance("event:/Movements");
     }
 
     public void Talk()
@@ -49,9 +51,16 @@ public class NPC : MonoBehaviour
         if (target.position.x < position.x) dir = 1;
         else dir = -1;
 
+
+        bool sound = false;
         while ((target.position - position).magnitude > 0.05f)
         {
             float currentDistance = Vector3.Distance(position, target.position);
+            if (!sound && currentDistance < initialDistance * 0.3f)
+            {
+                _movementSound.start();
+                sound = true;
+            }
             target.position = Vector3.Lerp(target.position, position, ( speed / (currentDistance / initialDistance))* Time.deltaTime);
             target.rotation = Quaternion.Lerp(
                 Quaternion.identity, 
@@ -65,6 +74,7 @@ public class NPC : MonoBehaviour
             yield return null;
         }
         target.position = position;
+        _movementSound.start();
         moving = false;
     }
 }

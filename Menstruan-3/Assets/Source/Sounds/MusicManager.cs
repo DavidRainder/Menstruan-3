@@ -1,4 +1,5 @@
 using FMOD;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
@@ -25,11 +26,16 @@ public class MusicManager : MonoBehaviour
     private ChannelGroup _musicGroup;
     private ChannelGroup _dialogueGroup;
     private Sound _musicSound;
+    private Channel _channel;
+    bool _soundCreated;
 
     private string _musicPath = Application.streamingAssetsPath + "/Sounds/Music/";
     
     [SerializeField]
     private string _musicName;
+
+    [SerializeField]
+    private float _musicVolume;
 
     public ChannelGroup GetDialogueGroup()
     {
@@ -39,11 +45,11 @@ public class MusicManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _system = FMODUnity.RuntimeManager.CoreSystem;
-        RESULT ret = _system.createSound(_musicPath + _musicName, MODE._2D | MODE.LOOP_NORMAL | MODE.CREATESAMPLE | MODE.LOWMEM, out _musicSound);
-        UnityEngine.Debug.Log(ret);
+        _soundCreated = false;
 
-        ret = _system.createChannelGroup("Music", out _musicGroup);
+        _system = FMODUnity.RuntimeManager.CoreSystem;
+
+        RESULT ret = _system.createChannelGroup("Music", out _musicGroup);
         UnityEngine.Debug.Log(ret);
         ret = _system.createChannelGroup("Dialogue", out _dialogueGroup);
         UnityEngine.Debug.Log(ret);
@@ -74,9 +80,66 @@ public class MusicManager : MonoBehaviour
         ret = _dialogueGroup.addDSP(CHANNELCONTROL_DSP_INDEX.HEAD, dialogueDSP);
         UnityEngine.Debug.Log(ret);
 
-        //ret = _system.playSound(_musicSound, _musicGroup, false, out Channel channel);
+        ret = _system.playSound(_musicSound, _musicGroup, false, out Channel channel);
+        channel.setVolume(_musicVolume);
+
         // UnityEngine.Debug.Log(ret);
     }
+
+    public void StopMusic(float fadeOutTime)
+    {
+        if (_soundCreated)
+        {
+            StartCoroutine(FadeOut(fadeOutTime));
+        }
+    }
+
+    public void StartMusic(float fadeInTime)
+    {
+        if(!_soundCreated)
+        {
+            StartCoroutine(FadeIn(fadeInTime));
+        }
+    }
+
+    IEnumerator FadeIn(float fadeInTime)
+    {
+        _soundCreated = true;
+        _system.createSound(_musicPath + _musicName, MODE._2D | MODE.LOOP_NORMAL | MODE.CREATESAMPLE | MODE.LOWMEM, out _musicSound);
+        _system.playSound(_musicSound, _musicGroup, false, out _channel);
+        _channel.setVolume(0);
+        float volume = 0;
+        float time = 0;
+        while(volume < _musicVolume)
+        {
+            yield return new WaitForEndOfFrame();
+            time += Time.deltaTime;
+            volume = _musicVolume * Mathf.Sqrt(time / fadeInTime);
+            _channel.setVolume(_musicVolume);
+        }
+        volume = _musicVolume;
+        _channel.setVolume(volume);
+    }
+
+    IEnumerator FadeOut(float fadeOutTime)
+    {
+        float volume = _musicVolume;
+        float time = 0;
+        while (volume > 0)
+        {
+            yield return new WaitForEndOfFrame();
+            time += Time.deltaTime;
+            float sqrt = (fadeOutTime - time) / fadeOutTime;
+            Mathf.Clamp(sqrt, 0, 1);
+            volume = _musicVolume * Mathf.Sqrt(sqrt);
+            _channel.setVolume(volume);
+        }
+        volume = 0;
+        _channel.setVolume(volume);
+        _musicSound.release();
+        _soundCreated = false;
+    }
+
 
     // Update is called once per frame
     void Update()

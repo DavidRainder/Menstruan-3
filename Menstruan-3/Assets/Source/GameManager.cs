@@ -114,6 +114,17 @@ public class GameManager : MonoBehaviour
         instance.StartCoroutine(instance.AfterMinigame(dialogID));
     }
 
+    public static void StartMusic(float fadeInTime)
+    {
+        MusicManager.Instance.StartMusic(fadeInTime);
+    }
+
+    public static void StopMusic(float fadeOutTime)
+    {
+        MusicManager.Instance.StopMusic(fadeOutTime);
+    }
+
+
     IEnumerator AfterMinigame(string dialogID)
     {
         while (MinigameInstanceManager.Instance.IsPlayingAnimation("BackToDialoguesScene"))
