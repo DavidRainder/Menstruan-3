@@ -234,6 +234,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: minigamesPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'cameraPositions.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: 19a314240ad4c364bb68e55ca0e7ec3a, type: 2}
@@ -251,8 +255,16 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 7428e8cbfbd8e3548b5f7e1426883018, type: 2}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: dialogSettingsInfo.Array.size
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'minigamesPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8529694656266298841, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'minigamesPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8529694656266298841, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'dialogSettingsInfo.Array.data[0]'
       value: 
@@ -312,7 +324,7 @@ PrefabInstance:
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'dialogSettingsInfo.Array.data[14]'
       value: 
-      objectReference: {fileID: 11400000, guid: 4d66faf8a1e32cc449f20fb4f66ddcf2, type: 2}
+      objectReference: {fileID: 11400000, guid: 1c89c58c6494b3942a273e5a4bbb3ba0, type: 2}
     - target: {fileID: 2775451464532338113, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: m_Name
       value: GameManager
