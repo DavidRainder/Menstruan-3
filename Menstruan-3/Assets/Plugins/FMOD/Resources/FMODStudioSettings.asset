@@ -164,7 +164,7 @@ MonoBehaviour:
   sourceProjectPath: ../FMOD projects/Menstruan-3/Menstruan-3.fspro
   sourceBankPath: ../FMOD projects/Menstruan-3/Build
   sourceBankPathUnformatted: 
-  BankRefreshCooldown: 5
+  BankRefreshCooldown: 1
   ShowBankRefreshWindow: 1
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -186,7 +186,8 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - Dialogues
+  - Music
+  - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

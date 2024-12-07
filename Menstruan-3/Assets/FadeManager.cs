@@ -54,7 +54,6 @@ public class FadeManager : MonoBehaviour
         instance._timer = 0.0f;
         while(instance._fade.color.a != end)
         {
-            Debug.Log(instance._timer);
             instance._fade.color = new Color(instance._fade.color.r, instance._fade.color.g, instance._fade.color.b, Mathf.Lerp(start, end, instance._timer / time));
 
             yield return new WaitForNextFrameUnit();
