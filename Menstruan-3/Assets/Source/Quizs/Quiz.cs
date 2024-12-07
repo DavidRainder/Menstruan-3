@@ -30,6 +30,8 @@ public class Quiz : MonoBehaviour
     [SerializeField]
     private float _afterQuizTime;
 
+    private FMOD.Studio.EventInstance _quizMusic;
+
     public void SetInfo(QuizSettings settings)
     {
         _time = 0;
@@ -90,6 +92,9 @@ public class Quiz : MonoBehaviour
             anim.SetBool("Wrong", false);
         }
         LayoutRebuilder.ForceRebuildLayoutImmediate(gameObject.GetComponent<RectTransform>());
+
+        _quizMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Quiz");
+        _quizMusic.start();
     }
 
     void RightOptionChoosed()
@@ -98,6 +103,8 @@ public class Quiz : MonoBehaviour
         {
             _buttonPressed = true;
             _rightButton.GetComponent<Animator>().SetBool("Correct", true);
+            _quizMusic.setParameterByNameWithLabel("Answer", "Correct answer");
+            _quizMusic.setParameterByName("FadeOutTimeline", 2.0f);
         }
     }
 
@@ -110,6 +117,8 @@ public class Quiz : MonoBehaviour
             {
                 button.GetComponent<Animator>().SetBool("Wrong", true);
             }
+            _quizMusic.setParameterByNameWithLabel("Answer", "Wrong answer");
+            _quizMusic.setParameterByName("FadeOutTimeline", 2.0f);
         }
     }
 
@@ -125,6 +134,7 @@ public class Quiz : MonoBehaviour
             _time += Time.deltaTime; // Se podría cambiar a subrutina
             if(_time >= _afterQuizTime)
             {
+                _quizMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 if (_correctOption)
                 {
                     _settings.onCorrectOption.Invoke();
