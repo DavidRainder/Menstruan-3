@@ -9,26 +9,15 @@ public class BodyZonesMinigameManager : MonoBehaviour
     [SerializeField]
     List<GameObject> _dropZones;
 
-    [SerializeField]
-    GameObject _correctTextGO;
-    TextMeshProUGUI _correctText;
-    [SerializeField]
-    GameObject _incorrectTextGO;
-    TextMeshProUGUI _incorrectText;
-
-
     MinigameManager _myMinigameManager;
+    BodyMinigameUI_Manager _myMinigameUIManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _myMinigameManager = GetComponent<MinigameManager>();
+        _myMinigameUIManager = GetComponent<BodyMinigameUI_Manager>();
         _myMinigameManager.StartMinigame();
-
-        _correctText = _correctTextGO.GetComponent<TextMeshProUGUI>();
-        _incorrectText = _incorrectTextGO.GetComponent<TextMeshProUGUI>();
-
-        Debug.Log("NULO: " + (_correctText == null) + "NULO2: " + (_incorrectText == null));
     }
 
     // Update is called once per frame
@@ -39,7 +28,7 @@ public class BodyZonesMinigameManager : MonoBehaviour
         }
     }
 
-    public void comprobar()
+    public void Comprobar()
     {
         bool description = false;
         bool name = false;
@@ -67,8 +56,10 @@ public class BodyZonesMinigameManager : MonoBehaviour
             i++;
         }
 
-        _correctText.text = "Bien: " + individualCorrects;
-        _incorrectText.text = "Mal: " + (_dropZones.Count * 2 - individualCorrects);
+        // Actualizo UI
+        _myMinigameUIManager.Comprobar();
+        _myMinigameUIManager.SetCorrects(individualCorrects);
+        _myMinigameUIManager.SetIncorrects((_dropZones.Count * 2 - individualCorrects));
 
         _gameFinished = (fullCorrects == _dropZones.Count);
         Debug.Log("Juego Correcto: " + _gameFinished);
