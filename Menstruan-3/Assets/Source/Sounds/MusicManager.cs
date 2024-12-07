@@ -31,7 +31,7 @@ public class MusicManager : MonoBehaviour
     [SerializeField]
     private string _musicName;
 
-    public ChannelGroup getDialogueGroup()
+    public ChannelGroup GetDialogueGroup()
     {
         return _dialogueGroup;
     }
@@ -53,7 +53,7 @@ public class MusicManager : MonoBehaviour
         ret = _system.createDSPByType(DSP_TYPE.COMPRESSOR, out compressorDSP);
         UnityEngine.Debug.Log(ret);
 
-        ret = compressorDSP.setParameterFloat((int)DSP_COMPRESSOR.THRESHOLD, -60.0f);
+        ret = compressorDSP.setParameterFloat((int)DSP_COMPRESSOR.THRESHOLD, -30.0f);
         UnityEngine.Debug.Log(ret);
 
         DSP_PARAMETER_SIDECHAIN dspSideChain = new DSP_PARAMETER_SIDECHAIN();
@@ -82,5 +82,10 @@ public class MusicManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnDestroy()
+    {
+        _musicSound.release();
     }
 }

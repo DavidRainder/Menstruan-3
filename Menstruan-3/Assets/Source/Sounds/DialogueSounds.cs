@@ -17,21 +17,25 @@ public class DialogueSounds : MonoBehaviour
     void OnEnable()
     {
         if (_soundsDict != null) return;
+        _system = FMODUnity.RuntimeManager.CoreSystem;
         _soundsDict = new Dictionary<string, Sound>();
         DirectoryInfo info = new DirectoryInfo(_lettersPath);
         FileInfo[] files = info.GetFiles();
 
-        _dialogueGroup = MusicManager.Instance.getDialogueGroup();
+        _dialogueGroup = MusicManager.Instance.GetDialogueGroup();
 
+        MODE mode = MODE._2D | MODE.LOOP_OFF | MODE.CREATESAMPLE | MODE.LOWMEM;
+        Sound sound;
         foreach (FileInfo file in files)
         {
             string name = file.Name.Split(".")[0];
             if (!_soundsDict.ContainsKey(name))
             {
-                RESULT ret = _system.createSound(_lettersPath + file.Name, MODE._2D | MODE.LOOP_OFF | MODE.CREATESAMPLE | MODE.LOWMEM, out Sound sound);
+                string fullPath = _lettersPath + file.Name;
+                RESULT ret = _system.createSound(fullPath, mode, out sound);
                 if (ret != RESULT.OK)
                 {
-                    UnityEngine.Debug.LogError("ERROR: " + ret);
+                    UnityEngine.Debug.LogError("ERROR: " + FMOD.Error.String(ret));
                     return;
                 }
                 _soundsDict.Add(name, sound);
