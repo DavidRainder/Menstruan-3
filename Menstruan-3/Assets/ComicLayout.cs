@@ -122,7 +122,5 @@ public class ComicLayout : MonoBehaviour
             _numCols * background.transform.localScale.y, 0);
         background.transform.position = _initialPosition + new Vector3(b.bounds.size.x / background.transform.localScale.x,
             -b.bounds.size.y / background.transform.localScale.y, 0);
-
-        GameManager.MoveCamera(0);
     }
 }

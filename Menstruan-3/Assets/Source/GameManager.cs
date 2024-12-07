@@ -14,8 +14,8 @@ public class GameManager : MonoBehaviour
     {
         if (instance == null)
         {
-            DontDestroyOnLoad(gameObject);
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else { Destroy(this.gameObject); }
     }
@@ -34,7 +34,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject[] minigamesPrefabs;
 
-
+    public static void Quit()
+    {
+        Application.Quit();
+    }
     public static void StartQuiz(int index)
     {
         QuizManager.Instance.StartQuiz(instance.quizSettingsInfo[index]);

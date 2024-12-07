@@ -74,8 +74,8 @@ public class MusicManager : MonoBehaviour
         ret = _dialogueGroup.addDSP(CHANNELCONTROL_DSP_INDEX.HEAD, dialogueDSP);
         UnityEngine.Debug.Log(ret);
 
-        ret = _system.playSound(_musicSound, _musicGroup, false, out Channel channel);
-        UnityEngine.Debug.Log(ret);
+        //ret = _system.playSound(_musicSound, _musicGroup, false, out Channel channel);
+        // UnityEngine.Debug.Log(ret);
     }
 
     // Update is called once per frame
