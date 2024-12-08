@@ -51,7 +51,7 @@ MonoBehaviour:
         m_MethodName: EmitEvent
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: f81a88d4c1bcfc1409c87c4016dee6cf, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 280ebbb3dd89a5e4ea1ca84308d29e57, type: 2}
           m_ObjectArgumentAssemblyTypeName: FMODEventData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
