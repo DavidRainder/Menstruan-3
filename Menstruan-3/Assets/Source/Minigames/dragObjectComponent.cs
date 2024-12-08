@@ -13,9 +13,12 @@ public class DragObjectComponent : MonoBehaviour
 
     InfoTypeComponent _myInfoTypeComponent;
 
+    private FMOD.Studio.EventInstance _dropSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _dropSound = FMODUnity.RuntimeManager.CreateInstance("event:/PickUpMinigame");
         _myRenderer = GetComponent<SpriteRenderer>();
         _myInfoTypeComponent = GetComponent<InfoTypeComponent>();
         _myTransform = transform;
@@ -35,8 +38,11 @@ public class DragObjectComponent : MonoBehaviour
 
     private void OnMouseDown()
     {
+        _dropSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        _dropSound.setParameterByName("Dropped", 0);
         _offset = _myTransform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         _isDragging = true;
+        _dropSound.start();
     }
 
     private void OnMouseUp()
@@ -55,6 +61,7 @@ public class DragObjectComponent : MonoBehaviour
                 int indx = _myInfoTypeComponent.GetIndex();
                 if ((((int)_myInfoTypeComponent.GetInfoType() == 0) && dzComp.IsNameZoneFree(indx)) || (((int)_myInfoTypeComponent.GetInfoType() == 1) && dzComp.IsDescriptionZoneFree(indx)))
                 {
+                    _dropSound.setParameterByName("Dropped", 1);
                     Vector3 pos = dzComp.GetZonePosition((int)(_myInfoTypeComponent.GetInfoType()));
                     _inDropZone = true;
                     _myTransform.position = pos;
@@ -68,5 +75,10 @@ public class DragObjectComponent : MonoBehaviour
 
         _inDropZone = false;
         _isDragging = false;
+    }
+
+    private void OnDestroy()
+    {
+        _dropSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }

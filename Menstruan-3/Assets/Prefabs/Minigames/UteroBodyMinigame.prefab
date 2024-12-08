@@ -462,6 +462,7 @@ GameObject:
   - component: {fileID: 9212605102387732438}
   - component: {fileID: 916889041997320538}
   - component: {fileID: 8981702183116693985}
+  - component: {fileID: 6658871190390298874}
   m_Layer: 5
   m_Name: ComprobarButton
   m_TagString: Untagged
@@ -583,6 +584,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6658871190390298874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3052155549434667969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -405567959
+      Data2: 1216175501
+      Data3: -1723507044
+      Data4: 1544028184
+    Path: event:/ButtonClick
+  Event: 
+  EventPlayTrigger: 20
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &4065398312755947228
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,6 +627,7 @@ GameObject:
   - component: {fileID: 8802496038773021341}
   - component: {fileID: 7382699881768473600}
   - component: {fileID: 6866761455006058479}
+  - component: {fileID: 8922361497120476756}
   m_Layer: 5
   m_Name: AceptarButton
   m_TagString: Untagged
@@ -716,6 +749,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8922361497120476756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4065398312755947228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -405567959
+      Data2: 1216175501
+      Data3: -1723507044
+      Data4: 1544028184
+    Path: event:/ButtonClick
+  Event: 
+  EventPlayTrigger: 20
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6646510173845579365
 GameObject:
   m_ObjectHideFlags: 0

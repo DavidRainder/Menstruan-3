@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{536b70de-3faa-4509-9286-04b0c31e02f4}">
+		<property name="name">
+			<value>Dropped</value>
+		</property>
+		<relationship name="folder">
+			<destination>{4dc65ab3-93a3-48b4-a8a9-d94fc32e29e7}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d2fc652e-ea90-412e-a532-c89f9b73800b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d2fc652e-ea90-412e-a532-c89f9b73800b}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
