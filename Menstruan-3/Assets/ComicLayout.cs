@@ -1,5 +1,4 @@
 using System;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -43,6 +42,7 @@ public class ComicLayout : MonoBehaviour
     {
         public Sprite _image;
         public FRAME_TYPE _type;
+        public UnityEvent onStart;
         public UnityEvent onEnd;
         public bool _moveToNext;
     }
@@ -71,18 +71,14 @@ public class ComicLayout : MonoBehaviour
         int numRows = _layout._strips.Length / _numCols + _layout._strips.Length % _numCols;
         for (int i = 0; i < _layout._strips.Length; ++i) {
             CamMovements movement = new CamMovements();
+            movement.onStart = _layout._strips[i].onStart;
             movement.onEnd = _layout._strips[i].onEnd;
 
-            if(_layout._strips[i]._moveToNext)
+            if (_layout._strips[i]._moveToNext)
             {
                 if (i != _layout._strips.Length - 1)
                 {
                     UnityAction action = MoveCam(i + 1);
-                    movement.onEnd.AddListener(action);
-                }
-                else
-                {
-                    UnityAction action = MoveCam(0);
                     movement.onEnd.AddListener(action);
                 }
             }
