@@ -57,3 +57,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7369674989672959838, guid: 181dffea5dd0c9240bdc2f8134b41e21, type: 3}
+        m_TargetAssemblyTypeName: FMODEventEmitter, Assembly-CSharp
+        m_MethodName: UpdateEventInstances
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 8ea3a661156f26242afbaf64fe4189aa, type: 2}
+          m_ObjectArgumentAssemblyTypeName: FMODEventData, Assembly-CSharp
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
