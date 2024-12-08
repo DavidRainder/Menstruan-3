@@ -33,12 +33,12 @@ public class NPC : MonoBehaviour
         _animator.SetBool("isTalking", false);
     }
 
-    public void MoveToPoint(Vector3 position)
+    public void MoveToPoint(NPCManager.NPCSceneDestinations namePosition, Vector3 position)
     {
-        if(!moving) StartCoroutine(_MoveToPoint(position));
+        if(!moving) StartCoroutine(_MoveToPoint(namePosition, position));
     }
 
-    IEnumerator _MoveToPoint(Vector3 position)
+    IEnumerator _MoveToPoint(NPCManager.NPCSceneDestinations namePosition, Vector3 position)
     {
         moving = true;
         
@@ -61,10 +61,7 @@ public class NPC : MonoBehaviour
             if (!sound && currentDistance < initialDistance * 0.3f)
             {
                 _movementSound.start();
-                if (target.position.x < position.x)
-                    _movementSound.setParameterByNameWithLabel("Pan", "RIGHT");
-                else
-                    _movementSound.setParameterByNameWithLabel("Pan", "LEFT");
+                _movementSound.setParameterByName("Pan", (int)namePosition);
                 sound = true;
             }
             target.position = Vector3.Lerp(target.position, position, ( speed / (currentDistance / initialDistance))* Time.deltaTime);
