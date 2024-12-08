@@ -61,7 +61,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 6204789372321249214, guid: bfeb978dde2f8c446b25cb95fde88627, type: 3}
         m_TargetAssemblyTypeName: FadeManager, Assembly-CSharp
-        m_MethodName: FadeIn
+        m_MethodName: FadeOut
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

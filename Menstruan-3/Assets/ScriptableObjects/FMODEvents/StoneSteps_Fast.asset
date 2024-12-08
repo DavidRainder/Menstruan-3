@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventName: Steps
   parameters:
-  - type: 2
+  - type: 0
     name: WalkingSpeed
     value: MEDIUM
-  - type: 2
+  - type: 0
     name: Surface
     value: Stone

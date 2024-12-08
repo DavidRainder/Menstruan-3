@@ -539,8 +539,8 @@ MonoBehaviour:
     foiadjfoiajoi fjasdoifjadoi jfaiodjf oiadjfio ajdoif jaoifjaoifj oiajfoaaiod
     jfoisadj fioajofiajiofjadoif jaoidjfiajoif jaofjaiojfoidaj oifjadi jfado
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
+  m_sharedMaterial: {fileID: -6233259095536918644, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -675,8 +675,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: AAA pues si de hecho si
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
+  m_sharedMaterial: {fileID: -6233259095536918644, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -875,8 +875,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pues no se pero me parece bien
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
+  m_sharedMaterial: {fileID: -6233259095536918644, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -981,7 +981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -0}
+  m_AnchoredPosition: {x: 50, y: -18.404999}
   m_SizeDelta: {x: 400, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4041611737502242467
@@ -1590,8 +1590,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: AAA pues si de hecho si
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
+  m_sharedMaterial: {fileID: -6233259095536918644, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1986,8 +1986,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xBFPor qu\xE9 pasa esto al hacer x cosa en x momento y no se qu\xE9?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
+  m_sharedMaterial: {fileID: -6233259095536918644, guid: a85a9f38080b21f458c8faf3bd8f38d4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

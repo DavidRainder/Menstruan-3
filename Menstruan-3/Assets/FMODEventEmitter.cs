@@ -61,18 +61,23 @@ public class FMODEventEmitter : MonoBehaviour
             "event:/"+ev.eventName);
         foreach(FMODEventParameterData a in ev.parameters)
         {
-            if(a.type == FMODUnity.ParameterType.Labeled)
-            {
-                eventInstance.setParameterByNameWithLabel(a.name, a.value);
-            }
-            else
-            {
-                float aFloat = float.Parse(a.value);
-                eventInstance.setParameterByName(a.name, aFloat);
-            }
+            ChangeParams(eventInstance, a);
         }
 
         EmitEvent(eventInstance, ev.eventName);
+    }
+
+    private void ChangeParams(EventInstance instane, FMODEventParameterData data)
+    {
+        if (data.type == FMODEventData.PARAM_TYPE.LABELED)
+        {
+            instane.setParameterByNameWithLabel(data.name, data.value);
+        }
+        else
+        {
+            float aFloat = float.Parse(data.value);
+            instane.setParameterByName(data.name, aFloat);
+        }
     }
 
     public void UpdateEventInstances(FMODEventData ev) {
@@ -82,20 +87,9 @@ public class FMODEventEmitter : MonoBehaviour
 
         foreach (var a in ev.parameters)
         {
-            if (a.type == FMODUnity.ParameterType.Labeled)
+            foreach(var b in eventInstance)
             {
-                foreach(var b in eventInstance)
-                {
-                    b.setParameterByNameWithLabel(a.name, a.value);
-                }
-            }
-            else
-            {
-                foreach (var b in eventInstance)
-                {
-                    float aFloat = float.Parse(a.value);
-                    b.setParameterByName(a.name, aFloat);
-                }
+                ChangeParams(b, a);
             }
         }
     }

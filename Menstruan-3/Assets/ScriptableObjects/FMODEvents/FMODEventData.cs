@@ -5,10 +5,17 @@ using UnityEngine;
 [CreateAssetMenu(fileName="FMODEventData", menuName="Scriptable Objects/FMODEventData")]
 public class FMODEventData : ScriptableObject
 {
+    public enum PARAM_TYPE
+    {
+        LABELED,
+        CONTINOUOS,
+        DISCRETE
+    }
+
     [Serializable]
     public struct FMODEventParameterData
     {
-        public FMODUnity.ParameterType type;
+        public PARAM_TYPE type;
         public string name;
         public string value;
     }

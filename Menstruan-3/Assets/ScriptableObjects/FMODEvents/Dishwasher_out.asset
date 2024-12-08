@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventName: Dishwasher
   parameters:
-  - type: 0
+  - type: 1
     name: Distance
     value: 95
-  - type: 0
+  - type: 1
     name: Angle
     value: -40
