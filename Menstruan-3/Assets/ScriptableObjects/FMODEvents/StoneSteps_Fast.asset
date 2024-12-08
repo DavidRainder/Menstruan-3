@@ -16,7 +16,7 @@ MonoBehaviour:
   parameters:
   - type: 2
     name: WalkingSpeed
-    value: FAST
+    value: MEDIUM
   - type: 2
     name: Surface
     value: Stone
