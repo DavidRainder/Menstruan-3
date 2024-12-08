@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{4853b0e6-64ee-4800-a113-33166f059a4a}">
+		<property name="assetPath">
+			<value>stepsWood-06.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.14699999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9317f74c-f380-401a-a8da-8807eb306907}</destination>
+		</relationship>
+	</object>
+</objects>
