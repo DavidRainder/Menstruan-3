@@ -13,6 +13,7 @@ public class MinigameInstanceManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            _screenSounds = FMODUnity.RuntimeManager.CreateInstance("event:/Television");
         }
         else { Destroy(this.gameObject); }
     }
@@ -37,7 +38,6 @@ public class MinigameInstanceManager : MonoBehaviour
 
     public void StartMinigame(GameObject prefab)
     {
-        _screenSounds = FMODUnity.RuntimeManager.CreateInstance("event:/Television");
         if (instance._minigameInstance!= null)
         {
             Destroy(instance._minigameInstance);
@@ -128,12 +128,12 @@ public class MinigameInstanceManager : MonoBehaviour
         _screenOnAnimation.SetBool("End", false);
         _minigameInstanceAnimations.SetBool("Instance", false);
         _minigameInstanceAnimations.SetBool("End", true);
-        _screenSounds.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
     public void ResetAnim()
     {
         _minigameInstanceAnimations.enabled = false;
         _minigameInstanceAnimations.SetBool("End", false);
+        _screenSounds.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }
