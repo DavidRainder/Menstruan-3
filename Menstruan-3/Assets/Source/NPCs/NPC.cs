@@ -19,6 +19,7 @@ public class NPC : MonoBehaviour
         if(ID == "null_id") { ID = "NPC_" + _id.ToString(); }
         ++_id;
         NPCManager.Instance.RegisterNPC(ID, this);
+        DialogManager.Instance.RegisterNPCTransform(ID, transform.GetChild(0).transform);
         _movementSound = FMODUnity.RuntimeManager.CreateInstance("event:/Movements");
     }
 

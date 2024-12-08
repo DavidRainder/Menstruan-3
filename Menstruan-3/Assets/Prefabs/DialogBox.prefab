@@ -452,3 +452,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e35dea3c184be4a899005f1a1dc48c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _distanceFactorX: 0.01
+  _distanceZ: 0.5

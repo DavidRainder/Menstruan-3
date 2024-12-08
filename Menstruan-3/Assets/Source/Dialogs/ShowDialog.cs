@@ -21,7 +21,9 @@ public class ShowDialog : MonoBehaviour
 
     DialogueSounds _sound;
 
-    public void SetSettings(DialogSettings settings) { this._settings = settings; }
+    Transform _currentSoundTransform;
+
+    public void SetSettings(DialogSettings settings, Transform soundTransform) { this._settings = settings; _currentSoundTransform = soundTransform; }
 
     private void Start()
     {
@@ -77,6 +79,7 @@ public class ShowDialog : MonoBehaviour
 
     IEnumerator AnimText(int initialIndex, string messageToShow)
     {
+        _sound.SetSoundTransform(_currentSoundTransform);
         _textEnded = false;
         _endTextPointer.SetActive(_textEnded);
         messageToShow = StringManager.Instance.GetGenderStringByKey(messageToShow);

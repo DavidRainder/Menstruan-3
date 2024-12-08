@@ -48,9 +48,16 @@ public class GameManager : MonoBehaviour
         var splitted = index.Split('_');
         int dialog = int.Parse(splitted[0]);
         DialogSettings settings = instance.dialogSettingsInfo[dialog];
-        DialogManager.Instance.StartDialog(settings);
         if(splitted.Length > 1)
+        {
             NPCManager.Instance.TalkNPC(splitted[1]);
+            DialogManager.Instance.SetNPC(splitted[1]);
+        }
+        else
+        {
+            DialogManager.Instance.SetNPC("");
+        }
+        DialogManager.Instance.StartDialog(settings);
     }
 
     public static void EndQuiz()

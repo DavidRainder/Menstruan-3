@@ -16,6 +16,7 @@ public class DialogManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
+            npcs = new Dictionary<string, Transform>();
         }
         else { Destroy(this.gameObject); }
     }
@@ -24,8 +25,16 @@ public class DialogManager : MonoBehaviour
 
     [SerializeField] private GameObject dialogPrefab;
     [SerializeField] private Canvas canvas;
+    [SerializeField] private Dictionary<string, Transform> npcs;
+
+    private Transform currentSoundPos = null;
 
     private GameObject _dialogInstance;
+
+    public void RegisterNPCTransform(string npc, Transform transform)
+    {
+        npcs[npc] = transform;
+    }
 
     public void StartDialog(DialogSettings settings)
     {
@@ -37,6 +46,18 @@ public class DialogManager : MonoBehaviour
         Destroy(instance._dialogInstance);
     }
     
+    public void SetNPC(string npc)
+    {
+        if (npcs.ContainsKey(npc))
+        {
+            currentSoundPos = npcs[npc];
+        }
+        else 
+        {
+            currentSoundPos = null;
+        }
+    }
+
     IEnumerator StartDialogCoroutine(DialogSettings settings)
     {
         while (StringManager.Instance.IsChangingLanguage())
@@ -51,6 +72,6 @@ public class DialogManager : MonoBehaviour
 
         instance._dialogInstance = Instantiate(dialogPrefab, instance.canvas.transform);
         ShowDialog dialog = instance._dialogInstance.GetComponent<ShowDialog>();
-        dialog.SetSettings(settings);
+        dialog.SetSettings(settings, currentSoundPos);
     }
 }
