@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ce73ad07516f0df4799f8426f8aef078
+guid: 127f66ab3814d1741a5bed551c8a7cdc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3264315252217526318
-    second: Yoranding_0
+      213: 8969922430669221706
+    second: Utero_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Yoranding_0
+      name: Utero_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 265
-        height: 252
+        x: 57
+        y: 86
+        width: 1711
+        height: 1437
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e28b0534d6d2d4d20800000000000000
-      internalID: 3264315252217526318
+      spriteID: a4fe8de0de09b7c70800000000000000
+      internalID: 8969922430669221706
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Yoranding_0: 3264315252217526318
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

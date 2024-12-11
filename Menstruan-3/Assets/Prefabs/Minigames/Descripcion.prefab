@@ -93,7 +93,7 @@ TextMesh:
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 25
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: ee7d509a34bd10144a4a34ace8a0ec2f, type: 3}
@@ -341,7 +341,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: b4d5d47f839ee7944b99a8888faf5337, type: 3}
-  m_Color: {r: 0.7433963, g: 0.59331435, b: 0.59331435, a: 1}
+  m_Color: {r: 0.54901963, g: 0.8039216, b: 0.7921569, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
