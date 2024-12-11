@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1713d12d484f4484eb085b080a080eeb, type: 3}
-  m_Name: Dialog 2
+  m_Name: Iteration2_Dialog2
   m_EditorClassIdentifier: 
   texts:
   - Tema2_TamponInfo
@@ -74,61 +74,13 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartQuiz
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 2_MOM
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: MoveNPC
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: c998a9b2f9f7ebd4db74f14cbd7b38cb, type: 2}
-          m_ObjectArgumentAssemblyTypeName: NPCMovement, Assembly-CSharp
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 2_MOM
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: MoveNPC
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: d26bf4234df83b1468d3980a5080b1f5, type: 2}
-          m_ObjectArgumentAssemblyTypeName: NPCMovement, Assembly-CSharp
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 2_MOM
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: MoveNPC
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: d26bf4234df83b1468d3980a5080b1f5, type: 2}
-          m_ObjectArgumentAssemblyTypeName: NPCMovement, Assembly-CSharp
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 2_MOM
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StopTalking
+        m_MethodName: StartDialog
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MOM
+          m_StringArgument: 17_MOM
           m_BoolArgument: 0
         m_CallState: 2

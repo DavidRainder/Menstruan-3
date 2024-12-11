@@ -21,18 +21,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartDialog
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 0
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: EndQuiz
         m_Mode: 1
         m_Arguments:
@@ -41,6 +29,30 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 0
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6204789372321249214, guid: bfeb978dde2f8c446b25cb95fde88627, type: 3}
+        m_TargetAssemblyTypeName: FadeManager, Assembly-CSharp
+        m_MethodName: FadeOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 0
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -1044618632904167041, guid: aa323c9f5d489df4daec952fe0962691, type: 3}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Intro
           m_BoolArgument: 0
         m_CallState: 2
   onWrongOption:
@@ -48,18 +60,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartDialog
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 0
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: EndQuiz
         m_Mode: 1
         m_Arguments:
@@ -68,5 +68,29 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 0
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6204789372321249214, guid: bfeb978dde2f8c446b25cb95fde88627, type: 3}
+        m_TargetAssemblyTypeName: FadeManager, Assembly-CSharp
+        m_MethodName: FadeOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 0
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -1044618632904167041, guid: aa323c9f5d489df4daec952fe0962691, type: 3}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Intro
           m_BoolArgument: 0
         m_CallState: 2

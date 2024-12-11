@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1713d12d484f4484eb085b080a080eeb, type: 3}
-  m_Name: Dialog 12
+  m_Name: Iteration2_Dialog6
   m_EditorClassIdentifier: 
   texts:
-  - Tema2_CompresasUnUsoInfo
-  - Tema2_CompresasUnUsoInfo2
-  - Tema2_CompresasUnUsoInfo3
+  - Tema2_CopaInfo
+  - Tema2_CopaInfo2
+  - Tema2_CopaInfo3
+  - Tema2_CopaInfo4
   speed: 0.035
   onStartDialog:
     m_PersistentCalls:
@@ -44,7 +45,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 12_MOM
+          m_StringArgument: 21_DAD
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
@@ -56,7 +57,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DAD
+          m_StringArgument: MOM
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
@@ -68,6 +69,6 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DAD
+          m_StringArgument: MOM
           m_BoolArgument: 0
         m_CallState: 2

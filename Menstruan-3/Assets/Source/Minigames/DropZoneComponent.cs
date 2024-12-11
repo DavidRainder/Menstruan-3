@@ -29,7 +29,6 @@ public class DropZoneComponent : MonoBehaviour
         return _dropZonesPartes[i].transform.position;
     }
 
-
     public bool IsCorrect() { return _descriptionCorrect && _nameCorrect; }
 
     public bool IsNameCorrect() { return _nameCorrect; }

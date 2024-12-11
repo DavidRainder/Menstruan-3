@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1713d12d484f4484eb085b080a080eeb, type: 3}
-  m_Name: Dialog 5
+  m_Name: Iteration2_Dialog11
   m_EditorClassIdentifier: 
   texts:
-  - Tema2_Copa
+  - Tema2_CompresasUnUso
   speed: 0.035
   onStartDialog:
     m_PersistentCalls:
@@ -30,6 +30,6 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 5_MOM
+          m_StringArgument: 26_DAD
           m_BoolArgument: 0
         m_CallState: 2

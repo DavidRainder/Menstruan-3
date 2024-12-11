@@ -75,6 +75,7 @@ public class MinigameInstanceManager : MonoBehaviour
         _screenOnAnimation.Rebind();
         _screenOnAnimation.Update(0f);
         _screenOnAnimation.SetBool("End", false);
+        FMOD.RESULT ret = _screenSounds.setParameterByName("ScreenOff", 0);
         _screenSounds.start();
         while (_screenOnAnimation.GetCurrentAnimatorStateInfo(0).IsName("ScreenOn"))
         {
