@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a2b2f952bdbc43e488fe96caf0bbee36
+guid: 5dd4e1ff31888134b86e2b85a7e37382
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5457598806232331006
-    second: Flecha2_0
+      213: -5367458538285485986
+    second: todo_sangre_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flecha2_0
+      name: todo_sangre_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 79
         y: 0
-        width: 426
-        height: 101
+        width: 624
+        height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef2f21cd2394dbb40800000000000000
-      internalID: 5457598806232331006
+      spriteID: e503bdeb5e4f285b0800000000000000
+      internalID: -5367458538285485986
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Flecha2_0: 5457598806232331006
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
