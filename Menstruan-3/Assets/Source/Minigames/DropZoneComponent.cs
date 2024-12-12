@@ -17,6 +17,7 @@ public class DropZoneComponent : MonoBehaviour
     [SerializeField]
     List<GameObject> _dropZonesPartes;
 
+
     private void Start()
     {
         _nameOccupied = -1;
@@ -38,6 +39,25 @@ public class DropZoneComponent : MonoBehaviour
     public bool IsNameZoneFree(int i) { return (_nameOccupied == -1) || (_nameOccupied == i); }
 
     public bool IsDescriptionZoneFree(int i) { return (_descriptionOccupied == -1) || (_descriptionOccupied == i); }
+
+    public void ResetValues()
+    {
+        _nameCorrect = false;
+        _descriptionCorrect = false;
+
+        _nameOccupied = -1;
+        _descriptionOccupied = -1;
+    }
+
+    public void SetIndex(int index)
+    {
+        _index = index;
+    }
+
+    public int GetIndex()
+    {
+        return _index;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

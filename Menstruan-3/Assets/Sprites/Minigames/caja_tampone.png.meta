@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      caja_tampone_0: 4974887573801692052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

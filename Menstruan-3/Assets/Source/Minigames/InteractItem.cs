@@ -1,14 +1,15 @@
 using NUnit.Framework;
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class InteractItem : MonoBehaviour
 {
     [SerializeField]
-    private string _animationBeforeParameterName;
+    private string _animationInteractParameterName, _animationAfterParameterName;
 
     [SerializeField]
-    private string _animationInteractParameterName;
+    private float _timeAfterInteract;
 
     private Animator _animator;
 
@@ -42,37 +43,53 @@ public class InteractItem : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if(_interactStates == InteractStates.BEFORE_INTERACT)
+        if (enabled)
         {
-            Debug.Log("CAMBIO ESTADO A DRAG");
-            //_animator.SetBool(_animationBeforeParameterName, true);
-            _interactStates++;
-            _drag.enabled = true;
-            _minigame.EnableDragToBody(this, true);
-        }
-        else if(_interactStates == InteractStates.DRAG && _drag.IsInDropZone())
-        {
-            Debug.Log("CAMBIO ESTADO A INTERACT");
+            if(_interactStates == InteractStates.BEFORE_INTERACT)
+            {
+                Debug.Log("CAMBIO ESTADO A DRAG");
+                _animator.enabled = true;
+                _animator.Rebind();
+                _animator.Update(0f);
 
-            _interactStates++;
-            _drag.SetInitialPos();
-            _drag.enabled = false;
-        }
-        else if(_interactStates == InteractStates.INTERACT)
-        {
-            Debug.Log("CAMBIO ESTADO A AFTER");
-            //_animator.SetBool(_animationInteractParameterName, true);
-            _interactStates++;
-            _drag.enabled = true;
-            _minigame.EnableDragToBody(this, false);
-        }
-        else if (_interactStates == InteractStates.AFTER_INTERACT && _drag.IsInDropZone())
-        {
-            Debug.Log("TERMINE");
+                _interactStates++;
+                _drag.enabled = true;
+                _minigame.SetIndex(gameObject.GetComponent<InfoTypeComponent>().GetIndex());
+                _minigame.EnableDragToBody(this, true);
+            }
+            else if(_interactStates == InteractStates.DRAG && _drag.IsInDropZone())
+            {
+                Debug.Log("CAMBIO ESTADO A INTERACT");
 
-            _interactStates++;
-            gameObject.SetActive(false);
+                _interactStates++;
+                _drag.SetInitialPos();
+                _drag.enabled = false;
+            }
+            else if(_interactStates == InteractStates.INTERACT)
+            {
+                Debug.Log("CAMBIO ESTADO A AFTER");
+                _animator.SetBool(_animationInteractParameterName, true);
+                //_animator.SetBool(_animationInteractParameterName, true);
+                _interactStates++;
+                _drag.enabled = true;
+                _minigame.EnableDragToBody(this, false);
+                StartCoroutine(ChangeAnimationAfterInteract());
+            }
+            else if (_interactStates == InteractStates.AFTER_INTERACT && _drag.IsInDropZone())
+            {
+                Debug.Log("TERMINE");
+
+                _interactStates++;
+                _minigame.EndItem();
+                gameObject.SetActive(false);
+            }
         }
+    }
+
+    IEnumerator ChangeAnimationAfterInteract()
+    {
+        yield return new WaitForSeconds(_timeAfterInteract);
+        _animator.SetBool(_animationAfterParameterName, true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tampon_usado_0: -183302264548367386
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

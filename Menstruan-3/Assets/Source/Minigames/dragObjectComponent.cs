@@ -11,10 +11,13 @@ public class DragObjectComponent : MonoBehaviour
     bool _inDropZone;
     bool _stop;
     bool _isDragging;
-    private SpriteRenderer _myRenderer;
+    private BoxCollider2D _collider;
 
     [SerializeField]
     private bool _alwaysDrop = false;
+
+    [SerializeField]
+    bool _onlyIfIndex = false;
 
     InfoTypeComponent _myInfoTypeComponent;
 
@@ -25,7 +28,7 @@ public class DragObjectComponent : MonoBehaviour
     {
         _stop = false;
         _dropSound = FMODUnity.RuntimeManager.CreateInstance("event:/PickUpMinigame");
-        _myRenderer = GetComponent<SpriteRenderer>();
+        _collider = GetComponent<BoxCollider2D>();
         _myInfoTypeComponent = GetComponent<InfoTypeComponent>();
         _myTransform = transform;
         _initialPos = _myTransform.position;
@@ -38,12 +41,19 @@ public class DragObjectComponent : MonoBehaviour
     {
         if (_stop)
         {
+            Debug.Log("PARA");
             _myTransform.position = _initialPos;
         }
         else if (_isDragging)
         {
-            _myTransform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + _offset;
+            Debug.Log("ESTOY DRAGGING");
+            Debug.Log("TRANSFORM ANTES " + transform.position);
+            transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + _offset;
+            Debug.Log("TRANSFORM DESPUES " + transform.position);
+
         }
+        else Debug.Log("NADA XD");
+
     }
 
     private void OnMouseDown()
@@ -61,7 +71,7 @@ public class DragObjectComponent : MonoBehaviour
     {
         if (!_stop)
         {
-            Collider2D[] colliders = Physics2D.OverlapBoxAll(_myTransform.position, _myRenderer.bounds.size, _myTransform.eulerAngles.z);
+            Collider2D[] colliders = Physics2D.OverlapBoxAll(_myTransform.position, _collider.size, _myTransform.eulerAngles.z);
 
             int i = 0;
             while (i < colliders.Length)
@@ -75,13 +85,23 @@ public class DragObjectComponent : MonoBehaviour
                     if(_myInfoTypeComponent != null)
                     {
                         int indx = _myInfoTypeComponent.GetIndex();
-                        if ((((int)_myInfoTypeComponent.GetInfoType() == 0) && dzComp.IsNameZoneFree(indx)) || (((int)_myInfoTypeComponent.GetInfoType() == 1) && dzComp.IsDescriptionZoneFree(indx)))
+                        if (!_onlyIfIndex)
+                        {
+                            if ((((int)_myInfoTypeComponent.GetInfoType() == 0) && dzComp.IsNameZoneFree(indx)) || (((int)_myInfoTypeComponent.GetInfoType() == 1) && dzComp.IsDescriptionZoneFree(indx)))
+                            {
+                                _dropSound.setParameterByName("Dropped", 1);
+                                Vector3 pos = dzComp.GetZonePosition((int)(_myInfoTypeComponent.GetInfoType()));
+                                _inDropZone = true;
+                                _myTransform.position = pos;
+                            }
+                        }
+                        else if(indx == dzComp.GetIndex())
                         {
                             _dropSound.setParameterByName("Dropped", 1);
-                            Vector3 pos = dzComp.GetZonePosition((int)(_myInfoTypeComponent.GetInfoType()));
                             _inDropZone = true;
-                            _myTransform.position = pos;
+                            return;
                         }
+
                     }
                     else
                     {

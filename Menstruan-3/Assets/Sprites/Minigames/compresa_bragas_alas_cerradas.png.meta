@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      compresa_bragas_alas_cerradas_0: -6798025130024716768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

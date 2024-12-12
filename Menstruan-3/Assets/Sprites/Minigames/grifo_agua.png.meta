@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grifo_agua_0: 1127243407622315252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

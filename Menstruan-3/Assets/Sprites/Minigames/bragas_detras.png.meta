@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bragas_detras_0: 5706968391659057079
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

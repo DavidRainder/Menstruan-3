@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      compresa_alas_cerradas_adhesivo_sin_adhesivo_0: -2000244340223245785
+      compresa_alas_cerradas_adhesivo_sin_adhesivo_1: -3545178241970689838
+      compresa_alas_cerradas_adhesivo_sin_adhesivo_2: 5048387072729435396
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -28,6 +28,18 @@ public class GestionMenstrualMinigame : MonoBehaviour
         }
     }
 
+    public void EndItem()
+    {
+        _grifo.ResetValues();
+        _trash.ResetValues();
+    }
+
+    public void SetIndex(int index)
+    {
+        _grifo.SetIndex(index);
+        _trash.SetIndex(index);
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
