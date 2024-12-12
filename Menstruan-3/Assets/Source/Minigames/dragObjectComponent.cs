@@ -47,13 +47,9 @@ public class DragObjectComponent : MonoBehaviour
         else if (_isDragging)
         {
             Debug.Log("ESTOY DRAGGING");
-            Debug.Log("TRANSFORM ANTES " + transform.position);
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + _offset;
-            Debug.Log("TRANSFORM DESPUES " + transform.position);
 
         }
-        else Debug.Log("NADA XD");
-
     }
 
     private void OnMouseDown()
@@ -99,7 +95,6 @@ public class DragObjectComponent : MonoBehaviour
                         {
                             _dropSound.setParameterByName("Dropped", 1);
                             _inDropZone = true;
-                            return;
                         }
 
                     }
@@ -116,6 +111,7 @@ public class DragObjectComponent : MonoBehaviour
                 _myTransform.position = _initialPos;
 
             _isDragging = false;
+            _stop = false;
         }
     }
     

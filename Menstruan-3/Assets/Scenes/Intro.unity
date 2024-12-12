@@ -286,7 +286,7 @@ PrefabInstance:
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'minigamesPrefabs.Array.data[2]'
       value: 
-      objectReference: {fileID: 1521786447710137444, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      objectReference: {fileID: 4612436613232812233, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'dialogSettingsInfo.Array.data[0]'
       value: 
