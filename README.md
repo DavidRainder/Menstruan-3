@@ -1,25 +1,29 @@
-README
+# MENSTRUAN-3
 
-------
+Videojuego que explica la menstruación a (mayormente) niñas y pre-adolescentes para evitar que su primera experiencia
+con el período sea con temor. Pretende informar acerca del proceso y de las partes del cuerpo involucradas
+de forma muy amable y poco distendida, pues al final el público no es capaz de retener tanto información
+en tan poco tiempo. Además, debe seguir resultando atractivo.
 
-Como nuestro proyecto utiliza, además de FMOD Studio, FMOD Core API, le pedimos
-encarecidamente si puede revisar los archivos subidos en el "core.zip", donde
-hemos hecho la integración del sonido de los diálogos y su interacción
-con la música en el motor de Unity, pero utilizando el Core API en lugar de FMOD Studio.
-También añadiremos un enlace a una reléase en GitHub por si quiere revisar los
-scripts en su contexto.
+La estructura del juego es la siguiente:
+- Introducción
+- información acerca de la menstruación
+- Minijuego que acompaña a la información dada
+- "Quiz" (una serie de preguntas) acerca de la información dada
+- Repetir desde el paso 2 hasta final de información
 
-Muchas gracias.
+Estéticamente se quería buscar una estética parecida a Majotori, el famoso juego de preguntas, que es visualmente muy simple y agradable.
 
-ENLACE RELEASE: 
+Algunas imágenes del juego:
 
-https://github.com/DavidRainder/Menstruan-3/releases/tag/v1.0
+![alt text](readme_assets/image.png)
+![alt text](readme_assets/image-1.png)
+![alt text](readme_assets/image-2.png)
+![alt text](readme_assets/image-3.png)
+![alt text](readme_assets/image-4.png)
 
-------
 
-Autores de la sonorización y juego:
-Roi Quintas Diz
-David Rivera Martínez
-
-Otros autores del juego (no de la sonorización):
-Nahia Iglesias Calvo
+Autores:
+- Nahia Iglesias Calvo  
+- David Rivera Martínez
+- Roi Quintas Diz
