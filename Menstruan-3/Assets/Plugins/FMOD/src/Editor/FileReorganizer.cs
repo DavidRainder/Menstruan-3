@@ -943,7 +943,6 @@ namespace FMODUnity
 
                 // Release 2.1 layout
                 new MoveRecord() { source = FMODRoot + "/src/Runtime/fmod_static_plugin_support.h", destination = "obsolete" },
-                new MoveRecord() { source = FMODRoot + "/src/Runtime/CodeGeneration.cs", destination = "src/Editor" },
 
                 // Release 2.2 layout
                 new MoveRecord() { source = FMODRoot + "/src/fmodplugins.cpp", destination = "obsolete" },
@@ -951,11 +950,8 @@ namespace FMODUnity
                 new MoveRecord() { source = FMODSource + "/CodeGeneration.cs", destination = "src/Editor" },
             };
 
-            private static readonly string[] fmodFoldersToCleanUp = {
+            private static readonly string[] foldersToCleanUp = {
                 "Assets/Plugins/FMOD/Runtime",
-                "Assets/Plugins/FMOD/lib",
-            };
-            private static readonly string[] publicFoldersToCleanUp = {
                 "Assets/Plugins/Editor",
             };
 
@@ -1177,30 +1173,12 @@ namespace FMODUnity
 
             private void GenerateTasksForFolderCleanup()
             {
-                foreach (string folder in publicFoldersToCleanUp)
+                foreach (string folder in foldersToCleanUp)
                 {
                     if (AssetDatabase.IsValidFolder(folder))
                     {
                         AddFolderTask(folder);
                     }
-                }
-                foreach (string folder in fmodFoldersToCleanUp)
-                {
-                    SearchSubFolders(folder);
-                }
-            }
-
-            private void SearchSubFolders(string folder)
-            {
-                if (AssetDatabase.IsValidFolder(folder))
-                {
-                    var subdirs = AssetDatabase.GetSubFolders(folder);
-                    foreach (var subfolder in subdirs)
-                    {
-                        SearchSubFolders(subfolder);
-                        AddFolderTask(subfolder);
-                    }
-                    AddFolderTask(folder);
                 }
             }
 

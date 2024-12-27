@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      compresa_perspectiva_flechas_0: -7211065581309094063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

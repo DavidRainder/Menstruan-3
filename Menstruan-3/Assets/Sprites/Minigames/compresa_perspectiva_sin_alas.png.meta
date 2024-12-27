@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      compresa_perspectiva_sin_alas_0: -2351937458623397433
+      compresa_perspectiva_sin_alas_1: 6859170749860485591
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

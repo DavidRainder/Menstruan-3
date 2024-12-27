@@ -30,8 +30,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.11, y: 0.6911111, z: 1.3822222}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2909148988570177709}
   m_Father: {fileID: 0}
@@ -56,7 +56,7 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 8
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -80,8 +80,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: b4d5d47f839ee7944b99a8888faf5337, type: 3}
-  m_Color: {r: 0.54901963, g: 0.8039216, b: 0.7921569, a: 1}
+  m_Sprite: {fileID: 4710868336738555022, guid: e9fc7bf25bd6dd946b67bf95d604a4f3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -125,17 +125,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.005808115, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.5, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.498489, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &2533105845614006627
 MonoBehaviour:
@@ -149,6 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4bec26be0959c24b89f84ee239fc092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _alwaysDrop: 0
+  _onlyIfIndex: 0
 --- !u!114 &7909319667124302491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +192,7 @@ RectTransform:
   m_GameObject: {fileID: 7888582355509565918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6568401748179186364}
@@ -220,7 +222,7 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 16
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: ee7d509a34bd10144a4a34ace8a0ec2f, type: 3}
@@ -255,12 +257,12 @@ TextMesh:
   m_GameObject: {fileID: 7888582355509565918}
   m_Text: 
   m_OffsetZ: 0
-  m_CharacterSize: 0.2
+  m_CharacterSize: 0.18
   m_LineSpacing: 1
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 20
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: ee7d509a34bd10144a4a34ace8a0ec2f, type: 3}

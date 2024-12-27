@@ -117,7 +117,7 @@ namespace FMODUnity
         [AOT.MonoPInvokeCallback(typeof(FMOD.SYSTEM_CALLBACK))]
         private static FMOD.RESULT ERROR_CALLBACK(IntPtr system, FMOD.SYSTEM_CALLBACK_TYPE type, IntPtr commanddata1, IntPtr commanddata2, IntPtr userdata)
         {
-            FMOD.ERRORCALLBACK_INFO callbackInfo = Marshal.PtrToStructure<FMOD.ERRORCALLBACK_INFO>(commanddata1);
+            FMOD.ERRORCALLBACK_INFO callbackInfo = (FMOD.ERRORCALLBACK_INFO)FMOD.MarshalHelper.PtrToStructure(commanddata1, typeof(FMOD.ERRORCALLBACK_INFO));
 
             // Filter out benign expected errors.
             if ((callbackInfo.instancetype == FMOD.ERRORCALLBACK_INSTANCETYPE.CHANNEL || callbackInfo.instancetype == FMOD.ERRORCALLBACK_INSTANCETYPE.CHANNELCONTROL)
@@ -445,7 +445,7 @@ retry:
             public Rigidbody rigidBody;
             #endif
             public Vector3 lastFramePosition;
-            public bool nonRigidbodyVelocity;
+            public bool allowNonRigidBodyDoppler;
             #if UNITY_PHYSICS2D_EXIST
             public Rigidbody2D rigidBody2D;
             #endif
@@ -496,7 +496,7 @@ retry:
                     else
                     #endif
                     {
-                        if (!attachedInstances[i].nonRigidbodyVelocity)
+                        if (!attachedInstances[i].allowNonRigidBodyDoppler)
                         {
                             attachedInstances[i].instance.set3DAttributes(RuntimeUtils.To3DAttributes(attachedInstances[i].transform));
                         }
@@ -579,36 +579,18 @@ retry:
             return attachedInstance;
         }
 
-        public static void AttachInstanceToGameObject(FMOD.Studio.EventInstance instance, GameObject gameObject, bool nonRigidbodyVelocity = false)
-        {
-            AttachedInstance attachedInstance = FindOrAddAttachedInstance(instance, gameObject.transform, RuntimeUtils.To3DAttributes(gameObject.transform));
-
-            if (nonRigidbodyVelocity)
-            {
-                attachedInstance.nonRigidbodyVelocity = nonRigidbodyVelocity;
-                attachedInstance.lastFramePosition = gameObject.transform.position;
-            }
-        }
-
-        public static void AttachInstanceToGameObject(FMOD.Studio.EventInstance instance, Transform transform, bool nonRigidbodyVelocity = false)
+        public static void AttachInstanceToGameObject(FMOD.Studio.EventInstance instance, Transform transform, bool allowNonRigidBodyDoppler = false)
         {
             AttachedInstance attachedInstance = FindOrAddAttachedInstance(instance, transform, RuntimeUtils.To3DAttributes(transform));
 
-            if (nonRigidbodyVelocity)
+            if (allowNonRigidBodyDoppler)
             {
-                attachedInstance.nonRigidbodyVelocity = nonRigidbodyVelocity;
+                attachedInstance.allowNonRigidBodyDoppler = allowNonRigidBodyDoppler;
                 attachedInstance.lastFramePosition = transform.position;
             }
         }
 
 #if UNITY_PHYSICS_EXIST
-        public static void AttachInstanceToGameObject(FMOD.Studio.EventInstance instance, GameObject gameObject, Rigidbody rigidBody)
-        {
-            AttachedInstance attachedInstance = FindOrAddAttachedInstance(instance, gameObject.transform, RuntimeUtils.To3DAttributes(gameObject.transform, rigidBody));
-
-            attachedInstance.rigidBody = rigidBody;
-        }
-
         public static void AttachInstanceToGameObject(FMOD.Studio.EventInstance instance, Transform transform, Rigidbody rigidBody)
         {
             AttachedInstance attachedInstance = FindOrAddAttachedInstance(instance, transform, RuntimeUtils.To3DAttributes(transform, rigidBody));
@@ -618,13 +600,6 @@ retry:
 #endif
 
 #if UNITY_PHYSICS2D_EXIST
-        public static void AttachInstanceToGameObject(FMOD.Studio.EventInstance instance, GameObject gameObject, Rigidbody2D rigidBody2D)
-        {
-            AttachedInstance attachedInstance = FindOrAddAttachedInstance(instance, gameObject.transform, RuntimeUtils.To3DAttributes(gameObject.transform, rigidBody2D));
-
-            attachedInstance.rigidBody2D = rigidBody2D;
-        }
-
         public static void AttachInstanceToGameObject(FMOD.Studio.EventInstance instance, Transform transform, Rigidbody2D rigidBody2D)
         {
             AttachedInstance attachedInstance = FindOrAddAttachedInstance(instance, transform, RuntimeUtils.To3DAttributes(transform, rigidBody2D));
@@ -1288,11 +1263,11 @@ retry:
         {
             var instance = CreateInstance(guid);
             #if UNITY_PHYSICS_EXIST
-            AttachInstanceToGameObject(instance, gameObject, gameObject.GetComponent<Rigidbody>());
+            AttachInstanceToGameObject(instance, gameObject.transform, gameObject.GetComponent<Rigidbody>());
             #elif UNITY_PHYSICS2D_EXIST
-            AttachInstanceToGameObject(instance, gameObject, gameObject.GetComponent<Rigidbody2D>());
+            AttachInstanceToGameObject(instance, gameObject.transform, gameObject.GetComponent<Rigidbody2D>());
             #else
-            AttachInstanceToGameObject(instance, gameObject);
+            AttachInstanceToGameObject(instance, gameObject.transform);
             #endif
             instance.start();
             instance.release();
@@ -1361,18 +1336,6 @@ retry:
             else
             {
                 Instance.studioSystem.setListenerAttributes(listenerIndex, RuntimeUtils.To3DAttributes(gameObject.transform, rigidBody));
-            }
-        }
-
-        public static void SetListenerLocation(int listenerIndex, GameObject gameObject, GameObject attenuationObject = null, Vector3 velocity = new Vector3())
-        {
-            if (attenuationObject)
-            {
-                Instance.studioSystem.setListenerAttributes(listenerIndex, RuntimeUtils.To3DAttributes(gameObject.transform, velocity), RuntimeUtils.ToFMODVector(attenuationObject.transform.position));
-            }
-            else
-            {
-                Instance.studioSystem.setListenerAttributes(listenerIndex, RuntimeUtils.To3DAttributes(gameObject.transform, velocity));
             }
         }
 #endif
