@@ -54,8 +54,11 @@ public class InteractItem : MonoBehaviour
 
                 _interactStates++;
                 _drag.enabled = true;
-                _minigame.SetIndex(gameObject.GetComponent<InfoTypeComponent>().GetIndex());
-                _minigame.EnableDragToBody(this, true);
+                int index = gameObject.GetComponent<InfoTypeComponent>().GetIndex();
+                _minigame.SetIndex(index);
+                _minigame.EnableDragToBody(index, true);
+                _minigame.EnableFinalDrag(false);
+                _minigame.EnableItems(this, false);
             }
             else if(_interactStates == InteractStates.DRAG && _drag.IsInDropZone())
             {
@@ -64,6 +67,7 @@ public class InteractItem : MonoBehaviour
                 _interactStates++;
                 _drag.SetInitialPos();
                 _drag.enabled = false;
+                _minigame.EnableDragToBody(-1, false);
             }
             else if(_interactStates == InteractStates.INTERACT)
             {
@@ -71,8 +75,6 @@ public class InteractItem : MonoBehaviour
                 _animator.SetBool(_animationInteractParameterName, true);
                 //_animator.SetBool(_animationInteractParameterName, true);
                 _interactStates++;
-                _drag.enabled = true;
-                _minigame.EnableDragToBody(this, false);
                 StartCoroutine(ChangeAnimationAfterInteract());
             }
             else if (_interactStates == InteractStates.AFTER_INTERACT && _drag.IsInDropZone())
@@ -90,6 +92,8 @@ public class InteractItem : MonoBehaviour
     {
         yield return new WaitForSeconds(_timeAfterInteract);
         _animator.SetBool(_animationAfterParameterName, true);
+        _drag.enabled = true;
+        _minigame.EnableFinalDrag(true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -67,7 +67,7 @@ public class DragObjectComponent : MonoBehaviour
     {
         if (!_stop)
         {
-            Collider2D[] colliders = Physics2D.OverlapBoxAll(_myTransform.position, _collider.size, _myTransform.eulerAngles.z);
+            Collider2D[] colliders = Physics2D.OverlapBoxAll(_myTransform.position, _collider.bounds.size, _myTransform.eulerAngles.z);
 
             int i = 0;
             while (i < colliders.Length)
