@@ -1,0 +1,1542 @@
+fileFormatVersion: 2
+guid: 3605a08ae952f73498bdf13c669ff69d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3129559549486048985
+    second: DescrpcionDiscontinua_0
+  - first:
+      213: 5732777260470695674
+    second: DescrpcionDiscontinua_1
+  - first:
+      213: -7485366193626848460
+    second: DescrpcionDiscontinua_2
+  - first:
+      213: -9194108683998897966
+    second: DescrpcionDiscontinua_3
+  - first:
+      213: -4424995791244976045
+    second: DescrpcionDiscontinua_4
+  - first:
+      213: -6077476838247544544
+    second: DescrpcionDiscontinua_5
+  - first:
+      213: 4841836728846724554
+    second: DescrpcionDiscontinua_6
+  - first:
+      213: 1314501517728029845
+    second: DescrpcionDiscontinua_7
+  - first:
+      213: -4687824583584070811
+    second: DescrpcionDiscontinua_8
+  - first:
+      213: -6378187528678509942
+    second: DescrpcionDiscontinua_9
+  - first:
+      213: -5678678073454539558
+    second: DescrpcionDiscontinua_10
+  - first:
+      213: -2920673161439098977
+    second: DescrpcionDiscontinua_11
+  - first:
+      213: -7901481734304256081
+    second: DescrpcionDiscontinua_12
+  - first:
+      213: 5218728672511008291
+    second: DescrpcionDiscontinua_13
+  - first:
+      213: -691493891024632967
+    second: DescrpcionDiscontinua_14
+  - first:
+      213: 5803333048075264396
+    second: DescrpcionDiscontinua_15
+  - first:
+      213: 3983909367886370520
+    second: DescrpcionDiscontinua_16
+  - first:
+      213: -2566218766426943416
+    second: DescrpcionDiscontinua_17
+  - first:
+      213: -2748186516671869308
+    second: DescrpcionDiscontinua_18
+  - first:
+      213: 5860265036073936461
+    second: DescrpcionDiscontinua_19
+  - first:
+      213: 8366189083531617065
+    second: DescrpcionDiscontinua_20
+  - first:
+      213: 3675845845202918827
+    second: DescrpcionDiscontinua_21
+  - first:
+      213: -3432809034080608806
+    second: DescrpcionDiscontinua_22
+  - first:
+      213: -1555804112291194419
+    second: DescrpcionDiscontinua_23
+  - first:
+      213: 4200117777534140038
+    second: DescrpcionDiscontinua_24
+  - first:
+      213: 611571511643490866
+    second: DescrpcionDiscontinua_25
+  - first:
+      213: 8491185247781643641
+    second: DescrpcionDiscontinua_26
+  - first:
+      213: 7275197644004494808
+    second: DescrpcionDiscontinua_27
+  - first:
+      213: 5924120980663686185
+    second: DescrpcionDiscontinua_28
+  - first:
+      213: 2011641246153354435
+    second: DescrpcionDiscontinua_29
+  - first:
+      213: -81621208838501846
+    second: DescrpcionDiscontinua_30
+  - first:
+      213: 5323087430756234531
+    second: DescrpcionDiscontinua_31
+  - first:
+      213: -5286450244289505612
+    second: DescrpcionDiscontinua_32
+  - first:
+      213: 6304087553329251532
+    second: DescrpcionDiscontinua_33
+  - first:
+      213: 2143941266846066299
+    second: DescrpcionDiscontinua_34
+  - first:
+      213: 2420345471222730738
+    second: DescrpcionDiscontinua_35
+  - first:
+      213: 2946148224530270841
+    second: DescrpcionDiscontinua_36
+  - first:
+      213: 2028749872006057758
+    second: DescrpcionDiscontinua_37
+  - first:
+      213: 8263920162811876065
+    second: DescrpcionDiscontinua_38
+  - first:
+      213: 4646716683885675708
+    second: DescrpcionDiscontinua_39
+  - first:
+      213: -7573776406488472229
+    second: DescrpcionDiscontinua_40
+  - first:
+      213: 4532072686284849564
+    second: DescrpcionDiscontinua_41
+  - first:
+      213: -8473704863213006575
+    second: DescrpcionDiscontinua_42
+  - first:
+      213: -5339972210596540452
+    second: DescrpcionDiscontinua_43
+  - first:
+      213: 3159468744344043594
+    second: DescrpcionDiscontinua_44
+  - first:
+      213: -2580734298195089139
+    second: DescrpcionDiscontinua_45
+  - first:
+      213: 5373059554805765593
+    second: DescrpcionDiscontinua_46
+  - first:
+      213: 7841704993940190981
+    second: DescrpcionDiscontinua_47
+  - first:
+      213: -8108816950480741060
+    second: DescrpcionDiscontinua_48
+  - first:
+      213: -6924527359241656752
+    second: DescrpcionDiscontinua_49
+  - first:
+      213: -6982536015363177359
+    second: DescrpcionDiscontinua_50
+  - first:
+      213: -952405688857603412
+    second: DescrpcionDiscontinua_51
+  - first:
+      213: 761446835334652515
+    second: DescrpcionDiscontinua_52
+  - first:
+      213: -858129405350243769
+    second: DescrpcionDiscontinua_53
+  - first:
+      213: -2553939956827405193
+    second: DescrpcionDiscontinua_54
+  - first:
+      213: 8722953022396714165
+    second: DescrpcionDiscontinua_55
+  - first:
+      213: -3130656387054595659
+    second: DescrpcionDiscontinua_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729d37dbb229194d0800000000000000
+      internalID: -3129559549486048985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 245
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6faca7b8aee8f40800000000000000
+      internalID: 5732777260470695674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 245
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43367272b13ae1890800000000000000
+      internalID: -7485366193626848460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 245
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d859e74dd6f76080800000000000000
+      internalID: -9194108683998897966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 245
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350ae32c5c14792c0800000000000000
+      internalID: -4424995791244976045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_5
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 245
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0294795f30778aba0800000000000000
+      internalID: -6077476838247544544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_6
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 245
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd295b0ad8a13340800000000000000
+      internalID: 4841836728846724554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_7
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 245
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c14e47a2c0e3210800000000000000
+      internalID: 1314501517728029845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_8
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 245
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563c02ed06081feb0800000000000000
+      internalID: -4687824583584070811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_9
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 245
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a827a4a5c302c77a0800000000000000
+      internalID: -6378187528678509942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_10
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 245
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc41fd01684131b0800000000000000
+      internalID: -5678678073454539558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_11
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 245
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97c76beb3fa777d0800000000000000
+      internalID: -2920673161439098977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_12
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 245
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafae8bf93c485290800000000000000
+      internalID: -7901481734304256081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_13
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 245
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e1a20e316ac6840800000000000000
+      internalID: 5218728672511008291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_14
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 245
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973cf1548f15766f0800000000000000
+      internalID: -691493891024632967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_15
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 245
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81afcbe8a4998050800000000000000
+      internalID: 5803333048075264396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_16
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 234
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6d7326670b94730800000000000000
+      internalID: 3983909367886370520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 223
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8405e2bd0a5f26cd0800000000000000
+      internalID: -2566218766426943416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_18
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 215
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e41417cea7cd9d0800000000000000
+      internalID: -2748186516671869308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4624d45008d35150800000000000000
+      internalID: 5860265036073936461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_20
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 197
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92327af35acaa1470800000000000000
+      internalID: 8366189083531617065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 185
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad5a6c125a330330800000000000000
+      internalID: 3675845845202918827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_22
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 178
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add9fdd0f563c50d0800000000000000
+      internalID: -3432809034080608806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 166
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc99ac2276ca86ae0800000000000000
+      internalID: -1555804112291194419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_24
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 159
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68eb9b09dd0d94a30800000000000000
+      internalID: 4200117777534140038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 147
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a4242bc0dbc7800800000000000000
+      internalID: 611571511643490866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_26
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 140
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975ef00aeffb6d570800000000000000
+      internalID: 8491185247781643641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd85a926b1b6f460800000000000000
+      internalID: 7275197644004494808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_28
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 121
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924d5e205a4b63250800000000000000
+      internalID: 5924120980663686185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ccae742e09caeb10800000000000000
+      internalID: 2011641246153354435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_30
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 102
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a0b0961f50edef0800000000000000
+      internalID: -81621208838501846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 91
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325729ab0d76fd940800000000000000
+      internalID: 5323087430756234531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_32
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 83
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6d85af281c2a6b0800000000000000
+      internalID: -5286450244289505612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4c621ba3e9c7750800000000000000
+      internalID: 6304087553329251532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_34
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 64
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7629ad193fc0cd10800000000000000
+      internalID: 2143941266846066299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ffc4fde16bc69120800000000000000
+      internalID: 2420345471222730738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_36
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 45
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a46ca6332d2e820800000000000000
+      internalID: 2946148224530270841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f4a038241972c10800000000000000
+      internalID: 2028749872006057758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_38
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 26
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2179c9a975fa270800000000000000
+      internalID: 8263920162811876065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb403e264347c7040800000000000000
+      internalID: 4646716683885675708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_40
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 7
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5525036c7a84e690800000000000000
+      internalID: -7573776406488472229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c914242a81825ee30800000000000000
+      internalID: 4532072686284849564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_42
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11150b0925a576a80800000000000000
+      internalID: -8473704863213006575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf8fec119b94e5b0800000000000000
+      internalID: -5339972210596540452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_44
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4083995510b8db20800000000000000
+      internalID: 3159468744344043594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_45
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 22
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d092a6044d36f2cd0800000000000000
+      internalID: -2580734298195089139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_46
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d557398231f09a40800000000000000
+      internalID: 5373059554805765593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_47
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5073635152553dc60800000000000000
+      internalID: 7841704993940190981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_48
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ddde522f1b77f80800000000000000
+      internalID: -8108816950480741060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_49
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0566de2fd0327ef90800000000000000
+      internalID: -6924527359241656752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_50
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 0
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17408e43d7c091f90800000000000000
+      internalID: -6982536015363177359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_51
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 0
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2d491721068c2f0800000000000000
+      internalID: -952405688857603412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_52
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362a777ccd3319a00800000000000000
+      internalID: 761446835334652515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_53
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74218c63adf4714f0800000000000000
+      internalID: -858129405350243769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_54
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 0
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77440aff3259e8cd0800000000000000
+      internalID: -2553939956827405193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_55
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc4064ce872e0970800000000000000
+      internalID: 8722953022396714165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DescrpcionDiscontinua_56
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b19dc75a9cad84d0800000000000000
+      internalID: -3130656387054595659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

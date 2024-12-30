@@ -1746,11 +1746,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5633581827626888275, guid: b48b429c91e1c6844b6263df3cfcda30, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.17
+      value: 3.48
       objectReference: {fileID: 0}
     - target: {fileID: 5633581827626888275, guid: b48b429c91e1c6844b6263df3cfcda30, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.63
+      value: -0.27
       objectReference: {fileID: 0}
     - target: {fileID: 5633581827626888275, guid: b48b429c91e1c6844b6263df3cfcda30, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2280,12 +2280,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1331549509000392805, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
       propertyPath: m_Text
-      value: "Casita y comida que\nse prepara para el beb\xE9,\nque se expulsar\xE1
+      value: "Casita y comida\nque se prepara para\nel beb\xE9, que se\nexpulsar\xE1
         luego\nen forma de regla."
       objectReference: {fileID: 0}
     - target: {fileID: 1331549509000392805, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
       propertyPath: m_FontSize
-      value: 19
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 6519688314981148388, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
       propertyPath: m_Name
