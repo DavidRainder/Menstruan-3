@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: e61c3df72eb575f4c93b3816e6bdf76a
+guid: 4fd9945dcf7e37543aa3c1f31087490a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4192984786636213525
-    second: DescrpcionCuadrado_0
+      213: -484516655639269213
+    second: Reloj_0
+  - first:
+      213: 2929069614817573744
+    second: Reloj_1
+  - first:
+      213: -7011496441995213121
+    second: Reloj_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DescrpcionCuadrado_0
+      name: Reloj_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 300
-        height: 250
+        x: 29
+        y: 7
+        width: 1021
+        height: 1063
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51d8114b279703a30800000000000000
-      internalID: 4192984786636213525
+      spriteID: 3a07cd43ba6a649f0800000000000000
+      internalID: -484516655639269213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reloj_1
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1070
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b7799bb4526a820800000000000000
+      internalID: 2929069614817573744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reloj_2
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 4
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb6c5fe622922be90800000000000000
+      internalID: -7011496441995213121
       vertices: []
       indices: 
       edges: []
@@ -134,8 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      DescrpcionCuadrado_0: 4192984786636213525
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -21,6 +21,13 @@ public class InteractItem : MonoBehaviour
     [SerializeField]
     private GestionMenstrualMinigame _minigame;
 
+    private int _index;
+
+    public int GetIndex()
+    {
+        return _index;
+    }
+
     public enum InteractStates
     {
         BEFORE_INTERACT,
@@ -39,6 +46,7 @@ public class InteractItem : MonoBehaviour
         _interactStates = InteractStates.BEFORE_INTERACT;
         _minigame = transform.GetComponentInParent<GestionMenstrualMinigame>();
         Debug.Assert(_minigame != null);
+        _index = gameObject.GetComponent<InfoTypeComponent>().GetIndex();
     }
 
     private void OnMouseUp()
@@ -54,9 +62,8 @@ public class InteractItem : MonoBehaviour
 
                 _interactStates++;
                 _drag.enabled = true;
-                int index = gameObject.GetComponent<InfoTypeComponent>().GetIndex();
-                _minigame.SetIndex(index);
-                _minigame.EnableDragToBody(index, true);
+                _minigame.SetIndex(_index);
+                _minigame.EnableDragToBody(_index, true);
                 _minigame.EnableFinalDrag(false);
                 _minigame.EnableItems(this, false);
             }
@@ -72,8 +79,8 @@ public class InteractItem : MonoBehaviour
             else if(_interactStates == InteractStates.INTERACT)
             {
                 Debug.Log("CAMBIO ESTADO A AFTER");
-                _animator.SetBool(_animationInteractParameterName, true);
                 //_animator.SetBool(_animationInteractParameterName, true);
+                _animator.SetBool(_animationInteractParameterName, true);
                 _interactStates++;
                 StartCoroutine(ChangeAnimationAfterInteract());
             }
@@ -91,6 +98,11 @@ public class InteractItem : MonoBehaviour
     IEnumerator ChangeAnimationAfterInteract()
     {
         yield return new WaitForSeconds(_timeAfterInteract);
+        _minigame.StartClockAnim(GetIndex());
+    }
+
+    public void AfterInteract()
+    {
         _animator.SetBool(_animationAfterParameterName, true);
         _drag.enabled = true;
         _minigame.EnableFinalDrag(true);

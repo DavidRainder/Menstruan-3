@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e61c3df72eb575f4c93b3816e6bdf76a
+guid: d042f80ff90a58a48837579eb4ce61bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4192984786636213525
-    second: DescrpcionCuadrado_0
+      213: 4281705095463570618
+    second: compresa_perspectiva_flechas_tela_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DescrpcionCuadrado_0
+      name: compresa_perspectiva_flechas_tela_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 300
-        height: 250
+        x: 276
+        y: 295
+        width: 256
+        height: 228
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51d8114b279703a30800000000000000
-      internalID: 4192984786636213525
+      spriteID: abc0610591cab6b30800000000000000
+      internalID: 4281705095463570618
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      DescrpcionCuadrado_0: 4192984786636213525
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

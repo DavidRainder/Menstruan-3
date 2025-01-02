@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 public class GestionMenstrualMinigame : MonoBehaviour
 {
@@ -9,6 +10,13 @@ public class GestionMenstrualMinigame : MonoBehaviour
 
     [SerializeField]
     private InteractItem[] _interactItems;
+
+    [SerializeField]
+    private Animator _clockAnimation;
+
+    private MinigameManager _minigameManager;
+
+    private int _cont;
 
     public void EnableDragToBody(int index, bool enable)
     {
@@ -42,6 +50,7 @@ public class GestionMenstrualMinigame : MonoBehaviour
             drop.gameObject.SetActive(true);
         }
         EnableItems(null, true);
+        _cont++;
     }
 
     public void SetIndex(int index)
@@ -50,15 +59,43 @@ public class GestionMenstrualMinigame : MonoBehaviour
         _trash.SetIndex(index);
     }
 
+    public void StartClockAnim(int itemIndex)
+    {
+        _clockAnimation.enabled = true;
+        _clockAnimation.Rebind();
+        _clockAnimation.Update(0f);
+        StartCoroutine(WaitClock(itemIndex));
+    }
+
+    IEnumerator WaitClock(int itemIndex)
+    {
+        while (_clockAnimation.GetCurrentAnimatorStateInfo(0).IsName("Clock"))
+        {
+            yield return new WaitForEndOfFrame();
+        }
+
+        int i = 0;
+        while(i < _interactItems.Length && _interactItems[i].GetIndex() != itemIndex) ++i;
+        if(i < _interactItems.Length)
+        {
+            _interactItems[i].AfterInteract();
+        }
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        _cont = 0;        
+        _minigameManager = gameObject.GetComponent<MinigameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (_cont == _interactItems.Length)
+        {
+            _minigameManager.EndMinigame();
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             gameObject.GetComponent<MinigameManager>().EndMinigame();

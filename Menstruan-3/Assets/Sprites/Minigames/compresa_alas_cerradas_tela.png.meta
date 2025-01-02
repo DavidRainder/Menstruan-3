@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: e61c3df72eb575f4c93b3816e6bdf76a
+guid: dded7611960fe314b9ce20798b11ea9a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4192984786636213525
-    second: DescrpcionCuadrado_0
+      213: -3536098781044498652
+    second: compresa_alas_cerradas_tela_0
+  - first:
+      213: 7768102896564543308
+    second: compresa_alas_cerradas_tela_1
+  - first:
+      213: 6093189915752919068
+    second: compresa_alas_cerradas_tela_2
+  - first:
+      213: -3386213167797157712
+    second: compresa_alas_cerradas_tela_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DescrpcionCuadrado_0
+      name: compresa_alas_cerradas_tela_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 300
-        height: 250
+        x: 156
+        y: 675
+        width: 17
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51d8114b279703a30800000000000000
-      internalID: 4192984786636213525
+      spriteID: 42f9629c4e04deec0800000000000000
+      internalID: -3536098781044498652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: compresa_alas_cerradas_tela_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 31
+        width: 336
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f99606d68ddcb60800000000000000
+      internalID: 7768102896564543308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: compresa_alas_cerradas_tela_2
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 675
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10f17df1fb5f8450800000000000000
+      internalID: 6093189915752919068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: compresa_alas_cerradas_tela_3
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 281
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b043b79011c101d0800000000000000
+      internalID: -3386213167797157712
       vertices: []
       indices: 
       edges: []
@@ -134,8 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      DescrpcionCuadrado_0: 4192984786636213525
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
