@@ -12,22 +12,11 @@ public class GestionMenstrualMinigame : MonoBehaviour
 
     public void EnableDragToBody(int index, bool enable)
     {
-        if (enable)
+        foreach (DropZoneComponent drop in _dropZones)
         {
-            foreach (DropZoneComponent drop in _dropZones)
-            {
-                if(drop.GetIndex() == index) drop.gameObject.SetActive(true);
-            }
+            if(enable && drop.GetIndex() == index) drop.gameObject.SetActive(true);
+            else drop.gameObject.SetActive(false);
         }
-        else
-        {
-            foreach (DropZoneComponent drop in _dropZones)
-            {
-                drop.gameObject.SetActive(false);
-            }
-        }
-
-        
     }
 
     public void EnableFinalDrag(bool enable)

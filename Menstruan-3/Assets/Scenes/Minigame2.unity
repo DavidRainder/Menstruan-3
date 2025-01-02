@@ -264,6 +264,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 986140134423348146, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      propertyPath: m_Size.x
+      value: 3.6792316
+      objectReference: {fileID: 0}
+    - target: {fileID: 986140134423348146, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      propertyPath: m_Size.y
+      value: 4.0638585
+      objectReference: {fileID: 0}
+    - target: {fileID: 986140134423348146, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0022921562
+      objectReference: {fileID: 0}
+    - target: {fileID: 986140134423348146, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.46282125
+      objectReference: {fileID: 0}
     - target: {fileID: 1166045087467089255, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -304,9 +320,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1243191080502676441, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243191080502676441, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243191080502676441, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243191080502676441, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4612436613232812233, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
       propertyPath: m_Name
       value: GestionMenstrualMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995089330815060104, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995089330815060104, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.93
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
