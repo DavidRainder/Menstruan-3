@@ -109,12 +109,12 @@ MonoBehaviour:
       Data4: 1122934648
     Path: event:/PopUp
   Event: 
-  EventPlayTrigger: 11
-  EventStopTrigger: 12
+  PlayEvent: 0
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
-  NonRigidbodyVelocity: 0
+  AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
@@ -196,7 +196,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

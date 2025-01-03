@@ -18,19 +18,7 @@ MonoBehaviour:
   speed: 0.035
   onStartDialog:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartAnimation
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Example
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onFinishDialog:
     m_PersistentCalls:
       m_Calls:
@@ -38,18 +26,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: StartDialog
         m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 4_MOM
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StopAnimation
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
