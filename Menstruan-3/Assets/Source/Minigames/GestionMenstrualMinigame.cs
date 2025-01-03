@@ -12,6 +12,9 @@ public class GestionMenstrualMinigame : MonoBehaviour
     private InteractItem[] _interactItems;
 
     [SerializeField]
+    private Animator[] _interactItemsAnimators;
+
+    [SerializeField]
     private Animator _clockAnimation;
 
     private MinigameManager _minigameManager;
@@ -35,19 +38,40 @@ public class GestionMenstrualMinigame : MonoBehaviour
 
     public void EnableItems(InteractItem item, bool enable)
     {
-        foreach (InteractItem item2 in _interactItems)
+        for(int i = 0; i < _interactItems.Length; i++)
         {
-            if (item2 != item) item2.enabled = enable;
+            if (_interactItems[i] != null && _interactItems[i] != item)
+            {
+                _interactItems[i].enabled = enable;
+                _interactItemsAnimators[i].SetBool("Blocked", !enable);
+            }
+            else if(_interactItems[i] != null)
+            {
+                _interactItemsAnimators[i].SetBool("Interact", !enable);
+            }
         }
     }
 
-    public void EndItem()
+    public void EndItem(InteractItem item)
     {
+        if (!_grifo.IsNameZoneFree(-1))
+        {
+            Debug.Log("Grifo: " + item.itemHasToWash());
+            _interactItemsAnimators[item.GetIndex()].SetBool("Correct", item.itemHasToWash());
+        }
+        else
+        {
+            Debug.Log("Basura: " + !item.itemHasToWash());
+            _interactItemsAnimators[item.GetIndex()].SetBool("Correct", !item.itemHasToWash());
+        }
+        _interactItemsAnimators[item.GetIndex()].SetBool("End", true);
+
         _grifo.ResetValues();
         _trash.ResetValues();
-        foreach (DropZoneComponent drop in _dropZones)
+        for(int i = 0;i < _dropZones.Length; ++i)
         {
-            drop.gameObject.SetActive(true);
+            _dropZones[i].gameObject.SetActive(true);
+            if (item == _interactItems[i]) _interactItems[i] = null;
         }
         EnableItems(null, true);
         _cont++;
@@ -74,12 +98,12 @@ public class GestionMenstrualMinigame : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
-        int i = 0;
-        while(i < _interactItems.Length && _interactItems[i].GetIndex() != itemIndex) ++i;
-        if(i < _interactItems.Length)
-        {
-            _interactItems[i].AfterInteract();
-        }
+        _interactItems[itemIndex].AfterInteract();
+    }
+
+    public void Collided(int index, bool enable)
+    {
+        _interactItemsAnimators[index].SetBool("Collided", enable);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

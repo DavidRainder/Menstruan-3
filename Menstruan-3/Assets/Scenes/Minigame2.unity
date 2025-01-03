@@ -304,9 +304,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4196168476240543715, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      propertyPath: _toWash
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4248503741440829306, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      propertyPath: _toWash
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4612436613232812233, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
       propertyPath: m_Name
       value: GestionMenstrualMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6706901378594861110, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+      propertyPath: _toWash
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

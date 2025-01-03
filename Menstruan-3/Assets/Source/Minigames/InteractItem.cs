@@ -23,6 +23,13 @@ public class InteractItem : MonoBehaviour
 
     private int _index;
 
+    [SerializeField]
+    private bool _toWash;
+
+    private Transform _childTransform;
+
+    public bool itemHasToWash() {  return _toWash; }
+
     public int GetIndex()
     {
         return _index;
@@ -47,6 +54,7 @@ public class InteractItem : MonoBehaviour
         _minigame = transform.GetComponentInParent<GestionMenstrualMinigame>();
         Debug.Assert(_minigame != null);
         _index = gameObject.GetComponent<InfoTypeComponent>().GetIndex();
+        _childTransform = transform.GetChild(0);
     }
 
     private void OnMouseUp()
@@ -55,7 +63,6 @@ public class InteractItem : MonoBehaviour
         {
             if(_interactStates == InteractStates.BEFORE_INTERACT)
             {
-                Debug.Log("CAMBIO ESTADO A DRAG");
                 _animator.enabled = true;
                 _animator.Rebind();
                 _animator.Update(0f);
@@ -69,8 +76,6 @@ public class InteractItem : MonoBehaviour
             }
             else if(_interactStates == InteractStates.DRAG && _drag.IsInDropZone())
             {
-                Debug.Log("CAMBIO ESTADO A INTERACT");
-
                 _interactStates++;
                 _drag.SetInitialPos();
                 _drag.enabled = false;
@@ -78,19 +83,15 @@ public class InteractItem : MonoBehaviour
             }
             else if(_interactStates == InteractStates.INTERACT)
             {
-                Debug.Log("CAMBIO ESTADO A AFTER");
-                //_animator.SetBool(_animationInteractParameterName, true);
                 _animator.SetBool(_animationInteractParameterName, true);
                 _interactStates++;
                 StartCoroutine(ChangeAnimationAfterInteract());
             }
             else if (_interactStates == InteractStates.AFTER_INTERACT && _drag.IsInDropZone())
             {
-                Debug.Log("TERMINE");
-
                 _interactStates++;
-                _minigame.EndItem();
-                gameObject.SetActive(false);
+                StartCoroutine(EndAnimation());
+                _minigame.EndItem(this);
             }
         }
     }
@@ -113,11 +114,25 @@ public class InteractItem : MonoBehaviour
         if (!_ignoreNoDrop)
         {
             NoDropComponent noDrop = collision.GetComponent<NoDropComponent>();
-            if (noDrop != null && _interactStates != InteractStates.BEFORE_INTERACT)
+            if (noDrop != null && _interactStates != InteractStates.BEFORE_INTERACT && _drag.enabled)
             {
                 Debug.Log("STOP DRAG");
                 _drag.StopDrag();
+                _minigame.Collided(_index, true);
+                StartCoroutine(DisableAnimationCollided());
             }
         }
+    }
+
+    IEnumerator DisableAnimationCollided()
+    {
+        yield return new WaitForSeconds(0.2f);
+        _minigame.Collided(_index, false);
+    }
+
+    IEnumerator EndAnimation()
+    {
+        yield return new WaitForSeconds(2.0f);
+        gameObject.SetActive(false);
     }
 }
