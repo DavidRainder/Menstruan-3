@@ -253,7 +253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: minigamesPrefabs.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'cameraPositions.Array.data[0]'
@@ -273,7 +273,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 7428e8cbfbd8e3548b5f7e1426883018, type: 2}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: dialogSettingsInfo.Array.size
-      value: 29
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'minigamesPrefabs.Array.data[0]'
@@ -287,6 +287,10 @@ PrefabInstance:
       propertyPath: 'minigamesPrefabs.Array.data[2]'
       value: 
       objectReference: {fileID: 4612436613232812233, guid: 5be6f60c0b9f4394e891548de2251ed9, type: 3}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'minigamesPrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 4612436613232812233, guid: 0099e99d5e7e0dd42b37d64ef9af2bc7, type: 3}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'dialogSettingsInfo.Array.data[0]'
       value: 
@@ -403,6 +407,38 @@ PrefabInstance:
       propertyPath: 'dialogSettingsInfo.Array.data[28]'
       value: 
       objectReference: {fileID: 11400000, guid: 498b2ca8faf12cc4281b1048cd71ab55, type: 2}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'dialogSettingsInfo.Array.data[29]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 228e07ec11a211148b3224f65a6aa880, type: 2}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'dialogSettingsInfo.Array.data[30]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e5ae00d8ace9de4429bffcd749562834, type: 2}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'dialogSettingsInfo.Array.data[31]'
+      value: 
+      objectReference: {fileID: 11400000, guid: b3b5ef223e200fe4caa879d348406f06, type: 2}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'dialogSettingsInfo.Array.data[32]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 76be5699bd755704b978348359b2bf45, type: 2}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'dialogSettingsInfo.Array.data[33]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 50c3a1fe9e73d7b4d9f4bc5ece115e19, type: 2}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'dialogSettingsInfo.Array.data[34]'
+      value: 
+      objectReference: {fileID: 11400000, guid: baaf0775dbfcbf74f8006a111eac5c01, type: 2}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'dialogSettingsInfo.Array.data[35]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 2c00001d94b7b1e489f389f7ef9dcfb7, type: 2}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'dialogSettingsInfo.Array.data[36]'
+      value: 
+      objectReference: {fileID: 11400000, guid: aec2e2d7e2f50e240aa01d7159cc8a26, type: 2}
     - target: {fileID: 2775451464532338113, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -1302,7 +1338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
 --- !u!1 &1641028455
 GameObject:

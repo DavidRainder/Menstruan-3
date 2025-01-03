@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1713d12d484f4484eb085b080a080eeb, type: 3}
-  m_Name: Iteration2_Dialog14
+  m_Name: IterationFinal_Dialog 1
   m_EditorClassIdentifier: 
   texts:
-  - Tema1_Quiz
+  - TemaFinal_Quiz
   speed: 0.035
   onStartDialog:
     m_PersistentCalls:
@@ -25,6 +25,30 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.3
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveNPC
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e65bbab724adf704e9a73210d9003e7f, type: 2}
+          m_ObjectArgumentAssemblyTypeName: NPCMovement, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0.3
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveNPC
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 28d38bc9c22ef9245a559c663f463266, type: 2}
+          m_ObjectArgumentAssemblyTypeName: NPCMovement, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0.3
           m_StringArgument: 
@@ -47,25 +71,13 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartQuiz
-        m_Mode: 3
+        m_MethodName: StopMusic
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: MOM
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: MoveNPC
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: d26bf4234df83b1468d3980a5080b1f5, type: 2}
-          m_ObjectArgumentAssemblyTypeName: NPCMovement, Assembly-CSharp
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 1
           m_StringArgument: MOM
           m_BoolArgument: 0
         m_CallState: 2
@@ -77,18 +89,30 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: c998a9b2f9f7ebd4db74f14cbd7b38cb, type: 2}
           m_ObjectArgumentAssemblyTypeName: NPCMovement, Assembly-CSharp
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 1
           m_StringArgument: MOM
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StopMusic
-        m_Mode: 4
+        m_MethodName: MoveNPC
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d26bf4234df83b1468d3980a5080b1f5, type: 2}
+          m_ObjectArgumentAssemblyTypeName: NPCMovement, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: MOM
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: StartQuiz
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 1
           m_StringArgument: MOM
           m_BoolArgument: 0

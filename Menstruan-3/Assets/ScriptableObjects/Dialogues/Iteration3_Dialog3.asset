@@ -9,30 +9,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd685626c1381d74c8cfddf37eaff4b6, type: 3}
-  m_Name: Quiz 6
+  m_Script: {fileID: 11500000, guid: 1713d12d484f4484eb085b080a080eeb, type: 3}
+  m_Name: Iteration3_Dialog3
   m_EditorClassIdentifier: 
-  question: "\xBFQu\xE9 sucede en la fase preovulatoria?"
-  wrongOptions:
-  - "El \xF3vulo sale del ovario y espera a que lleguen los espermatozoides"
-  - "Se destruye el endometrio que se prepar\xF3 para el beb\xE9"
-  - "Se expulsa el endometrio (cama y comida de un beb\xE9)"
-  rightOption: "El \xF3vulo se prepara y se pega a la pared del ovario "
-  onCorrectOption:
+  texts:
+  - Tema3_Ovul
+  - Tema3_Ovul1
+  - Tema3_Ovul2
+  - Tema3_Ovul3
+  speed: 0.035
+  onStartDialog:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: EndQuiz
-        m_Mode: 1
+        m_MethodName: StartAnimation
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Example
           m_BoolArgument: 0
         m_CallState: 2
+  onFinishDialog:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: StartDialog
@@ -42,33 +45,18 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 36_DAD
+          m_StringArgument: 32_DAD
           m_BoolArgument: 0
         m_CallState: 2
-  onWrongOption:
-    m_PersistentCalls:
-      m_Calls:
       - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: EndQuiz
+        m_MethodName: StopAnimation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartDialog
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 35
-          m_FloatArgument: 0
-          m_StringArgument: 36_DAD
+          m_StringArgument: 32_DAD
           m_BoolArgument: 0
         m_CallState: 2

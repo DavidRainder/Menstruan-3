@@ -285,6 +285,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 8305575361400832
     m_Localized: "\xA1Muy bien hecho! \xBFTe parece hacer un quiz? \xA1Vamos a ello!"
+    m_Metadata:
+      m_Items: []
   - m_Id: 8301744372387840
     m_Localized: "\xA1Ya estoy en casa!"
     m_Metadata:
@@ -320,6 +322,86 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 8340984980377600
     m_Localized: "\xBF\xA1Qu\xE9 me pasa!?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18408394272276480
+    m_Localized: "Como ya dijimos, el ciclo var\xEDa entre 24 y 35 d\xEDas. Es recomendable
+      contactar con un profesional en caso de que no sea as\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18408557254541312
+    m_Localized: "No obstante, no tienes que preocuparte si no es as\xED al principio,
+      ya que en muchos casos el ciclo no es regular desde el comienzo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18408621498695680
+    m_Localized: "La primera es la preovulatoria. Un \xF3vulo se prepara y se pega
+      a la pared del ovario. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18408766017634304
+    m_Localized: "La segunda es la ovulatoria. El \xF3vulo sale del ovario y espera
+      a que lleguen los espermatozoides, durante 1 d\xEDa. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18408884460584960
+    m_Localized: 'Si no se llegan a juntar, empieza la siguiente fase. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18408941800914944
+    m_Localized: 'La tercera fase es la premenstrual. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18409031496105984
+    m_Localized: "Por esto, la energ\xEDa baja y es mucho m\xE1s f\xE1cil sentir
+      tristeza, miedo o enfado. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18409121484898304
+    m_Localized: "Por \xFAltimo, est\xE1 la fase menstrual. Se expulsa el endometrio,
+      sale por el cuello del \xFAtero y luego por la vagina."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18409164744949760
+    m_Localized: "Es la fase en la que tienes menos energ\xEDa, por tanto es un buen
+      momento para meditar, cuidarte y descansar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18409230398390272
+    m_Localized: "Ahora, \xA1vamos a hacer un minijuego!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18409333385330688
+    m_Localized: Vamos a comprobar que tal lo has entendido.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18409428751220736
+    m_Localized: "\xBFTe apetecen unas preguntas de todo lo que hemos visto? \xA1Vamos
+      a ello!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18422263657005056
+    m_Localized: "En esta fase empiezas a tener mucha energ\xEDa, ideas, ganas de
+      relacionarte, etc."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18422383387607040
+    m_Localized: "Si se junta el \xF3vulo con el espermatozoide, puede dar lugar
+      a un beb\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18422517353676800
+    m_Localized: "Esta es la fase en la que m\xE1s energ\xEDa tienes, pero cuidado
+      porque pronto va a disminuir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18422637600178176
+    m_Localized: "Como el \xF3vulo no se junt\xF3 con el espermatozoide, se empieza
+      a destruir la casita que preparaste para el beb\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18422722484502528
+    m_Localized: "Es un buen momento para identificar de d\xF3nde vienen estos sentimientos."
     m_Metadata:
       m_Items: []
   references:
