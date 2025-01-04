@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0ddb3e6ea5f627e4792d61c66c355c6b
+guid: b936e70888e2abe449ef03fd2776f5c2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8489564093735822342
-    second: MenstrualCup7_0
+      213: -1488061398391951779
+    second: Tela7_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MenstrualCup7_0
+      name: Tela7_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 762
-        height: 628
+        width: 800
+        height: 800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: afb17f6bf620f2a80800000000000000
-      internalID: -8489564093735822342
+      spriteID: d5e60e0da08595be0800000000000000
+      internalID: -1488061398391951779
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      MenstrualCup7_0: -8489564093735822342
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
