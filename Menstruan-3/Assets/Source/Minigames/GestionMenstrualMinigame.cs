@@ -21,6 +21,9 @@ public class GestionMenstrualMinigame : MonoBehaviour
 
     private int _cont;
 
+    [SerializeField]
+    private Animator _finalItems;
+
     public void EnableDragToBody(int index, bool enable)
     {
         foreach (DropZoneComponent drop in _dropZones)
@@ -32,8 +35,12 @@ public class GestionMenstrualMinigame : MonoBehaviour
 
     public void EnableFinalDrag(bool enable)
     {
-        _grifo.gameObject.SetActive(enable);
-        _trash.gameObject.SetActive(enable);
+        _finalItems.SetBool("Appear", enable);
+    }
+
+    private void StartFinalStepAnimation()
+    {
+        _finalItems.SetBool("End", true);
     }
 
     public void EnableItems(InteractItem item, bool enable)
@@ -65,7 +72,7 @@ public class GestionMenstrualMinigame : MonoBehaviour
             _interactItemsAnimators[item.GetIndex()].SetBool("Correct", !item.itemHasToWash());
         }
         _interactItemsAnimators[item.GetIndex()].SetBool("End", true);
-
+        EnableFinalDrag(false);
         _grifo.ResetValues();
         _trash.ResetValues();
         for(int i = 0;i < _dropZones.Length; ++i)
@@ -98,6 +105,7 @@ public class GestionMenstrualMinigame : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
+        StartFinalStepAnimation();
         _interactItems[itemIndex].AfterInteract();
     }
 
