@@ -26,8 +26,6 @@ public class InteractItem : MonoBehaviour
     [SerializeField]
     private bool _toWash;
 
-    private Transform _childTransform;
-
     public bool itemHasToWash() {  return _toWash; }
 
     public int GetIndex()
@@ -54,7 +52,6 @@ public class InteractItem : MonoBehaviour
         _minigame = transform.GetComponentInParent<GestionMenstrualMinigame>();
         Debug.Assert(_minigame != null);
         _index = gameObject.GetComponent<InfoTypeComponent>().GetIndex();
-        _childTransform = transform.GetChild(0);
     }
 
     private void OnMouseUp()
@@ -80,9 +77,11 @@ public class InteractItem : MonoBehaviour
                 _drag.SetInitialPos();
                 _drag.enabled = false;
                 _minigame.EnableDragToBody(-1, false);
+                _minigame.EnableNeedInteractAnimation(_index, true);
             }
             else if(_interactStates == InteractStates.INTERACT)
             {
+                _minigame.EnableNeedInteractAnimation(_index, false);
                 _animator.SetBool(_animationInteractParameterName, true);
                 _interactStates++;
                 StartCoroutine(ChangeAnimationAfterInteract());

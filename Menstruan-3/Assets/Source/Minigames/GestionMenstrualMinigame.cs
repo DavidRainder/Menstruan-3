@@ -59,6 +59,11 @@ public class GestionMenstrualMinigame : MonoBehaviour
         }
     }
 
+    public void EnableNeedInteractAnimation(int index, bool enable)
+    {
+        _interactItemsAnimators[index].SetBool("NeedInteract", enable);
+    }
+
     public void EndItem(InteractItem item)
     {
         if (!_grifo.IsNameZoneFree(-1))
