@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      compresa_colocada_sangre_tela_0: 7193765707261662398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

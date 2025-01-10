@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AgujaSegundos_0: -438928400941152560
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

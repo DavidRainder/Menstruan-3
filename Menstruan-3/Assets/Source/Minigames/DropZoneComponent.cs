@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DropZoneComponent : MonoBehaviour
@@ -17,6 +18,17 @@ public class DropZoneComponent : MonoBehaviour
     [SerializeField]
     List<GameObject> _dropZonesPartes;
 
+    private bool _occupied = false;
+    private DragObjectComponent _draggedObject = null;
+
+    public void NotifyOccupation(DragObjectComponent drag)
+    {
+        _occupied = true;
+        _draggedObject = drag;
+    }
+
+    public bool IsOccupied() { return _occupied; }
+    public DragObjectComponent GetDraggedObject() { return _draggedObject; }
 
     private void Start()
     {
@@ -78,6 +90,15 @@ public class DropZoneComponent : MonoBehaviour
                 Debug.Log("Descripcion puesta!___Correcto: " + _descriptionCorrect);
             }
         }
+        else if (_dropZonesPartes.Count == 0)
+        {
+            DragObjectComponent dragComponent = collision.gameObject.GetComponent<DragObjectComponent>();
+            if (dragComponent != null && _draggedObject == null)
+            {
+                _occupied = true;
+                _draggedObject = dragComponent;
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -96,6 +117,15 @@ public class DropZoneComponent : MonoBehaviour
                 _descriptionOccupied = -1;
                 _descriptionCorrect = false;
                 Debug.Log("Descripcion kitado!___Descripción correcto: " + _descriptionCorrect);
+            }
+        }
+        else if (_dropZonesPartes.Count == 0)
+        {
+            DragObjectComponent dragComponent = collision.gameObject.GetComponent<DragObjectComponent>();
+            if (dragComponent != null && dragComponent == _draggedObject)
+            {
+                _occupied = false;
+                _draggedObject = null;
             }
         }
     }

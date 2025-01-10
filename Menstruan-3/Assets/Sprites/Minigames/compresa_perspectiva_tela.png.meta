@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      compresa_perspectiva_tela_0: -7707334054394514178
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

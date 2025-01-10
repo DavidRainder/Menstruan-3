@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EndometrioVerde_0: 5366932367500892364
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

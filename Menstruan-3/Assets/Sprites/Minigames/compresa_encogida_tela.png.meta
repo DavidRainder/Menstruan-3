@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      compresa_encogida_tela_0: -8759706791601197001
+      compresa_encogida_tela_1: 6111353470154948641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

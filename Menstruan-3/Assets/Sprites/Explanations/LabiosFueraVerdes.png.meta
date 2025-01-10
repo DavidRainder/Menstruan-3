@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LabiosFueraVerdes_0: -3176585886713830779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

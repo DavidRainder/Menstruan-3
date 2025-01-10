@@ -20,6 +20,9 @@ public class DragObjectComponent : MonoBehaviour
     [SerializeField]
     bool _onlyIfIndex = false;
 
+    [SerializeField]
+    bool _dropOnCenter = false;
+
     InfoTypeComponent _myInfoTypeComponent;
 
     private FMOD.Studio.EventInstance _dropSound;
@@ -35,6 +38,13 @@ public class DragObjectComponent : MonoBehaviour
         _initialPos = _myTransform.position;
         _inDropZone = false;
         _isDragging = false;
+    }
+
+    public void SetPosition(Vector3 position)
+    {
+        _myTransform.position = position;
+        OnMouseDown();
+        OnMouseUp();
     }
 
     // Update is called once per frame
@@ -77,7 +87,6 @@ public class DragObjectComponent : MonoBehaviour
                 DropZoneComponent dzComp = colliders[i].GetComponent<DropZoneComponent>();
                 if (dzComp != null && dzComp.enabled)
                 {
-
                     // Si no esta ocupado
                     if(_myInfoTypeComponent != null)
                     {
@@ -103,7 +112,10 @@ public class DragObjectComponent : MonoBehaviour
                     {
                         _dropSound.setParameterByName("Dropped", 1);
                         _inDropZone = true;
+                        dzComp.NotifyOccupation(this);
+                        if (_dropOnCenter) _myTransform.position = dzComp.transform.position;
                     }
+
                 }
                 i++;
             }

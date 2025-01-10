@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ovulo_0: -8963712379160545717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

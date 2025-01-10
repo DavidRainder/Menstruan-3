@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      discomenstrual3_0: 431839162108825426
+      discomenstrual3_1: 5518527979551780891
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

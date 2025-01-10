@@ -256,6 +256,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: quizSettingsInfo.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'cameraPositions.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: 19a314240ad4c364bb68e55ca0e7ec3a, type: 2}
@@ -290,7 +294,15 @@ PrefabInstance:
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'minigamesPrefabs.Array.data[3]'
       value: 
-      objectReference: {fileID: 4612436613232812233, guid: 0099e99d5e7e0dd42b37d64ef9af2bc7, type: 3}
+      objectReference: {fileID: 7564539838789937963, guid: 8f1825fa1777b124c9290a17f173e571, type: 3}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'quizSettingsInfo.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 44097f07552558f4fafce2fec7714592, type: 2}
+    - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
+      propertyPath: 'quizSettingsInfo.Array.data[9]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 58cf9d4746a79a843ad21d94e58a694c, type: 2}
     - target: {fileID: 2665242717952186066, guid: e7198d98eb278d14a92162d309a9a1ca, type: 3}
       propertyPath: 'dialogSettingsInfo.Array.data[0]'
       value: 

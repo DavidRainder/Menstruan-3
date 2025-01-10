@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CuelloVerde_0: 4915831412651190549
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

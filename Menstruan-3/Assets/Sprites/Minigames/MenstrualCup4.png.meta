@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MenstrualCup4_0: 3652060924803923191
+      MenstrualCup4_1: -5109207848514121717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
