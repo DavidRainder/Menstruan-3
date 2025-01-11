@@ -1743,6 +1743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 671262423185803959}
   - component: {fileID: 7113489818008256174}
+  - component: {fileID: 9073090761714025836}
   m_Layer: 0
   m_Name: Wheel
   m_TagString: Untagged
@@ -1822,6 +1823,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &9073090761714025836
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6631106219877324786}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b9d0f649a51d24c47b3ce0156c88a0ae, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7422204538537063144
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,7 +2212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
       propertyPath: onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartDialog
+      value: EndMinigame
       objectReference: {fileID: 0}
     - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
       propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -2209,7 +2232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
       propertyPath: onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 28_DAD
+      value: 35_DAD
       objectReference: {fileID: 0}
     - target: {fileID: 4336472078923862789, guid: 90102bfd8bdb65a4c87e3b3d4c093f9b, type: 3}
       propertyPath: onEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2262,6 +2285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aea87cff5349aa4c8de1006859f02f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _wheel: {fileID: 6631106219877324786}
   _dropZones:
   - {fileID: 8045914332193941275}
   - {fileID: 6823589866853137251}

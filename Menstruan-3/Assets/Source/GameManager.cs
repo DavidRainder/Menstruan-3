@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     #endregion
 
     [SerializeField]
+    private GameObject _endGameObject = null;
+
+    [SerializeField]
     private QuizSettings[] quizSettingsInfo;
 
     [SerializeField]
@@ -131,6 +134,11 @@ public class GameManager : MonoBehaviour
         MusicManager.Instance.StopMusic(fadeOutTime);
     }
 
+    public void EndGame()
+    {
+        Transform a = Instantiate(Instance._endGameObject, Camera.main.transform.position, Quaternion.identity).transform;
+        a.position = new Vector3(a.position.x, a.position.y, 0);
+    }
 
     IEnumerator AfterMinigame(string dialogID)
     {

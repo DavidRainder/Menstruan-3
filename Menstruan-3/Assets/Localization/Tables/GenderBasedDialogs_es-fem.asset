@@ -403,6 +403,10 @@ MonoBehaviour:
     m_Localized: "Es un buen momento para identificar de d\xF3nde vienen estos sentimientos."
     m_Metadata:
       m_Items: []
+  - m_Id: 21231701724422144
+    m_Localized: Placeholder de texto para acabar el juego
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

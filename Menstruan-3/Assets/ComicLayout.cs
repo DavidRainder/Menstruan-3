@@ -18,7 +18,9 @@ public class ComicLayout : MonoBehaviour
     }
 
     #endregion
-    
+
+    [SerializeField] bool _DEBUG_MODE = false;
+
     /// <summary>
     /// 0 -> Normal
     /// 1 -> Inclined
@@ -118,5 +120,10 @@ public class ComicLayout : MonoBehaviour
             _numCols * background.transform.localScale.y, 0);
         background.transform.position = _initialPosition + new Vector3(b.bounds.size.x / background.transform.localScale.x,
             -b.bounds.size.y / background.transform.localScale.y, 0);
+
+        if (_DEBUG_MODE)
+        {
+            GameManager.MoveCamera(_layout._strips.Length - 1);
+        }
     }
 }
