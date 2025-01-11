@@ -1,10 +1,12 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
-using UnityEngine.Rendering.Universal;
 
 public class PhasesMinigame : MonoBehaviour
 {
+    [SerializeField]
+    GameObject _wheel = null;
+    
     [SerializeField]
     List<DropZoneComponent> _dropZones = new List<DropZoneComponent>();
 
@@ -40,7 +42,7 @@ public class PhasesMinigame : MonoBehaviour
         if(checking)
         {
             // Esto funciona
-            Debug.Log("GANASTE AAAAAAAAAAAAAAAAAAAAAAAAAA");
+            _wheel.GetComponent<Animator>().SetTrigger("Correct");
             if(FMODEventEmitter.Instance != null) {
                 FMODEventEmitter.Instance.EmitEvent("CorrectAnswer");
             }
@@ -48,6 +50,7 @@ public class PhasesMinigame : MonoBehaviour
         }
         else
         {
+            _wheel.GetComponent<Animator>().SetTrigger("Wrong");
             if (FMODEventEmitter.Instance != null)
             {
                 FMODEventEmitter.Instance.EmitEvent("WrongAnswer");

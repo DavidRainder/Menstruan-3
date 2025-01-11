@@ -106,14 +106,14 @@ public class DragObjectComponent : MonoBehaviour
                             _dropSound.setParameterByName("Dropped", 1);
                             _inDropZone = true;
                         }
-
                     }
-                    else
+                    else if(dzComp.GetDraggedObject() == null)
                     {
                         _dropSound.setParameterByName("Dropped", 1);
                         _inDropZone = true;
                         dzComp.NotifyOccupation(this);
-                        if (_dropOnCenter) _myTransform.position = dzComp.transform.position;
+                        if (_dropOnCenter) 
+                            _myTransform.position = dzComp.transform.position;
                     }
 
                 }

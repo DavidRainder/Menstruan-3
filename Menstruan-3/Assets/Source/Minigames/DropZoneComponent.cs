@@ -96,12 +96,12 @@ public class DropZoneComponent : MonoBehaviour
         }
         else if (_dropZonesPartes.Count == 0)
         {
-            DragObjectComponent dragComponent = collision.gameObject.GetComponent<DragObjectComponent>();
-            if (dragComponent != null && _draggedObject == null)
-            {
-                _occupied = true;
-                _draggedObject = dragComponent;
-            }
+            //DragObjectComponent dragComponent = collision.gameObject.GetComponent<DragObjectComponent>();
+            //if (dragComponent != null && _draggedObject == null)
+            //{
+            //    _occupied = true;
+            //    _draggedObject = dragComponent;
+            //}
         }
     }
 
