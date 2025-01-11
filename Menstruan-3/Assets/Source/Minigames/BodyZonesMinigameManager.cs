@@ -36,9 +36,6 @@ public class BodyZonesMinigameManager : MonoBehaviour
     public void Comprobar()
     {
 
-        if (tries < feedback_X) // Para no sumar infinitamente
-            tries++;
-
         bool correct = false;
 
         int individualCorrects = 0;
@@ -81,6 +78,9 @@ public class BodyZonesMinigameManager : MonoBehaviour
 
         _gameFinished = (individualCorrects == _dropZones.Count);
         Debug.Log("Juego Correcto: " + _gameFinished);
+
+        if (tries < feedback_X) // Para no sumar infinitamente
+            tries++;
 
         if (_gameFinished)
         {

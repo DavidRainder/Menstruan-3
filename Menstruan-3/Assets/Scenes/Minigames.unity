@@ -246,17 +246,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2280444890033841961, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 4341998940623295098, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.72
-      objectReference: {fileID: 0}
     - target: {fileID: 8529694656266298841, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
       propertyPath: m_Name
       value: UteroBodyMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529694656266298841, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -311,9 +307,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7825299286589655040, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10
+    - target: {fileID: 6120098131777940190, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 6120098131777940190, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 6120098131777940190, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259399097949304236, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259399097949304236, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.31
       objectReference: {fileID: 0}
     - target: {fileID: 8529694656266298841, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
       propertyPath: m_Name
@@ -321,7 +333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8529694656266298841, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
