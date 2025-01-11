@@ -250,10 +250,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UteroBodyMinigame
       objectReference: {fileID: 0}
-    - target: {fileID: 8529694656266298841, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -307,33 +303,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6120098131777940190, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 6120098131777940190, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 6120098131777940190, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6259399097949304236, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 6259399097949304236, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.31
-      objectReference: {fileID: 0}
     - target: {fileID: 8529694656266298841, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
       propertyPath: m_Name
       value: VulvaBodyMinigame
-      objectReference: {fileID: 0}
-    - target: {fileID: 8529694656266298841, guid: 7649c94f5b8803d4ebfe934667e45731, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
