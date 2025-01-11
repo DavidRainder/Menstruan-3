@@ -107,7 +107,7 @@ public class DragObjectComponent : MonoBehaviour
                             _inDropZone = true;
                         }
                     }
-                    else if(dzComp.GetDraggedObject() == null)
+                    else if(dzComp.GetDraggedObject() == null && !IsInDropZone())
                     {
                         _dropSound.setParameterByName("Dropped", 1);
                         _inDropZone = true;
