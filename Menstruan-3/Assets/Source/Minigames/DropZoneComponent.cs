@@ -18,6 +18,9 @@ public class DropZoneComponent : MonoBehaviour
     [SerializeField]
     List<GameObject> _dropZonesPartes;
 
+    [SerializeField]
+    private bool _onlyOneItem = false;
+
     private bool _occupied = false;
     private DragObjectComponent _draggedObject = null;
 
@@ -74,6 +77,9 @@ public class DropZoneComponent : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Holah?");
+
+        if (_onlyOneItem && _occupied) return;
+
         InfoTypeComponent itComp = collision.gameObject.GetComponent<InfoTypeComponent>();
         if (itComp != null)
         {
