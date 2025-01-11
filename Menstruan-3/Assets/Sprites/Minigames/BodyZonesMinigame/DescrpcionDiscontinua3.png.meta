@@ -1,61 +1,61 @@
 fileFormatVersion: 2
-guid: 7141282f1f9050149a44d83a4fd886a9
+guid: 4efa17b6d5d3c0d41a61681e2861c95b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2967379991440122308
-    second: DescrpcionDiscontinua2_0
+      213: -3548989733521796840
+    second: DescrpcionDiscontinua3_0
   - first:
-      213: -5783287910048692342
-    second: DescrpcionDiscontinua2_1
+      213: -230155524530941893
+    second: DescrpcionDiscontinua3_1
   - first:
-      213: 6046820152147873985
-    second: DescrpcionDiscontinua2_2
+      213: -9016922562427622036
+    second: DescrpcionDiscontinua3_2
   - first:
-      213: 3396004171228444964
-    second: DescrpcionDiscontinua2_3
+      213: 1329581932447070930
+    second: DescrpcionDiscontinua3_3
   - first:
-      213: 4863243093967825526
-    second: DescrpcionDiscontinua2_4
+      213: -4683337897483060549
+    second: DescrpcionDiscontinua3_4
   - first:
-      213: -3970032134061619836
-    second: DescrpcionDiscontinua2_5
+      213: 1218192662899839688
+    second: DescrpcionDiscontinua3_5
   - first:
-      213: 1457192467199139250
-    second: DescrpcionDiscontinua2_6
+      213: -8262691222057740798
+    second: DescrpcionDiscontinua3_6
   - first:
-      213: -922366636347808085
-    second: DescrpcionDiscontinua2_7
+      213: -1429798510099849212
+    second: DescrpcionDiscontinua3_7
   - first:
-      213: -773002840083919590
-    second: DescrpcionDiscontinua2_8
+      213: -6423523420639195546
+    second: DescrpcionDiscontinua3_8
   - first:
-      213: -659100850108283398
-    second: DescrpcionDiscontinua2_9
+      213: 6341707928280262563
+    second: DescrpcionDiscontinua3_9
   - first:
-      213: -8765366080304996441
-    second: DescrpcionDiscontinua2_10
+      213: -8980988139700486950
+    second: DescrpcionDiscontinua3_10
   - first:
-      213: 7823558410478506028
-    second: DescrpcionDiscontinua2_11
+      213: 6193183026695019907
+    second: DescrpcionDiscontinua3_11
   - first:
-      213: 3097813518620251748
-    second: DescrpcionDiscontinua2_12
+      213: -3874635725197581467
+    second: DescrpcionDiscontinua3_12
   - first:
-      213: -3576380642236220560
-    second: DescrpcionDiscontinua2_13
+      213: -8026795083445802548
+    second: DescrpcionDiscontinua3_13
   - first:
-      213: 471539927901185537
-    second: DescrpcionDiscontinua2_14
+      213: 2491310806602839646
+    second: DescrpcionDiscontinua3_14
   - first:
-      213: -433561123074679712
-    second: DescrpcionDiscontinua2_15
+      213: -8759565233655431508
+    second: DescrpcionDiscontinua3_15
   - first:
-      213: -1743962648004472057
-    second: DescrpcionDiscontinua2_16
+      213: 9111803858545027458
+    second: DescrpcionDiscontinua3_16
   - first:
-      213: 4817513074589807432
-    second: DescrpcionDiscontinua2_17
+      213: 3185506093816875053
+    second: DescrpcionDiscontinua3_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,7 +102,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -151,7 +151,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_0
+      name: DescrpcionDiscontinua3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3e1c90ae9fb1d6d0800000000000000
-      internalID: -2967379991440122308
+      spriteID: 811dce504a47fbec0800000000000000
+      internalID: -3548989733521796840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_1
+      name: DescrpcionDiscontinua3_1
       rect:
         serializedVersion: 2
         x: 39
@@ -188,14 +188,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a878cb77942adbfa0800000000000000
-      internalID: -5783287910048692342
+      spriteID: b305d3515c25eccf0800000000000000
+      internalID: -230155524530941893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_2
+      name: DescrpcionDiscontinua3_2
       rect:
         serializedVersion: 2
         x: 101
@@ -210,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c0927514ee9ae350800000000000000
-      internalID: 6046820152147873985
+      spriteID: c6deb4304b47dd280800000000000000
+      internalID: -9016922562427622036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_3
+      name: DescrpcionDiscontinua3_3
       rect:
         serializedVersion: 2
         x: 162
@@ -232,14 +232,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 429f0d90dc7012f20800000000000000
-      internalID: 3396004171228444964
+      spriteID: 2daf84f19bf937210800000000000000
+      internalID: 1329581932447070930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_4
+      name: DescrpcionDiscontinua3_4
       rect:
         serializedVersion: 2
         x: 223
@@ -254,14 +254,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67ae250d3d5bd7340800000000000000
-      internalID: 4863243093967825526
+      spriteID: bbab561eef0710fb0800000000000000
+      internalID: -4683337897483060549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_5
+      name: DescrpcionDiscontinua3_5
       rect:
         serializedVersion: 2
         x: 284
@@ -276,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4850f56eecc97e8c0800000000000000
-      internalID: -3970032134061619836
+      spriteID: 8c2d12cc5c3e7e010800000000000000
+      internalID: 1218192662899839688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_6
+      name: DescrpcionDiscontinua3_6
       rect:
         serializedVersion: 2
         x: 0
@@ -298,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2bd97c014dcf83410800000000000000
-      internalID: 1457192467199139250
+      spriteID: 20692847c16055d80800000000000000
+      internalID: -8262691222057740798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_7
+      name: DescrpcionDiscontinua3_7
       rect:
         serializedVersion: 2
         x: 288
@@ -320,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba621df5e681333f0800000000000000
-      internalID: -922366636347808085
+      spriteID: 400ad1994d5582ce0800000000000000
+      internalID: -1429798510099849212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_8
+      name: DescrpcionDiscontinua3_8
       rect:
         serializedVersion: 2
         x: 0
@@ -342,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1d0e62330eb545f0800000000000000
-      internalID: -773002840083919590
+      spriteID: 66e06627b7f0bd6a0800000000000000
+      internalID: -6423523420639195546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_9
+      name: DescrpcionDiscontinua3_9
       rect:
         serializedVersion: 2
         x: 288
@@ -364,14 +364,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af54326d4476ad6f0800000000000000
-      internalID: -659100850108283398
+      spriteID: 3a76c6ec2c5420850800000000000000
+      internalID: 6341707928280262563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_10
+      name: DescrpcionDiscontinua3_10
       rect:
         serializedVersion: 2
         x: 0
@@ -386,14 +386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7af9929adf92b5680800000000000000
-      internalID: -8765366080304996441
+      spriteID: adcf729cede1d5380800000000000000
+      internalID: -8980988139700486950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_11
+      name: DescrpcionDiscontinua3_11
       rect:
         serializedVersion: 2
         x: 288
@@ -408,14 +408,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c2057106cecd29c60800000000000000
-      internalID: 7823558410478506028
+      spriteID: 38d922f562b92f550800000000000000
+      internalID: 6193183026695019907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_12
+      name: DescrpcionDiscontinua3_12
       rect:
         serializedVersion: 2
         x: 0
@@ -430,14 +430,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46653c57bf4adfa20800000000000000
-      internalID: 3097813518620251748
+      spriteID: 5636f8d26578a3ac0800000000000000
+      internalID: -3874635725197581467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_13
+      name: DescrpcionDiscontinua3_13
       rect:
         serializedVersion: 2
         x: 42
@@ -452,14 +452,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07b3ded11c42e5ec0800000000000000
-      internalID: -3576380642236220560
+      spriteID: cc96c5e36681b9090800000000000000
+      internalID: -8026795083445802548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_14
+      name: DescrpcionDiscontinua3_14
       rect:
         serializedVersion: 2
         x: 85
@@ -474,14 +474,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 106a6fbe01f3b8600800000000000000
-      internalID: 471539927901185537
+      spriteID: e5677a4aaf9e29220800000000000000
+      internalID: 2491310806602839646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_15
+      name: DescrpcionDiscontinua3_15
       rect:
         serializedVersion: 2
         x: 146
@@ -496,14 +496,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 06cd6b6a47eabf9f0800000000000000
-      internalID: -433561123074679712
+      spriteID: cae3b1584d5cf6680800000000000000
+      internalID: -8759565233655431508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_16
+      name: DescrpcionDiscontinua3_16
       rect:
         serializedVersion: 2
         x: 208
@@ -518,14 +518,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 703d42826333cc7e0800000000000000
-      internalID: -1743962648004472057
+      spriteID: 2892c9b3551a37e70800000000000000
+      internalID: 9111803858545027458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DescrpcionDiscontinua2_17
+      name: DescrpcionDiscontinua3_17
       rect:
         serializedVersion: 2
         x: 269
@@ -540,8 +540,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 843b9b7fd9e3bd240800000000000000
-      internalID: 4817513074589807432
+      spriteID: d280ccf2ae0353c20800000000000000
+      internalID: 3185506093816875053
       vertices: []
       indices: 
       edges: []
@@ -560,24 +560,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DescrpcionDiscontinua2_0: -2967379991440122308
-      DescrpcionDiscontinua2_1: -5783287910048692342
-      DescrpcionDiscontinua2_10: -8765366080304996441
-      DescrpcionDiscontinua2_11: 7823558410478506028
-      DescrpcionDiscontinua2_12: 3097813518620251748
-      DescrpcionDiscontinua2_13: -3576380642236220560
-      DescrpcionDiscontinua2_14: 471539927901185537
-      DescrpcionDiscontinua2_15: -433561123074679712
-      DescrpcionDiscontinua2_16: -1743962648004472057
-      DescrpcionDiscontinua2_17: 4817513074589807432
-      DescrpcionDiscontinua2_2: 6046820152147873985
-      DescrpcionDiscontinua2_3: 3396004171228444964
-      DescrpcionDiscontinua2_4: 4863243093967825526
-      DescrpcionDiscontinua2_5: -3970032134061619836
-      DescrpcionDiscontinua2_6: 1457192467199139250
-      DescrpcionDiscontinua2_7: -922366636347808085
-      DescrpcionDiscontinua2_8: -773002840083919590
-      DescrpcionDiscontinua2_9: -659100850108283398
+      DescrpcionDiscontinua3_0: -3548989733521796840
+      DescrpcionDiscontinua3_1: -230155524530941893
+      DescrpcionDiscontinua3_10: -8980988139700486950
+      DescrpcionDiscontinua3_11: 6193183026695019907
+      DescrpcionDiscontinua3_12: -3874635725197581467
+      DescrpcionDiscontinua3_13: -8026795083445802548
+      DescrpcionDiscontinua3_14: 2491310806602839646
+      DescrpcionDiscontinua3_15: -8759565233655431508
+      DescrpcionDiscontinua3_16: 9111803858545027458
+      DescrpcionDiscontinua3_17: 3185506093816875053
+      DescrpcionDiscontinua3_2: -9016922562427622036
+      DescrpcionDiscontinua3_3: 1329581932447070930
+      DescrpcionDiscontinua3_4: -4683337897483060549
+      DescrpcionDiscontinua3_5: 1218192662899839688
+      DescrpcionDiscontinua3_6: -8262691222057740798
+      DescrpcionDiscontinua3_7: -1429798510099849212
+      DescrpcionDiscontinua3_8: -6423523420639195546
+      DescrpcionDiscontinua3_9: 6341707928280262563
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
