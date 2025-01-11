@@ -246,61 +246,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1342297401783381015, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2.5
+    - target: {fileID: 2280444890033841961, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.05
       objectReference: {fileID: 0}
-    - target: {fileID: 1342297401783381015, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1645901395441044062, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: -15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1645901395441044062, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_RenderingLayerMask
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2747368455934932172, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2747368455934932172, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_RenderingLayerMask
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806616757448020778, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2806616757448020778, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_RenderingLayerMask
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3047823598810704227, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3047823598810704227, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_RenderingLayerMask
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5752808473451192568, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: -150
-      objectReference: {fileID: 0}
-    - target: {fileID: 7511719079934478371, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_RenderingLayerMask
-      value: 16
+    - target: {fileID: 4341998940623295098, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.72
       objectReference: {fileID: 0}
     - target: {fileID: 8529694656266298841, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
       propertyPath: m_Name
       value: UteroBodyMinigame
-      objectReference: {fileID: 0}
-    - target: {fileID: 8529694656266298841, guid: c80b0ede6c8308a43a14021e664858d1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

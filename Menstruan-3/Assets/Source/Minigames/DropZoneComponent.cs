@@ -14,9 +14,6 @@ public class DropZoneComponent : MonoBehaviour
     [SerializeField]
     private int _index; // Index del dropZone
 
-    [SerializeField]
-    List<GameObject> _dropZonesPartes;
-
     //[SerializeField]
     //private bool _onlyOneItem = false;
 
@@ -25,7 +22,8 @@ public class DropZoneComponent : MonoBehaviour
 
     public void NotifyOccupation(DragObjectComponent drag)
     {
-        if(_draggedObject == null) { 
+        if (_draggedObject == null)
+        {
             _occupied = true;
             _draggedObject = drag;
         }
@@ -43,7 +41,7 @@ public class DropZoneComponent : MonoBehaviour
     }
     public Vector3 GetZonePosition(int i)
     {
-        return _dropZonesPartes[i].transform.position;
+        return transform.position;
     }
 
     public bool IsCorrect() { return _descriptionCorrect && _nameCorrect; }
@@ -94,15 +92,6 @@ public class DropZoneComponent : MonoBehaviour
                 Debug.Log("Descripcion puesta!___Correcto: " + _descriptionCorrect);
             }
         }
-        else if (_dropZonesPartes.Count == 0)
-        {
-            //DragObjectComponent dragComponent = collision.gameObject.GetComponent<DragObjectComponent>();
-            //if (dragComponent != null && _draggedObject == null)
-            //{
-            //    _occupied = true;
-            //    _draggedObject = dragComponent;
-            //}
-        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -123,7 +112,7 @@ public class DropZoneComponent : MonoBehaviour
                 Debug.Log("Descripcion kitado!___Descripción correcto: " + _descriptionCorrect);
             }
         }
-        else if (_dropZonesPartes.Count == 0)
+        else
         {
             DragObjectComponent dragComponent = collision.gameObject.GetComponent<DragObjectComponent>();
             if (dragComponent != null && dragComponent == _draggedObject)

@@ -7,6 +7,10 @@ public class BodyZonesMinigameManager : MonoBehaviour
     bool _gameFinished = false;
 
     [SerializeField]
+    int feedback_X = 2;
+    int tries = 0;
+
+    [SerializeField]
     List<GameObject> _dropZones;
 
     MinigameManager _myMinigameManager;
@@ -23,45 +27,59 @@ public class BodyZonesMinigameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
             _myMinigameManager.EndMinigame();
         }
     }
 
     public void Comprobar()
     {
-        bool description = false;
-        bool name = false;
+
+        if (tries < feedback_X) // Para no sumar infinitamente
+            tries++;
+
+        bool correct = false;
 
         int individualCorrects = 0;
-        int fullCorrects = 0;
 
         int i = 0;
         while (i < _dropZones.Count)
         {
+
             DropZoneComponent dropZonComp = _dropZones[i].GetComponent<DropZoneComponent>();
+            DragObjectComponent drag = dropZonComp.GetDraggedObject();
 
-            description = dropZonComp.IsDescriptionCorrect();
-            name = dropZonComp.IsNameCorrect();
-
-            if (name && description)
+            if (drag != null)
             {
-                fullCorrects++;
-                individualCorrects += 2;
+                if (!(dropZonComp.IsOccupied() &&
+                    drag.GetComponent<DropZoneIndex>().GetIndex() == dropZonComp.GetIndex()))
+                {
+                    correct = false;
+                    if (tries >= feedback_X)
+                        drag.GetComponent<Animator>().SetTrigger("Wrong");
+                }
+                else
+                {
+                    correct = true;
+                    if (tries >= feedback_X)
+                        drag.GetComponent<Animator>().SetTrigger("Correct");
+                }
+
+                if (correct)
+                    individualCorrects++;
+
             }
-            else if (name || description)
-                individualCorrects++;
-
-
             i++;
         }
 
         // Actualizo UI
-        _myMinigameUIManager.Comprobar();
+        if (tries < feedback_X)
+            _myMinigameUIManager.Comprobar();
         _myMinigameUIManager.SetCorrects(individualCorrects);
-        _myMinigameUIManager.SetIncorrects((_dropZones.Count * 2 - individualCorrects));
+        _myMinigameUIManager.SetIncorrects((_dropZones.Count - individualCorrects));
 
-        _gameFinished = (fullCorrects == _dropZones.Count);
+        _gameFinished = (individualCorrects == _dropZones.Count);
         Debug.Log("Juego Correcto: " + _gameFinished);
 
         if (_gameFinished)
