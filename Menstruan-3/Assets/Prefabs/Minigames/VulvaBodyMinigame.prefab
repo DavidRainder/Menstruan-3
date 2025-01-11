@@ -568,12 +568,12 @@ MonoBehaviour:
       Data4: 1544028184
     Path: event:/ButtonClick
   Event: 
-  EventPlayTrigger: 20
-  EventStopTrigger: 0
+  PlayEvent: 0
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
-  NonRigidbodyVelocity: 0
+  AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
@@ -1528,12 +1528,12 @@ MonoBehaviour:
       Data4: 1544028184
     Path: event:/ButtonClick
   Event: 
-  EventPlayTrigger: 20
-  EventStopTrigger: 0
+  PlayEvent: 0
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
-  NonRigidbodyVelocity: 0
+  AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
@@ -1621,6 +1621,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1087043684570282683}
     m_Modifications:
+    - target: {fileID: 1558324300506596395, guid: 50e0e628498304f4285daac624fae257, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363657527273802827, guid: 50e0e628498304f4285daac624fae257, type: 3}
+      propertyPath: m_Size.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2907697906423441033, guid: 50e0e628498304f4285daac624fae257, type: 3}
       propertyPath: m_Text
       value: "Cl\xEDtoris"
@@ -1691,6 +1699,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1087043684570282683}
     m_Modifications:
+    - target: {fileID: 1558324300506596395, guid: 50e0e628498304f4285daac624fae257, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363657527273802827, guid: 50e0e628498304f4285daac624fae257, type: 3}
+      propertyPath: m_Size.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2907697906423441033, guid: 50e0e628498304f4285daac624fae257, type: 3}
       propertyPath: m_Text
       value: Uretra
@@ -1766,6 +1782,22 @@ PrefabInstance:
       value: 'Sitio por donde
 
         sale la regla.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282616159935632755, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282616159935632755, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570453280443197109, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570453280443197109, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_Size.y
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6519688314981148388, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
       propertyPath: m_Name
@@ -2165,6 +2197,22 @@ PrefabInstance:
         la
         vulva.'
       objectReference: {fileID: 0}
+    - target: {fileID: 2282616159935632755, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282616159935632755, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570453280443197109, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570453280443197109, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_Size.y
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6519688314981148388, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
       propertyPath: m_Name
       value: Descripcion (3)
@@ -2373,6 +2421,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1087043684570282683}
     m_Modifications:
+    - target: {fileID: 1558324300506596395, guid: 50e0e628498304f4285daac624fae257, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363657527273802827, guid: 50e0e628498304f4285daac624fae257, type: 3}
+      propertyPath: m_Size.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2907697906423441033, guid: 50e0e628498304f4285daac624fae257, type: 3}
       propertyPath: m_Text
       value: Entrada vagina
@@ -2439,6 +2495,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1087043684570282683}
     m_Modifications:
+    - target: {fileID: 1558324300506596395, guid: 50e0e628498304f4285daac624fae257, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363657527273802827, guid: 50e0e628498304f4285daac624fae257, type: 3}
+      propertyPath: m_Size.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2907697906423441033, guid: 50e0e628498304f4285daac624fae257, type: 3}
       propertyPath: m_Text
       value: Labios internos
@@ -2516,6 +2580,22 @@ PrefabInstance:
     - target: {fileID: 1331549509000392805, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
       propertyPath: m_Text
       value: "\xD3rgano para el\nplacer sexual."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282616159935632755, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282616159935632755, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570453280443197109, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570453280443197109, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_Size.y
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6519688314981148388, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
       propertyPath: m_Name
@@ -2655,6 +2735,22 @@ PrefabInstance:
       value: 'Sitio por donde
 
         sale el pis.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282616159935632755, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2282616159935632755, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570453280443197109, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5570453280443197109, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
+      propertyPath: m_Size.y
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6519688314981148388, guid: c589d0b4f906edf48a11518e44abb3b8, type: 3}
       propertyPath: m_Name
