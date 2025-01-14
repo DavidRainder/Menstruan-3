@@ -14,6 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texts:
   - TemaFinal_1
+  - TemaFinal_2
+  - TemaFinal_3
+  - TemaFinal_4
+  - TemaFinal_5
+  - TemaFinal_6
+  - TemaFinal_7
+  - TemaFinal_8
+  - TemaFinal_9
+  - TemaFinal_10
+  - TemaFinal_11
+  - TemaFinal_12
+  - TemaFinal_13
+  - TemaFinal_14
+  - TemaFinal_15
+  - TemaFinal_16
+  - TemaFinal_17
+  - TemaFinal_18
+  - TemaFinal_19
+  - TemaFinal_20
   speed: 0.035
   onStartDialog:
     m_PersistentCalls:

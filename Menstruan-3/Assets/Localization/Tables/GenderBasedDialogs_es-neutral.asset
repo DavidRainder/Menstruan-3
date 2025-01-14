@@ -405,7 +405,100 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 21231701724422144
-    m_Localized: Placeholder de texto para acabar el juego
+    m_Localized: "Bueno, eso ha sido todo lo que te podemos ense\xF1ar en tan poquito
+      tiempo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22468906526629888
+    m_Localized: Vamos a repasar un poco para relajar tus nervios.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22468907998830592
+    m_Localized: 'Respondiendo a tu primera pregunta de todas: No, no te vas a morir.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22468909471031296
+    m_Localized: 'Esto es un proceso natural que le sucede a las personas con aparato
+      reproductor femenino.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469032473190400
+    m_Localized: "Es un proceso c\xEDclico, lo que significa que se repite. Sucede
+      aproximadamente cada mes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469047031619584
+    m_Localized: "Hemos visto qu\xE9 zonas de tu cuerpo estaban involucradas en el
+      proceso:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469054245822464
+    m_Localized: "La vulva, el \xFAtero, el endometrio..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469066187005952
+    m_Localized: "Tambi\xE9n hemos explicado los productos m\xE1s utilizados de gesti\xF3n
+      menstrual:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469079935934464
+    m_Localized: Compresas, tampones, disco y copa menstrual y ropa interior absorbente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469087896723456
+    m_Localized: "(\xA1y tambi\xE9n recuerda que puedes investigar otras formas de
+      gesti\xF3n menstrual como el sangrado libre!)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469097208078336
+    m_Localized: "Y, aunque te hayamos explicado c\xF3mo se usan, \xA1siempre pide
+      ayuda la primera vez!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469107266019328
+    m_Localized: "La gente adulta menstruante que te rodea ha gestionado la menstruaci\xF3n
+      decenas de veces;"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469115692376064
+    m_Localized: "no sientas verg\xFCenza ni miedo de volver a preguntarnos c\xF3mo
+      funciona"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469124328448000
+    m_Localized: 'Y, finalmente, hemos explicado muy por encima las fases que componen
+      el ciclo menstrual. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469662658977792
+    m_Localized: "Es m\xE1s complejo, pero por ahora te llega con saber cu\xE1les
+      son las fases:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469710738284544
+    m_Localized: Preovulatoria, ovulatoria, premenstrual, menstrual.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469752123482112
+    m_Localized: 'Entonces, con esto hemos acabado por hoy.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22469759727755264
+    m_Localized: "Ten en cuenta, hay mucha m\xE1s informaci\xF3n que te falta por
+      saber, como por ejemplo cu\xE1les son los s\xEDntomas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22470063487639552
+    m_Localized: "de cada fase m\xE1s en detalle, pero desgraciadamente se nos enfr\xEDa
+      la comida jeje.\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22470079681847296
+    m_Localized: "Si tienes m\xE1s dudas, preg\xFAntanos sin problema."
     m_Metadata:
       m_Items: []
   references:
