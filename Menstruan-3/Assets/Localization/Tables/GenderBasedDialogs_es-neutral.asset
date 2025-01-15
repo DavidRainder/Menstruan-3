@@ -56,7 +56,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4773269963165696
     m_Localized: "Est\xE1n hechas de tela. Se colocan en la ropa interior y se comportan
-      como la ropa interior absorbente \r\n"
+      como la ropa interior absorbente. \r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 4773328368848896
@@ -499,6 +499,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 22470079681847296
     m_Localized: "Si tienes m\xE1s dudas, preg\xFAntanos sin problema."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22825372657385472
+    m_Localized: El ciclo tiene 4 fases.
     m_Metadata:
       m_Items: []
   references:

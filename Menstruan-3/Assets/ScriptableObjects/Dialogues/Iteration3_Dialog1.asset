@@ -15,6 +15,7 @@ MonoBehaviour:
   texts:
   - Tema3_Ciclo
   - Tema3_Ciclo2
+  - Tema3_Ciclo3
   speed: 0.035
   onStartDialog:
     m_PersistentCalls:

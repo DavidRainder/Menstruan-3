@@ -133,9 +133,5 @@ public class GestionMenstrualMinigame : MonoBehaviour
         {
             _minigameManager.EndMinigame();
         }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            gameObject.GetComponent<MinigameManager>().EndMinigame();
-        }
     }
 }

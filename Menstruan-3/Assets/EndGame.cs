@@ -27,6 +27,6 @@ public class EndGame : MonoBehaviour
         GameManager.StopMusic(0.3f);
         FadeManager.Instance.FadeOut();
         SceneLoader.LoadScene("Intro");
-        FMODEventEmitter.Instance.EmitEvent("BookClosed");
+        FMODEventEmitter.Instance.EmitEvent("BookClosing");
     }
 }

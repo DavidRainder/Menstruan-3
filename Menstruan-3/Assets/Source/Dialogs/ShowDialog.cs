@@ -37,11 +37,6 @@ public class ShowDialog : MonoBehaviour
         {
             ShowText();
         }
-
-        if(Input.GetKeyDown(KeyCode.Space)) { 
-            StopAllCoroutines();
-            EndDialog();
-        }
     }
 
     private void StartDialog()
