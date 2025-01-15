@@ -1840,7 +1840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8290431078233361283, guid: 871b5473868eea74fba7f0aeebc9dd17, type: 3}
       propertyPath: _DEBUG_MODE
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8290431078233361283, guid: 871b5473868eea74fba7f0aeebc9dd17, type: 3}
       propertyPath: _layout._strips.Array.data[0]._moveToNext
