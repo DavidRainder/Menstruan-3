@@ -48,7 +48,7 @@ public class Quiz : MonoBehaviour
 
         _questionText.text = settings.question;
         
-        int correctAnswer = UnityEngine.Random.Range(0, settings.wrongOptions.Length);
+        int correctAnswer = UnityEngine.Random.Range(0, settings.wrongOptions.Length + 1);
         _rightButton = _layout.transform.GetChild(correctAnswer / 2).transform.GetChild(correctAnswer % 2).GetComponent<Button>();
         TextMeshProUGUI rightText = _rightButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         rightText.text = settings.rightOption;

@@ -291,11 +291,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8301972915818496
-    m_Localized: "\xA1Hola cari\xF1o! Ven a poner la mesa que ya est\xE1 la comida"
+    m_Localized: "\xA1Hola cari\xF1o! Ven a poner la mesa que ya est\xE1 la comida."
     m_Metadata:
       m_Items: []
   - m_Id: 8302220690132992
-    m_Localized: "\xA1Valee! Voy al ba\xF1o un momento y ya vengo"
+    m_Localized: "\xA1Valee! Voy al ba\xF1o un momento y ya vengo."
     m_Metadata:
       m_Items: []
   - m_Id: 8302304391663616
@@ -443,7 +443,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 22469079935934464
-    m_Localized: Compresas, tampones, disco y copa menstrual y ropa interior absorbente
+    m_Localized: Compresas, tampones, disco y copa menstrual y ropa interior absorbente.
     m_Metadata:
       m_Items: []
   - m_Id: 22469087896723456
@@ -463,7 +463,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 22469115692376064
     m_Localized: "no sientas verg\xFCenza ni miedo de volver a preguntarnos c\xF3mo
-      funciona"
+      funciona."
     m_Metadata:
       m_Items: []
   - m_Id: 22469124328448000
@@ -488,7 +488,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 22469759727755264
     m_Localized: "Ten en cuenta, hay mucha m\xE1s informaci\xF3n que te falta por
-      saber, como por ejemplo cu\xE1les son los s\xEDntomas"
+      saber, como por ejemplo cu\xE1les son los s\xEDntomas."
     m_Metadata:
       m_Items: []
   - m_Id: 22470063487639552
