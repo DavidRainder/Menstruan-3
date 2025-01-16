@@ -84,6 +84,7 @@ public class MusicManager : MonoBehaviour
         channel.setVolume(_musicVolume);
 
         // UnityEngine.Debug.Log(ret);
+        GameManager.Instance.SetMute();
     }
 
     public void StopMusic(float fadeOutTime)
@@ -100,6 +101,13 @@ public class MusicManager : MonoBehaviour
         {
             StartCoroutine(FadeIn(fadeInTime));
         }
+    }
+
+    public void Mute(bool enabled)
+    {
+        StopAllCoroutines();
+        _dialogueGroup.setVolume(enabled ? 0 : 1);
+        _musicGroup.setVolume(enabled ? 0 : _musicVolume);
     }
 
     IEnumerator FadeIn(float fadeInTime)

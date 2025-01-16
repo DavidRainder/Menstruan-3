@@ -37,6 +37,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject[] minigamesPrefabs;
 
+    private bool mute = false;
+
+    private MuteButton button;
+
     public static void Quit()
     {
         Application.Quit();
@@ -138,6 +142,34 @@ public class GameManager : MonoBehaviour
     {
         Transform a = Instantiate(Instance._endGameObject, Camera.main.transform.position, Quaternion.identity).transform;
         a.position = new Vector3(a.position.x, a.position.y, 0);
+    }
+
+    public void ChangeMute()
+    {
+        Instance.mute = !Instance.mute;
+        SetMute();
+    }
+
+    public void SetMute()
+    {
+        Instance.button?.onMuteClick(Instance.mute);
+        MusicManager.Instance.Mute(Instance.mute);
+        FMODUnity.RuntimeManager.MuteAllEvents(Instance.mute);
+    }
+
+    public void DisableButtonMute()
+    {
+        Instance.button = null;
+    }
+
+    public bool IsMute()
+    {
+        return mute;
+    }
+
+    public void RegisterMuteButton(MuteButton mButton)
+    {
+        button = mButton;
     }
 
     IEnumerator AfterMinigame(string dialogID)
